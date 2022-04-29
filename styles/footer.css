@@ -1,0 +1,7 @@
+footer{
+    background-color: var(--color-brown);
+}
+
+footer a{
+    color: var(--color-beige);
+}

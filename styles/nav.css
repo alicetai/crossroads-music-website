@@ -1,0 +1,13 @@
+nav{
+    /* styles for both nav bars */
+    width: 100vw; /* width of the whole viewport */
+}
+
+#top-nav{
+    background-color: var(--color-brown);
+}
+
+#top-nav a{
+    color: var(--color-beige);
+}
+

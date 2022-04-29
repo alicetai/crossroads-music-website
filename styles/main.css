@@ -1,6 +1,23 @@
 /* Import all CSS files */
 
+@import "reset.css";
 @import "colors.css";
 @import "layout.css";
 @import "spacing.css";
 @import "typography.css";
+@import "responsive.css";
+
+/* Import component styles */
+@import "nav.css";
+@import "footer.css";
+@import "button.css";
+@import "form.css";
+
+:root{
+    --round-border: 14px;
+}
+
+
+/* .rounded{
+    border-radius: 14px;
+} */
