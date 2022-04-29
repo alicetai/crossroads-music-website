@@ -1,7 +1,28 @@
+:root{
+    --padding-vertical: 14px;
+    --padding-horizontal: 24px;
+}
+
 button{
     color: var(--color-beige);
-    background-color: var(--color-brown);
     font-family: var(--font-body);
     border: none;
-    border-radius: var(--round-border);
+    border-radius: var(--round-border-sm);
+    padding: var(--padding-vertical) var(--padding-horizontal);
+}
+
+button[variant=primary]{
+    background-color: var(--color-brown);
+}
+
+button[variant=primary]:hover{
+    background-color: var(--color-brown-dark);
+}
+
+button[variant=green]{
+    background-color: var(--color-green);
+}
+
+button[variant=green]:hover{
+    background-color: var(--color-green-dark);
 }
