@@ -26,3 +26,7 @@
 header, section{
     text-align: center;
 }
+
+section{
+    padding: var(--padding-xl) var(--padding-xs);
+}

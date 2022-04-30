@@ -11,10 +11,10 @@
     --color-green-dark: #647D68;
 }
 
-.filled{
-    background-color: var(--color-brown);
+.empty-bg{
+    background-color: transparent;
 }
 
-[variant=green]{
-    background-color: var(--color-green);
+.shaded-bg{
+    background-color: var(--color-beige-dark);
 }

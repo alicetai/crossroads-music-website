@@ -48,7 +48,7 @@ h6{
     font-size: var(--text-xs);
 }
 
-p{
+p, a{
     font-size: var(--text-base);
     line-height: 150%;
 }
