@@ -1,15 +1,34 @@
-/* nav{
-    width: 100vw;
-} */
+nav{
+    position: fixed;
+    width: 100%;
+}
 
 #top-nav{
+    height: 88px;
     background-color: var(--color-brown);
 }
 
-#top-nav a{
+.nav-link{
     color: var(--color-beige);
 }
 
+.nav-link:hover{
+    color: var(--color-tan);
+}
+
 #main-nav{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: var(--color-tan);
+}
+
+.main-nav-link{
+    height: 100%;
+    width: 100%;
+}
+
+.main-nav-link:hover{
+    background-color: var(--color-beige-dark);
 }

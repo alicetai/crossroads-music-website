@@ -4,6 +4,6 @@
     --transition-time: 300ms;
 }
 
-:hover{
+a, button{
     transition: all var(--transition-time) ease-in-out;
 }

@@ -10,6 +10,7 @@ button{
     border: none;
     border-radius: var(--round-border-md);
     padding: var(--padding-vertical) var(--padding-horizontal);
+    transition: all var(--transition-time) ease-in-out;
 }
 
 button[variant=primary]{

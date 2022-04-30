@@ -4,7 +4,8 @@
 :root{
     --font-body: 'Commissioner', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-serif: 'Fraunces', serif;
-    --font-semibold: 600;
+    --weight-semibold: 600;
+    --weight-medium: 500;
 
     --text-2xl: 3rem;
     --text-xl: 2rem;
@@ -54,7 +55,7 @@ p, a{
 }
 
 h2, h3, h4, h5, h6{
-    font-weight: var(--font-semibold);
+    font-weight: var(--weight-semibold);
 }
 
 .bold{
@@ -62,11 +63,13 @@ h2, h3, h4, h5, h6{
 }
 
 .semibold{
-    font-weight: var(--font-semibold);
+    font-weight: var(--weight-semibold);
 }
 
 
 /* Hyperlink styles */
 a{
     color: var(--color-brown);
+    font-weight: var(--weight-medium);
+    text-decoration: none;
 }
