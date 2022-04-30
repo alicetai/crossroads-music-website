@@ -1,0 +1,15 @@
+/* nav{
+    width: 100vw;
+} */
+
+#top-nav{
+    background-color: var(--color-brown);
+}
+
+#top-nav a{
+    color: var(--color-beige);
+}
+
+#main-nav{
+    background-color: var(--color-tan);
+}

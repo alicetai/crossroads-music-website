@@ -1,0 +1,9 @@
+footer{
+    display: block;
+    color: var(--color-beige);
+    background-color: var(--color-brown);
+}
+
+footer a{
+    color: var(--color-beige);
+}

@@ -1,0 +1,9 @@
+/* Transition styles */
+
+:root{
+    --transition-time: 300ms;
+}
+
+:hover{
+    transition: all var(--transition-time) ease-in-out;
+}

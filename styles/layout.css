@@ -1,0 +1,8 @@
+/* .flex-container{
+    
+} */
+
+.horizontal-flex{
+    display: flex;
+    flex-direction: row;
+}

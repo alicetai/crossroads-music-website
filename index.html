@@ -4,62 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Crossroads Music</title>
 </head>
 <body>
     <header>
         <!-- Introductory content -->
-        <nav class="top-nav">
-            <div>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="rentals.html">Rentals</a></li>
-                    <li><a href="repairs.html">Repairs</a></li>
-                    <li><a href="music-lessons.html">Music Lessons</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>    
+        <nav id="top-nav">
+            <div class="horizontal-flex">
+                <div class="horizontal-flex">
+                    <a href="index.html" class="logo">Crossroads Music</a>
+                    <div>
+                        <form>
+                            <input type="text" placeholder="Search all products" name="search">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="horizontal-flex">
+                        <a href="about.html">About Us</a>
+                        <a href="rentals.html">Rentals</a>
+                        <a href="repairs.html">Repairs</a>
+                        <a href="music-lessons.html">Music Lessons</a>
+                        <a href="contact.html">Contact</a>
+                </div>
             </div>
         </nav>
 
-        <h1>Port Townsend’s finest hand-crafted instruments</h1>
-
-        <nav class="main-nav">
+        <!-- Slideshow image gallery -->
+        <div class="slideshow-gallery">
             <div>
-                <ul>
-                    <li><a href="products.html">Guitars</a></li>
-                    <li><a href="products.html">Amps</a></li>
-                    <li><a href="products.html">Drums</a></li>
-                </ul>    
+                <img src="images/gallery/gallery-image-1.jpg">
+            </div>
+            
+            <!-- <div>
+                <img src="images/gallery/gallery-image-1.jpg">
+            </div> -->
+            
+            <h1>Port Townsend’s finest hand-crafted instruments</h1>
+            <button>Shop now</button>
+        </div>
+
+        <nav id="main-nav">
+            <div class="horizontal-flex">
+                <a href="products.html">Guitars</a>
+                <a href="products.html">Amps</a>
+                <a href="products.html">Drums</a>
+                <a href="products.html">Live Sound</a>
             </div>
         </nav>
+
+        <section>
+            <div class="section-content">
+                <p>Crossroads Music is the destination music store for North American-made, locally hand-crafted instruments including guitars, ukuleles, resonator guitars and banjos. We strive to find the best musical instruments fitted for anyone and everyone, whether you’re an experienced musician or just looking to get your hands on your first instrument.</p>
+            </div>
+        </section>
+
     </header>
 
     <main>
         <section>
-            <p>Crossroads Music is the destination music store for North American-made, locally hand-crafted instruments including guitars, ukuleles, resonator guitars and banjos. We strive to find the best musical instruments fitted for anyone and everyone, whether you’re an experienced musician or just looking to get your hands on your first instrument.</p>
+            <div class="section-content">
+                <h3>Shop our bestsellers</h3>
+                <div>
+                    <ul class="horizontal-flex">
+                        <li class="listing-item"><a href="guitar.html">Guitar</a></li>
+                        <li class="listing-item"><a href="guitar.html">Guitar</a></li>
+                        <li class="listing-item"><a href="guitar.html">Guitar</a></li>
+                        <li class="listing-item"><a href="guitar.html">Guitar</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
         <section>
-            <h1>Shop our bestsellers</h1>
+            <div class="section-content">
+                <h3>Recommended for you</h3>
+            </div>
         </section>
-        <section>
-            <h1>Recommended for you</h1>
+
+        <section class="shaded-bg">
+            <div class="section-content">
+                <h3>Our brands</h3>
+                <div>
+                    <ul>
+                        <li class="brand-item"><a href="https://www.martinguitar.com" target="_blank">Martin</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
         <section>
-            <h1>Our brands</h1>
-        </section>
-        <section>
-            <h1>What our customers say</h1>
+            <div class="section-content">
+                <h3>What our customers say</h3>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="repairs.html">Repairs</a></li>
-            <li><a href="music-lessons.html">Music Lessons</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <footer id="main-footer">
+        <div class="horizontal-flex">
+            <div>
+                <h5>Address</h5>
+                <p>
+                    2100 Lawrence Street
+                    <br/>
+                    Port Townsend, WA. 98368
+                    <br/>
+                    United States
+                </p>
+            </div>
+            <div>
+                <h5>Contact</h5>
+            </div>
+            <div class="vertical-flex">
+                <h5>Company</h5>
+                <a href="about.html">About Us</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="repairs.html">Repairs</a>
+                <a href="music-lessons.html">Music Lessons</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <h5>Get our newsletter</h5>
+                <div>
+                    <input type="text" placeholder="Email address" name="email" required>
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+            <div>
+                <h5>Stay in touch</h5>
+            </div>
         </div>
     </footer>
 </body>

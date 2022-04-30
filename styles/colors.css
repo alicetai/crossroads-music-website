@@ -1,0 +1,21 @@
+:root{
+    /*** COLORS ***/
+    --color-brown: #493722;
+    --color-brown-dark: #372A1A;
+    --color-beige: #F8F5F1;
+    --color-beige-dark: #F2ECE3;
+    --color-tan: #D7CDC1;
+    --color-white: white;
+
+    --color-red: #D93636;
+    --color-green: #708C74;
+    --color-green-dark: #647D68;
+}
+
+.empty-bg{
+    background-color: transparent;
+}
+
+.shaded-bg{
+    background-color: var(--color-beige-dark);
+}
