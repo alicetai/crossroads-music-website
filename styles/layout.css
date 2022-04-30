@@ -2,7 +2,13 @@
     
 } */
 
-.horizontal-flex{
+.flex-row{
     display: flex;
     flex-direction: row;
+    /* justify-content: space-evenly; */
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }

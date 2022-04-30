@@ -1,0 +1,8 @@
+.listing-gallery{
+    justify-content: space-evenly;
+}
+
+.listing-item{
+    width: 12.5rem;
+    height: 18.75rem;
+}

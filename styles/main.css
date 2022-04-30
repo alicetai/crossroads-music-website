@@ -13,6 +13,8 @@
 @import "footer.css";
 @import "button.css";
 @import "form.css";
+@import "listing.css";
+@import "card.css";
 
 :root{
     /* BORDER VARIABLES */
@@ -50,4 +52,9 @@ img{
 .alert-banner{
     color: var(--color-beige);
     background-color: var(--color-green);
+}
+
+.brand-item{
+    width: 9.75rem;
+    height: 5rem;
 }

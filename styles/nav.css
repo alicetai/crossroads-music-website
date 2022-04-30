@@ -1,10 +1,10 @@
 nav{
-    position: fixed;
     width: 100%;
 }
 
 #top-nav{
     height: 88px;
+    position: fixed;
     background-color: var(--color-brown);
 }
 
