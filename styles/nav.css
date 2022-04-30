@@ -1,5 +1,5 @@
 nav{
-    /* styles for both nav bars */
+    /* styles for both top and main nav bars */
     width: 100vw; /* width of the whole viewport */
 }
 
@@ -11,3 +11,6 @@ nav{
     color: var(--color-beige);
 }
 
+#main-nav{
+    background-color: var(--color-tan);
+}

@@ -15,7 +15,8 @@
 @import "form.css";
 
 :root{
-    --round-border-sm: 10px;
+    /* BORDER VARIABLES */
+    --round-border-md: 10px;
     --round-border-lg: 14px;
 }
 

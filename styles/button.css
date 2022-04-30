@@ -7,7 +7,7 @@ button{
     color: var(--color-beige);
     font-family: var(--font-body);
     border: none;
-    border-radius: var(--round-border-sm);
+    border-radius: var(--round-border-md);
     padding: var(--padding-vertical) var(--padding-horizontal);
 }
 
