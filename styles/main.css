@@ -25,9 +25,19 @@
 } */
 
 header, section{
+    width: 100vw;
     text-align: center;
 }
 
 section{
-    padding: var(--padding-xl) var(--padding-xs);
+    padding: var(--padding-xl) 0px;
+}
+
+/* .slideshow-gallery{
+    width: 100vw;
+} */
+
+img{
+    width: 100%;
+    max-width: 100vw;
 }

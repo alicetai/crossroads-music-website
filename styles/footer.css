@@ -1,4 +1,6 @@
 footer{
+    width: 100vw;
+    color: var(--color-beige);
     background-color: var(--color-brown);
 }
 
