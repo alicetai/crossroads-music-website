@@ -1,7 +1,6 @@
-nav{
-    /* styles for both top and main nav bars */
-    width: 100vw; /* width of the whole viewport */
-}
+/* nav{
+    width: 100vw;
+} */
 
 #top-nav{
     background-color: var(--color-brown);
