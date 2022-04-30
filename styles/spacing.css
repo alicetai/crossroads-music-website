@@ -1,4 +1,5 @@
 :root{
-    --padding-xs: 10px;
-    --padding-xl: 70px;
+    --spacing-xs: 8px;
+    --spacing-sm: 10px;
+    --spacing-xl: 70px;
 }

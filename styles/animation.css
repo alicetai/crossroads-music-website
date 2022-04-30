@@ -4,6 +4,6 @@
     --transition-time: 300ms;
 }
 
-a, button{
+a, button, input{
     transition: all var(--transition-time) ease-in-out;
 }

@@ -5,4 +5,14 @@
 .listing-item{
     width: 12.5rem;
     height: 18.75rem;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.listing-img{
+    height: 60%;
+    width: 100%;
+    object-fit: contain; /* fit height */
 }

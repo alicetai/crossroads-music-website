@@ -1,16 +1,17 @@
 :root{
-    --padding-vertical: 14px;
-    --padding-horizontal: 24px;
+    --spacing-vertical: 14px;
+    --spacing-horizontal: 24px;
 }
 
 button{
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
     color: var(--color-beige);
     background-color: var(--color-brown);
     font-family: var(--font-body);
     border: none;
     border-radius: var(--round-border-md);
-    padding: var(--padding-vertical) var(--padding-horizontal);
-    transition: all var(--transition-time) ease-in-out;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
 }
 
 button[variant=primary]{
@@ -27,4 +28,9 @@ button[variant=green]{
 
 button[variant=green]:hover{
     background-color: var(--color-green-dark);
+}
+
+button[type=submit] {
+    color: var(--color-brown);
+    background-color: transparent;
 }

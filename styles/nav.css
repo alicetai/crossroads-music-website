@@ -3,9 +3,10 @@ nav{
 }
 
 #top-nav{
-    height: 88px;
-    position: fixed;
     background-color: var(--color-brown);
+    height: 5rem;
+    position: fixed;
+    z-index: 1;
 }
 
 .nav-link{
@@ -17,7 +18,7 @@ nav{
 }
 
 #main-nav{
-    height: 60px;
+    height: 3.75rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
