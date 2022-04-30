@@ -19,7 +19,10 @@
     --round-border-lg: 14px;
 }
 
-
 /* .rounded{
     border-radius: 14px;
 } */
+
+header, section{
+    text-align: center;
+}

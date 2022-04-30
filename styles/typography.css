@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Fraunces:400,700');
-@import url('https://fonts.googleapis.com/css?family=Commissioner');
+@import url('https://fonts.googleapis.com/css?family=Commissioner:300,400,500,600,700,800');
 
 :root{
-    --font-body: 'Commissioner', sans-serif;
-    --font-deco: 'Fraunces', serif;
+    --font-body: 'Commissioner', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Fraunces', serif;
+    --font-semibold: 600;
+
+    --text-2xl: 3rem;
+    --text-xl: 2rem;
+    --text-lg: 1.625rem;
+    --text-md: 1.375rem;
+    --text-sm: 1.125rem;
+    --text-xs: 1rem;
+    --text-base: 0.9rem;
 }
 
 body{
@@ -13,18 +22,49 @@ body{
 }
 
 h1{
-    font-family: var(--font-deco);
+    font-size: var(--text-2xl);
+    font-family: var(--font-serif);
     font-weight: bold;
     text-transform: capitalize;
 }
 
 h2{
-    font-weight: bold;
+    font-size: var(--text-xl);
 }
 
 h3{
+    font-size: var(--text-lg);
+}
+
+h4{
+    font-size: var(--text-md);
+}
+
+h5{
+    font-size: var(--text-sm);
+}
+
+h6{
+    font-size: var(--text-xs);
+}
+
+p{
+    font-size: var(--text-base);
+    line-height: 150%;
+}
+
+h2, h3, h4, h5, h6{
+    font-weight: var(--font-semibold);
+}
+
+.bold{
     font-weight: bold;
 }
+
+.semibold{
+    font-weight: var(--font-semibold);
+}
+
 
 /* Hyperlink styles */
 a{
