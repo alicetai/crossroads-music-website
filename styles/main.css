@@ -7,6 +7,7 @@
 @import "typography.css";
 @import "responsive.css";
 @import "animation.css";
+@import "effects.css";
 
 /* Import component styles */
 @import "nav.css";
@@ -15,12 +16,6 @@
 @import "form.css";
 @import "listing.css";
 @import "card.css";
-
-:root{
-    /* BORDER VARIABLES */
-    --round-border-md: 10px;
-    --round-border-lg: 14px;
-}
 
 header, section{
     /* display: block; */

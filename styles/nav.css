@@ -1,5 +1,5 @@
 nav{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,10 +8,9 @@ nav{
 #top-nav{
     color: var(--color-beige);
     background-color: var(--color-brown);
-    padding: var(--spacing-lg);
     position: fixed;
     z-index: 1;
-    align-items: stretch;
+    padding: var(--spacing-xs) 0px;
 }
 
 #top-nav a{
@@ -23,10 +22,7 @@ nav{
 }
 
 #main-nav{
-    height: 3.75rem;
     flex-wrap: wrap; /* go onto a new line if needed */
-    justify-content: space-between;
-    align-items: stretch;
     background-color: var(--color-tan);
 }
 
@@ -34,6 +30,18 @@ nav{
     background-color: var(--color-beige-dark);
 }
 
-/* .nav-links{
+.nav-link{
     padding: var(--spacing-md) var(--spacing-lg);
-} */
+}
+
+.notification-badge {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    border-radius: 50%;
+    background-color: var(--color-red);
+    /* color: white; */
+    font-size: 0.625rem;
+}
