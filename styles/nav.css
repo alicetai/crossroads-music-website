@@ -1,35 +1,39 @@
 nav{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #top-nav{
+    color: var(--color-beige);
     background-color: var(--color-brown);
-    height: 5rem;
+    padding: var(--spacing-lg);
     position: fixed;
     z-index: 1;
+    align-items: stretch;
 }
 
-.nav-link{
+#top-nav a{
     color: var(--color-beige);
 }
 
-.nav-link:hover{
+#top-nav a:hover{
     color: var(--color-tan);
 }
 
 #main-nav{
     height: 3.75rem;
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* go onto a new line if needed */
     justify-content: space-between;
+    align-items: stretch;
     background-color: var(--color-tan);
 }
 
-.main-nav-link{
-    height: 100%;
-    width: 100%;
-}
-
-.main-nav-link:hover{
+#main-nav a:hover{
     background-color: var(--color-beige-dark);
 }
+
+/* .nav-links{
+    padding: var(--spacing-md) var(--spacing-lg);
+} */

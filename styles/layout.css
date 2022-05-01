@@ -5,10 +5,17 @@
 .flex-row{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
 }
 
 .flex-column{
     display: flex;
     flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
 }

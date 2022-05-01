@@ -90,3 +90,8 @@ p, a{
 .left-align{
     text-align: left;
 }
+
+.logo{
+    font-family: var(--font-serif);
+    font-size: var(--text-xs);
+}

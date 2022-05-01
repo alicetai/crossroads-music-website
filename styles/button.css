@@ -1,8 +1,3 @@
-:root{
-    --spacing-vertical: 14px;
-    --spacing-horizontal: 24px;
-}
-
 button{
     font-size: var(--text-xs);
     font-weight: var(--weight-semibold);
@@ -11,7 +6,7 @@ button{
     font-family: var(--font-body);
     border: none;
     border-radius: var(--round-border-md);
-    padding: var(--spacing-vertical) var(--spacing-horizontal);
+    padding: var(--spacing-md) var(--spacing-lg);
 }
 
 button[variant=primary]{
@@ -30,7 +25,12 @@ button[variant=green]:hover{
     background-color: var(--color-green-dark);
 }
 
-button[type=submit] {
+/* button[type=submit] {
     color: var(--color-brown);
     background-color: transparent;
+} */
+
+.search-btn{
+    color: var(--color-beige);
+    padding: 0px;
 }

@@ -4,7 +4,6 @@ input{
     font-family: var(--font-body);
     background-color: transparent;
     border-style: none;
-    border-bottom: 2px solid var(--color-beige-dark);
     padding: var(--spacing-xs) 0px;
     outline: none;
 }
@@ -16,4 +15,8 @@ input{
 
 input:focus{
     border-bottom: 2px solid var(--color-brown);
+}
+
+.bottom-border{
+    border-bottom: 2px solid var(--color-beige-dark);
 }
