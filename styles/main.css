@@ -60,3 +60,8 @@ section{
     width: 9.75rem;
     height: 5rem;
 }
+
+.logo{
+    font-family: var(--font-serif);
+    font-size: var(--text-xs);
+}

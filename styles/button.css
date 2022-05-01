@@ -25,11 +25,6 @@ button[variant=green]:hover{
     background-color: var(--color-green-dark);
 }
 
-/* button[type=submit] {
-    color: var(--color-brown);
-    background-color: transparent;
-} */
-
 .search-btn{
     color: var(--color-beige);
     padding: 0px;
