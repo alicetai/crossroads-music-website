@@ -3,3 +3,11 @@
     --round-border-md: 10px;
     --round-border-lg: 14px;
 }
+
+.empty-bg{
+    background-color: transparent;
+}
+
+.shaded-bg{
+    background-color: var(--color-beige-dark);
+}

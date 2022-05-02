@@ -90,3 +90,7 @@ p, a{
 .left-align{
     text-align: left;
 }
+
+.price-tag{
+    font-weight: bold;
+}

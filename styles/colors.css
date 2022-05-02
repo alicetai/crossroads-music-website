@@ -12,11 +12,3 @@
     --color-green: #708C74;
     --color-green-dark: #647D68;
 }
-
-.empty-bg{
-    background-color: transparent;
-}
-
-.shaded-bg{
-    background-color: var(--color-beige-dark);
-}
