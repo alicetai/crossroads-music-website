@@ -8,6 +8,22 @@
     background-color: transparent;
 }
 
+.light-bg{
+    background-color: var(--color-beige);
+}
+
 .shaded-bg{
     background-color: var(--color-beige-dark);
+}
+
+.rounded{
+    border-radius: var(--round-border-lg);
+}
+
+.borderless{
+    border: none;
+}
+
+.bottom-border{
+    border-bottom: 2px solid var(--color-beige-dark);
 }

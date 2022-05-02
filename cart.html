@@ -13,16 +13,16 @@
     </header>
     <section id="shopping-cart">
         <div class="section-content">
-            <h2>Your cart</h2>
-            <table id="cart-items">
-                <tr>
-                    <td>Guitar Name</td>
+            <h3>Your cart</h3>
+            <table class="cart-table">
+                <tr class="white-card">
+                    <td>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</td>
                     <td>$0.00</td>
                     <td>2</td>
                     <td>$10.00</td>
                     <td>Delete</td>
                 </tr>
-                <tr>
+                <tr class="white-card">
                     <td>Guitar Name</td>
                     <td>$0.00</td>
                     <td>2</td>
@@ -35,8 +35,9 @@
                 <input type="text" placeholder="xxxxxx" id="discount-code" name="discount-code">
                 <button type="submit">Apply</button>
             </div>
-            <h6>Subtotal: $100.00</h6>
-            <button id="checkout-btn" type="submit">Proceed to checkout</button>
+            <h5>Subtotal:</h5>
+            <h5 class="price-tag">$100.00</h5>
+            <button id="checkout-btn" type="submit" variant="primary">Proceed to checkout</button>
         </div>
     </section>
     <footer></footer>

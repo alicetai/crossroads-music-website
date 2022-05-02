@@ -1,0 +1,12 @@
+table{
+    width: 100%;
+}
+
+tr{
+    font-size: var(--text-base);
+    text-align: left;
+}
+
+/* .cart-table{
+    row-gap: 100px;
+} */

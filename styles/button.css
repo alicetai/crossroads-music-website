@@ -6,6 +6,7 @@ button{
     font-family: var(--font-body);
     border: none;
     border-radius: var(--round-border-md);
+    margin: var(--spacing-sm);
     padding: var(--spacing-md) var(--spacing-lg);
 }
 

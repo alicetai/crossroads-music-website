@@ -12,6 +12,7 @@
 /* Import component styles */
 @import "nav.css";
 @import "footer.css";
+@import "table.css";
 @import "button.css";
 @import "form.css";
 @import "listing.css";

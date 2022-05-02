@@ -12,11 +12,3 @@ input{
     color: var(--color-tan-dark);
     opacity: 1; /* Firefox */
 }
-
-input:focus{
-    border-bottom: 2px solid var(--color-brown);
-}
-
-.bottom-border{
-    border-bottom: 2px solid var(--color-beige-dark);
-}

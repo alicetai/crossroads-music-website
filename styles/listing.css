@@ -6,9 +6,8 @@
     width: 12.5rem;
     height: 18.75rem;
     text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    padding: var(--spacing-sm);
+    margin: var(--spacing-xs) 0px;
 }
 
 .listing-img{
