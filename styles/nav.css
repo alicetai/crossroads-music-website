@@ -1,16 +1,47 @@
 nav{
-    /* styles for both top and main nav bars */
-    width: 100vw; /* width of the whole viewport */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #top-nav{
+    color: var(--color-beige);
     background-color: var(--color-brown);
+    position: fixed;
+    z-index: 1;
+    padding: var(--spacing-xs) 0px;
 }
 
 #top-nav a{
     color: var(--color-beige);
 }
 
+#top-nav a:hover{
+    color: var(--color-tan);
+}
+
 #main-nav{
+    flex-wrap: wrap; /* go onto a new line if needed */
     background-color: var(--color-tan);
+}
+
+#main-nav a:hover{
+    background-color: var(--color-beige-dark);
+}
+
+.nav-link{
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.notification-badge {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    border-radius: 50%;
+    background-color: var(--color-red);
+    /* color: white; */
+    font-size: 0.625rem;
 }

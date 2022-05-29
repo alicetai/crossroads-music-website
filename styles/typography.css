@@ -4,7 +4,9 @@
 :root{
     --font-body: 'Commissioner', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-serif: 'Fraunces', serif;
-    --font-semibold: 600;
+    --weight-extrabold: 800;
+    --weight-semibold: 600;
+    --weight-medium: 500;
 
     --text-2xl: 3rem;
     --text-xl: 2rem;
@@ -25,7 +27,6 @@ h1{
     font-size: var(--text-2xl);
     font-family: var(--font-serif);
     font-weight: bold;
-    text-transform: capitalize;
 }
 
 h2{
@@ -46,6 +47,19 @@ h5{
 
 h6{
     font-size: var(--text-xs);
+    letter-spacing: 0.01rem;
+}
+
+h2, h3, h4, h5, h6{
+    font-weight: var(--weight-semibold);
+    margin: var(--spacing-sm) 0px;
+}
+
+/* Hyperlink styles */
+a{
+    color: var(--color-brown);
+    font-weight: var(--weight-medium);
+    text-decoration: none;
 }
 
 p, a{
@@ -53,20 +67,30 @@ p, a{
     line-height: 150%;
 }
 
-h2, h3, h4, h5, h6{
-    font-weight: var(--font-semibold);
-}
-
 .bold{
     font-weight: bold;
 }
 
 .semibold{
-    font-weight: var(--font-semibold);
+    font-weight: var(--weight-semibold);
 }
 
+.extrabold{
+    font-weight: var(--weight-extrabold);
+}
 
-/* Hyperlink styles */
-a{
-    color: var(--color-brown);
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.price-text{
+    font-weight: bold;
 }

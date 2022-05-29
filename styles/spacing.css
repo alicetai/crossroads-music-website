@@ -1,3 +1,8 @@
 :root{
-    --padding-xl: 70px;
+    --spacing-xs: 8px;
+    --spacing-sm: 10px;
+    --spacing-md: 14px;
+    --spacing-lg: 24px;
+    --spacing-xl: 50px;
+    --spacing-2xl: 70px;
 }

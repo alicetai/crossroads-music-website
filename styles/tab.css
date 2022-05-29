@@ -1,0 +1,20 @@
+.tab-btn{
+    color: var(--color-brown) ;
+    background-color: var(--color-beige);
+    border-radius: 0px;
+    margin: 0px;
+    padding: var(--spacing-lg);
+}
+
+.tab-btn:active{
+    border-bottom: 2px solid var(--color-brown);
+}
+
+.tab-btn:hover{
+    background-color: var(--color-beige-dark);
+}
+
+.tab-content{
+    text-align: left;
+    padding: var(--spacing-xl);
+}

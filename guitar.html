@@ -8,12 +8,59 @@
     <title>Guitar</title>
 </head>
 <body>
-    <section class="product-info">
-        <div>
-            <h1>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</h1>
-            <button id="add-to-cart-btn" variant="primary">Add to cart</button>
-            <button id="buy-now-btn" variant="green">Buy now</button>
+    <header>
+        <div class="alert-banner">
+            <p class="uppercase">Free shipping on all orders over $300*</p>
+        </div>
+    </header>
+
+    <section id="product-info">
+        <div class="section-content">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img class="main-product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Main.png">
+                </div>
+                <div class="grid-item left-align">
+                    <h4>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</h4>
+                    <h4 class="price-text">$699.00</h4>
+                    <label>Category</label>
+                    <h6>Guitars</h6>
+                    <label>Quantity</label>
+                    <p>1</p>
+                    <button id="add-to-cart-btn" variant="primary">Add to cart</button>
+                    <button id="buy-now-btn" variant="green">Buy now</button>
+                    <!-- <div>
+                        <label>
+                            <p>Email address</p>
+                            <input type="text" placeholder="yourname@email.com" name="email" required>
+                            <button type="submit">Subscribe</button>
+                        </label>
+                    </div> -->
+                </div>
+            </div>
+            <section>
+                <div class="tab">
+                    <button class="tab-btn" onclick="openTab(event, 'Description')">Description</button>
+                    <button class="tab-btn" onclick="openTab(event, 'Specifications')">Specifications</button>
+                </div>
+                    
+                <div id="product-description" class="tab-content shaded-bg">
+                    <p>The OM-28 Modern Deluxe is a new take on Martin Vintage. This guitar is packed with custom features and modern technology that you have to see, feel, and hear for yourself.</p>
+                </div>
+                <div id="product-specs" class="tab-content shaded-bg">
+                    <p>* Top Material: Sitka Spruce with VTS</p> 
+                </div>
+            </section>
         </div>
     </section>
+    <section>
+        <h3>You might also like</h3>
+    </section>
+    <section>
+        <h3>Recently viewed</h3>
+    </section>
+    <footer>
+
+    </footer>
 </body>
 </html>

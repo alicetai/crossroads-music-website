@@ -1,15 +1,13 @@
-:root{
-    --padding-vertical: 14px;
-    --padding-horizontal: 24px;
-}
-
 button{
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
     color: var(--color-beige);
     background-color: var(--color-brown);
     font-family: var(--font-body);
     border: none;
     border-radius: var(--round-border-md);
-    padding: var(--padding-vertical) var(--padding-horizontal);
+    margin: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg);
 }
 
 button[variant=primary]{
@@ -26,4 +24,9 @@ button[variant=green]{
 
 button[variant=green]:hover{
     background-color: var(--color-green-dark);
+}
+
+.search-btn{
+    color: var(--color-beige);
+    padding: 0px;
 }

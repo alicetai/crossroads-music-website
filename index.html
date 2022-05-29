@@ -6,93 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <title>Crossroads Music</title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 <body>
     <header>
         <!-- Introductory content -->
         <nav id="top-nav">
-            <div class="horizontal-flex">
-                <div class="horizontal-flex">
-                    <a href="index.html" class="logo">Crossroads Music</a>
-                    <div>
-                        <form>
-                            <input type="text" placeholder="Search all products" name="search">
-                            <button type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="horizontal-flex">
-                        <a href="about.html">About Us</a>
-                        <a href="rentals.html">Rentals</a>
-                        <a href="repairs.html">Repairs</a>
-                        <a href="music-lessons.html">Music Lessons</a>
-                        <a href="contact.html">Contact</a>
-                </div>
-            </div>
+            <a href="index.html" class="logo">Crossroads Music</a>
+            <form class="bottom-border">
+                <input type="text" placeholder="Search all products" name="search">
+                <button class="search-btn" type="submit">
+                    <span class="iconify" data-icon="fe:search" data-width="20" data-height="20"></span>
+                </button>
+            </form>
+            <a class="nav-link" href="about.html">About </a>
+            <a class="nav-link" href="rentals.html">Rentals</a>
+            <a class="nav-link" href="repairs.html">Repairs</a>
+            <a class="nav-link" href="music-lessons.html">Music Lessons</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="cart.html">
+                <span class="iconify" data-icon="bi:cart" data-width="24" data-height="24"></span>
+                <span class="notification-badge">0</span>
+            </a>
         </nav>
 
         <!-- Slideshow image gallery -->
         <div class="slideshow-gallery">
-            <div>
-                <img src="images/gallery/gallery-image-1.jpg">
-            </div>
-            
-            <!-- <div>
-                <img src="images/gallery/gallery-image-1.jpg">
-            </div> -->
-            
-            <h1>Port Townsend’s finest hand-crafted instruments</h1>
+            <img src="images/gallery/gallery-image-1.jpg">
+            <h1 class="capitalize">Port Townsend’s finest hand-crafted instruments</h1>
             <button>Shop now</button>
         </div>
 
         <nav id="main-nav">
-            <div class="horizontal-flex">
-                <a href="products.html">Guitars</a>
-                <a href="products.html">Amps</a>
-                <a href="products.html">Drums</a>
-                <a href="products.html">Live Sound</a>
-            </div>
+            <a class="nav-link" href="products.html">Guitars</a>
+            <a class="nav-link" href="products.html">Amps</a>
+            <a class="nav-link" href="products.html">Drums</a>
+            <a class="nav-link" href="products.html">Live Sound</a>
+
         </nav>
 
         <section>
-            <p>Crossroads Music is the destination music store for North American-made, locally hand-crafted instruments including guitars, ukuleles, resonator guitars and banjos. We strive to find the best musical instruments fitted for anyone and everyone, whether you’re an experienced musician or just looking to get your hands on your first instrument.</p>
+            <div class="section-content">
+                <p>Crossroads Music is the destination music store for North American-made, locally hand-crafted instruments including guitars, ukuleles, resonator guitars and banjos. We strive to find the best musical instruments fitted for anyone and everyone, whether you’re an experienced musician or just looking to get your hands on your first instrument.</p>
+            </div>
         </section>
 
     </header>
 
     <main>
         <section>
-            <h3>Shop our bestsellers</h3>
-            <div>
-                <ul class="horizontal-flex">
-                    <li class="listing-item"><a href="guitar.html">Guitar</a></li>
-                    <li class="listing-item"><a href="guitar.html">Guitar</a></li>
-                    <li class="listing-item"><a href="guitar.html">Guitar</a></li>
-                    <li class="listing-item"><a href="guitar.html">Guitar</a></li>
-                </ul>
+            <div class="section-content">
+                <h3>Shop our bestsellers</h3>
+                <div>
+                    <ul class="listing-gallery flex-row">
+                        <a class="listing-item white-card" href="guitar.html">
+                            <img class="listing-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Main.png">
+                            <div class="left-align">
+                                <h6>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</h6>
+                                <h6 class="price-text extrabold">$699.00</h6>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section>
-            <h3>Recommended for you</h3>
+            <div class="section-content">
+                <h3>Recommended for you</h3>
+            </div>
         </section>
 
         <section class="shaded-bg">
-            <h3>Our brands</h3>
-            <div>
-                <ul>
-                    <li class="brand-item"><a href="https://www.martinguitar.com" target="_blank">Martin</a></li>
-                </ul>
+            <div class="section-content">
+                <h3>Our brands</h3>
+                <div>
+                    <ul class="flex-row">
+                        <a class="brand-item white-card" href="https://www.martinguitar.com" target="_blank">Martin</a>
+                        <a class="brand-item white-card" href="https://www.martinguitar.com" target="_blank">Martin</a>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section>
-            <h3>What our customers say</h3>
+            <div class="section-content">
+                <h3>What our customers say</h3>
+            </div>
         </section>
     </main>
 
     <footer id="main-footer">
-        <div class="horizontal-flex">
+        <div class="flex-row">
             <div>
                 <h5>Address</h5>
                 <p>
@@ -106,20 +111,21 @@
             <div>
                 <h5>Contact</h5>
             </div>
-            <div class="vertical-flex">
+            <div class="flex-column">
                 <h5>Company</h5>
-                <a href="about.html">About Us</a>
-                <a href="rentals.html">Rentals</a>
-                <a href="repairs.html">Repairs</a>
-                <a href="music-lessons.html">Music Lessons</a>
-                <a href="contact.html">Contact</a>
+                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="rentals.html">Rentals</a>
+                <a class="nav-link" href="repairs.html">Repairs</a>
+                <a class="nav-link" href="music-lessons.html">Music Lessons</a>
+                <a class="nav-link" href="contact.html">Contact</a>
             </div>
             <div>
                 <h5>Get our newsletter</h5>
-                <div>
-                    <input type="text" placeholder="Email address" name="email" required>
+                <form>
+                    <label for="email">Email address</label>
+                    <input type="text" placeholder="Email address" id="email" name="email" required>
                     <button type="submit">Subscribe</button>
-                </div>
+                </form>
             </div>
             <div>
                 <h5>Stay in touch</h5>
