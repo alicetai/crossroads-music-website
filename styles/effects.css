@@ -1,7 +1,7 @@
 :root{
     /* BORDER VARIABLES */
-    --round-border-md: 10px;
-    --round-border-lg: 14px;
+    --round-border-md: 0.625rem;
+    --round-border-lg: 0.875rem;
 }
 
 .empty-bg{

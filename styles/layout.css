@@ -24,12 +24,18 @@
     justify-content: space-between;
 }
 
-.grid-container {
+.product-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
   }
 
 .grid-item {
-    /* border: 1px solid rgba(0, 0, 0, 0.8); */
     padding: var(--spacing-md);
+}
+
+.product-img-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) 0px;
 }

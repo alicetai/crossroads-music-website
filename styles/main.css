@@ -18,6 +18,7 @@
 @import "listing.css";
 @import "card.css";
 @import "tab.css";
+@import "image.css";
 
 header, section{
     /* display: block; */
