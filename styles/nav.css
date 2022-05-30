@@ -30,8 +30,9 @@ nav{
     background-color: var(--color-beige-dark);
 }
 
-.nav-link{
+.header-nav-link{
     padding: var(--spacing-md) var(--spacing-lg);
+    font-weight: var(--weight-medium);
 }
 
 .notification-badge {

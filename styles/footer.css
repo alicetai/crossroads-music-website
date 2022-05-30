@@ -1,10 +1,19 @@
 footer{
     display: block;
+    text-align: center;
     color: var(--color-beige);
     background-color: var(--color-brown);
     padding: var(--spacing-2xl) 10vw;
 }
 
 footer a{
-    font-weight: normal;
+    color: var(--color-beige);
+}
+
+footer a:hover{
+    color: var(--color-tan);
+}
+
+#footer-content{
+    text-align: left;
 }

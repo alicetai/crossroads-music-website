@@ -19,12 +19,12 @@
                     <span class="iconify" data-icon="fe:search" data-width="20" data-height="20"></span>
                 </button>
             </form>
-            <a class="nav-link" href="about.html">About </a>
-            <a class="nav-link" href="rentals.html">Rentals</a>
-            <a class="nav-link" href="repairs.html">Repairs</a>
-            <a class="nav-link" href="music-lessons.html">Music Lessons</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-            <a class="nav-link" href="cart.html">
+            <a class="header-nav-link" href="about.html">About </a>
+            <a class="header-nav-link" href="rentals.html">Rentals</a>
+            <a class="header-nav-link" href="repairs.html">Repairs</a>
+            <a class="header-nav-link" href="music-lessons.html">Music Lessons</a>
+            <a class="header-nav-link" href="contact.html">Contact</a>
+            <a class="header-nav-link" href="cart.html">
                 <span class="iconify" data-icon="bi:cart" data-width="24" data-height="24"></span>
                 <span class="notification-badge">0</span>
             </a>
@@ -38,10 +38,10 @@
         </div>
 
         <nav id="main-nav">
-            <a class="nav-link" href="products.html">Guitars</a>
-            <a class="nav-link" href="products.html">Amps</a>
-            <a class="nav-link" href="products.html">Drums</a>
-            <a class="nav-link" href="products.html">Live Sound</a>
+            <a class="header-nav-link" href="products.html">Guitars</a>
+            <a class="header-nav-link" href="products.html">Amps</a>
+            <a class="header-nav-link" href="products.html">Drums</a>
+            <a class="header-nav-link" href="products.html">Live Sound</a>
 
         </nav>
 
@@ -63,7 +63,7 @@
                             <img class="listing-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Main.png">
                             <div class="left-align">
                                 <h6>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</h6>
-                                <h6 class="price-text extrabold">$699.00</h6>
+                                <h6 class="text-extrabold">$699.00</h6>
                             </div>
                         </a>
                     </ul>
@@ -96,29 +96,37 @@
         </section>
     </main>
 
-    <footer id="main-footer">
-        <div class="flex-row">
-            <div>
-                <h5>Address</h5>
-                <p>
-                    2100 Lawrence Street
-                    <br/>
-                    Port Townsend, WA. 98368
-                    <br/>
-                    United States
-                </p>
-            </div>
-            <div>
-                <h5>Contact</h5>
-            </div>
+    <footer id="footer">
+        <div id="footer-content" class="flex-row space-between">
+            <address class="flex-column">
+                <div>
+                    <h5>Address</h5>
+                    <p>
+                        2100 Lawrence Street<br/>
+                        Port Townsend, WA. 98368<br/>
+                        United States<br/>
+                        Monday - Friday, 12:00 - 5:00pm<br/>
+                        Saturdays & Sundays, Closed
+                    </p>
+                </div>
+                <div>
+                    <h5>Contact</h5>
+                    <p>
+                        <em>Phone: </em> <a href="tel:360 385 1471">360 385 1471</a><br/>
+                        <em>Email: </em> <a href="mailto:info@crossroads-music.com">info@crossroads-music.com</a>
+                    </p>
+                </div>
+            </address>
+
             <div class="flex-column">
                 <h5>Company</h5>
-                <a class="nav-link" href="about.html">About Us</a>
-                <a class="nav-link" href="rentals.html">Rentals</a>
-                <a class="nav-link" href="repairs.html">Repairs</a>
-                <a class="nav-link" href="music-lessons.html">Music Lessons</a>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="repairs.html">Repairs</a>
+                <a href="music-lessons.html">Music Lessons</a>
+                <a href="contact.html">Contact</a>
             </div>
+
             <div>
                 <h5>Get our newsletter</h5>
                 <form>
@@ -127,11 +135,25 @@
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
+
             <div>
                 <h5>Stay in touch</h5>
+                <div>
+                    <a id="crossroads-facebook" class="social-link">Facebook icon</a>
+                    <a id="crossroads-instagram" class="social-link">Instagram icon</a>
+                    <a id="crossroads-youtube" class="social-link">YouTube icon</a>
+                </div>
             </div>
         </div>
+
+        <div>
+            <label id="copyright-label" class="text-light">
+                © 2022 Crossroads Music All Rights Reserved
+            </label>
+        </div>
+
     </footer>
+    
 </body>
 </html>
 

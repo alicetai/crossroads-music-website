@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+.space-between{
+    justify-content: space-between;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
