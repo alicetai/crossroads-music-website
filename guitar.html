@@ -28,19 +28,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item flex-column left-align">
-                    <h4>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</h4>
-                    <h4 class="text-bold">$699.00</h4>
-                    <h6>Category</h6>
-                    <h6>Guitars</h6>
-                    <h6>Quantity</h6>
 
-                    <div class="counter white-surface">
-                        <button class="counter-minus" onClick="decrement(event, this)">-</button>
-                        <input class="counter-input text-semibold" type="number" id="item-quantity" name="item-quantity" value="1" min="1" placeholder="1">
-                        <button class="counter-plus" onClick="increment(event, this)">+</button>
+                <div class="grid-item flex-column left-align">
+                    <div>
+                        <h4>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</h4>
+                        <h4 class="text-bold">$699.00</h4>    
                     </div>
-                    <script type="text/javascript" src="scripts/counter.js"></script>
+                    
+                    <div>
+                        <h6>Category</h6>
+                        <div class="flex-row">
+                            <a href="products.html">
+                                <button class="tag" variant="primary">Guitars</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h6>Quantity</h6>
+                        <div class="counter white-surface">
+                            <button class="counter-minus" onClick="decrement(event, this)">-</button>
+                            <input class="counter-input text-semibold" type="number" id="item-quantity" name="item-quantity" value="1" min="1" placeholder="1">
+                            <button class="counter-plus" onClick="increment(event, this)">+</button>
+                        </div>
+                        <script type="text/javascript" src="scripts/counter.js"></script>
+    
+                    </div>
 
                     <div class="flex-row">
                         <button id="add-to-cart-btn" variant="primary">Add to cart</button>

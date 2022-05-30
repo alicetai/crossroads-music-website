@@ -5,13 +5,13 @@
 .flex-row{
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-xs);
+    gap: var(--spacing-sm);
 }
 
 .flex-column{
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 }
 
 .justify-left{
@@ -33,6 +33,7 @@
 .product-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
   }
 
 .grid-item {

@@ -2,6 +2,7 @@
     /* BORDER VARIABLES */
     --round-border-md: 0.625rem;
     --round-border-lg: 0.875rem;
+    /* --round-border-xl: 1rem; */
 }
 
 .empty-bg{

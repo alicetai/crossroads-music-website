@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Commissioner:300,400,500,600,700,800');
 
 :root{
-    --font-body: 'Commissioner', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Commissioner', sans-serif, -apple-system, BlinkMacSystemFont;
     --font-serif: 'Fraunces', serif;
     --weight-extrabold: 800;
     --weight-semibold: 600;
@@ -42,6 +42,7 @@ h3{
 
 h4{
     font-size: var(--text-md);
+    line-height: 140%;
 }
 
 h5{
