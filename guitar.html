@@ -62,9 +62,9 @@
                 </div>
             </div>
             <section>
-                <div class="tab">
-                    <button class="tab-btn" onclick="openTab(event, 'Description')">Description</button>
-                    <button class="tab-btn" onclick="openTab(event, 'Specifications')">Specifications</button>
+                <div class="product-info-tab">
+                    <button class="tab-link active" onclick="openTab(event, 'product-description')">Description</button>
+                    <button class="tab-link" onclick="openTab(event, 'product-specs')">Specifications</button>
                 </div>
                     
                 <div id="product-description" class="tab-content shaded-bg">
@@ -73,6 +73,8 @@
                 <div id="product-specs" class="tab-content shaded-bg">
                     <p>* Top Material: Sitka Spruce with VTS</p> 
                 </div>
+
+                <script type="text/javascript" src="scripts/tab.js"></script>
             </section>
         </div>
     </section>

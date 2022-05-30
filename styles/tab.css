@@ -1,16 +1,20 @@
-.tab-btn{
-    color: var(--color-brown) ;
+.tab-link{
+    font-weight: var(--weight-medium);
+    color: var(--color-tan-dark);
     background-color: var(--color-beige);
     border-radius: 0px;
     margin: 0px;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
 }
 
-.tab-btn:active{
-    border-bottom: 2px solid var(--color-brown);
+.tab-link.active{
+    font-weight: var(--weight-bold);
+    color: var(--color-brown);
+    border-bottom: 2.5px solid var(--color-brown);
 }
 
-.tab-btn:hover{
+.tab-link:hover{
+    color: var(--color-brown);
     background-color: var(--color-beige-dark);
 }
 
