@@ -15,14 +15,21 @@
         <div class="section-content">
             <h3>Your cart</h3>
             <table class="cart-table">
-                <tr class="white-card">
+                <tr class="white-surface">
                     <td>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</td>
                     <td>$0.00</td>
-                    <td>2</td>
+                    <td>
+                        <div class="counter white-surface">
+                            <button class="counter-minus" onClick="decrement(event, this)">-</button>
+                            <input class="counter-input text-semibold" type="number" id="item-quantity" name="item-quantity" value="1" min="1" placeholder="1">
+                            <button class="counter-plus" onClick="increment(event, this)">+</button>
+                        </div>
+                        <script type="text/javascript" src="scripts/counter.js"></script>    
+                    </td>
                     <td>$10.00</td>
                     <td>Delete</td>
                 </tr>
-                <tr class="white-card">
+                <tr class="white-surface">
                     <td>Guitar Name</td>
                     <td>$0.00</td>
                     <td>2</td>

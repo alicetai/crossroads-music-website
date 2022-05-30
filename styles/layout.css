@@ -5,11 +5,17 @@
 .flex-row{
     display: flex;
     flex-direction: row;
+    gap: var(--spacing-xs);
 }
 
 .flex-column{
     display: flex;
     flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.justify-left{
+    justify-content: flex-start;
 }
 
 .justify-center{

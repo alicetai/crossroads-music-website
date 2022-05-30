@@ -1,3 +1,8 @@
+:root{
+    --button-size: 2.5rem;
+}
+
+
 button{
     font-size: var(--text-xs);
     font-weight: var(--weight-semibold);
@@ -6,7 +11,7 @@ button{
     font-family: var(--font-body);
     border: none;
     border-radius: var(--round-border-md);
-    margin: var(--spacing-sm);
+    margin: var(--spacing-sm) 0px;
     padding: var(--spacing-md) var(--spacing-lg);
 }
 
@@ -29,4 +34,22 @@ button[variant=green]:hover{
 .search-btn{
     color: var(--color-beige);
     padding: 0px;
+}
+
+.input-btn{
+    height: var(--button-size);
+    /* padding: var(--spacing-xs) var(--spacing-xs); */
+}
+
+.counter-minus, .counter-plus{
+    background-color: transparent;
+    color: var(--color-brown);
+    margin: 0px;
+    padding: 0px;
+    width: var(--button-size);
+    height: var(--button-size);
+}
+
+.counter-minus:hover, .counter-plus:hover{
+    background-color: var(--color-beige);
 }
