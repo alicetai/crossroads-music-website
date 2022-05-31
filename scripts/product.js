@@ -4,7 +4,7 @@ var product = {
     quantityInStock: 10,
     quantityInCart: 0,
     tags: ["Guitars"],
-    image: "../images/products/guitars/OM28E/OM28E-Modern-Deluxe-Main.jpg",
+    image: "images/products/guitars/OM28E/OM28E-Modern-Deluxe-Main.jpg",
     description: "The OM-28 Modern Deluxe is a new take on Martin Vintage. This guitar is packed with custom features and modern technology that you have to see, feel, and hear for yourself.",
     specifications: "Top Material: Sitka Spruce with VTS"
 }
