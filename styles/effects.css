@@ -1,8 +1,10 @@
 :root{
     /* BORDER VARIABLES */
-    --round-border-md: 0.625rem;
-    --round-border-lg: 0.875rem;
+    --border-round: 0.625rem;
+    --border-rounder: 0.875rem;
     /* --round-border-xl: 1rem; */
+    --border-medium: 2px;
+    --border-thick: 2.5px;
 }
 
 .empty-bg{
@@ -18,7 +20,7 @@
 }
 
 .rounded{
-    border-radius: var(--round-border-lg);
+    border-radius: var(--border-rounder);
 }
 
 .borderless{
@@ -26,5 +28,5 @@
 }
 
 .bottom-border{
-    border-bottom: 2px solid var(--color-beige-dark);
+    border-bottom: var(--border-medium) solid var(--color-beige-dark);
 }

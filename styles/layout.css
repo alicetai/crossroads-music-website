@@ -1,7 +1,3 @@
-/* .flex-container{
-    
-} */
-
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -36,7 +32,7 @@
     gap: var(--spacing-2xl);
 }
 
-.listing-grid{
+.listing-grid, #product-filters{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--spacing-sm);

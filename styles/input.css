@@ -24,6 +24,23 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
+/* input[type=radio], input[type=checkbox]{
+    //
+} */
+
+/* input, select{
+    Remove default appearance
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} */
+
+select{
+    border: none;
+    border-radius: 0;
+    font: inherit;
+}
+
 .counter {
     display: flex;
     width: 100px;
@@ -34,4 +51,46 @@ input[type=number]::-webkit-outer-spin-button {
 .counter input{
     width: 24px;
     text-align: center;
+}
+
+.dropdown-button, .dropdown-list li{
+    padding: var(--spacing-md) var(--spacing-xs);
+}
+
+.dropdown-button{
+    font-weight: var(--weight-medium);
+    color: var(--color-brown);
+    background-color: transparent;
+    border-bottom: var(--border-thick) solid var(--color-brown);
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.dropdown-button, .option-label{
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-button:hover{
+    background-color: var(--color-beige-dark);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+    width: 216px;
+}
+
+.dropdown-list li{
+    background-color: var(--color-white);
+    border-bottom: var(--border-medium) solid var(--color-beige-dark);
+    cursor: pointer;
+}
+
+.dropdown-list li:hover, .dropdown-list li:focus{
+    background-color: var(--color-beige);
 }

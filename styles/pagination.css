@@ -11,7 +11,7 @@
     color: var(--color-tan-dark);
     background-color: var(--color-white);
     font-weight: var(--weight-medium);
-    border: 2px solid var(--color-beige-dark);
+    border: var(--border-medium) solid var(--color-beige-dark);
     width: var(--button-size);
     height: var(--button-size);
 }
@@ -26,9 +26,9 @@
 }
 
 .pagination-prev {
-    border-radius: var(--round-border-lg) 0px 0px var(--round-border-lg);
+    border-radius: var(--border-rounder) 0px 0px var(--border-rounder);
 }
 
 .pagination-next {
-    border-radius: 0px var(--round-border-lg) var(--round-border-lg) 0px;
+    border-radius: 0px var(--border-rounder) var(--border-rounder) 0px;
 }

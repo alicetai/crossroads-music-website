@@ -10,7 +10,7 @@ button{
     background-color: var(--color-brown);
     font-family: var(--font-body);
     border: none;
-    border-radius: var(--round-border-md);
+    border-radius: var(--border-round);
     margin: var(--spacing-lg) 0px;
     padding: var(--spacing-md) var(--spacing-lg);
     cursor: pointer;
@@ -35,7 +35,7 @@ button[variant=green]:hover{
 .tag{
     font-weight: var(--weight-medium);
     font-size: var(--text-base);
-    border-radius: var(--round-border-lg);
+    border-radius: var(--border-rounder);
     margin: var(--spacing-xs) 0px;
     padding: 6px var(--spacing-sm);
 }

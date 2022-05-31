@@ -10,8 +10,11 @@ a{
 }
 
 .listing-item{
-    width: 12.5rem;
     text-align: center;
     padding: var(--spacing-sm);
     margin: var(--spacing-xs) 0px;
+}
+
+.listing-item .product-name{
+    font-weight: var(--weight-medium);
 }

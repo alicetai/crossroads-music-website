@@ -10,7 +10,7 @@
 .tab-link.active{
     font-weight: var(--weight-bold);
     color: var(--color-brown);
-    border-bottom: 2.5px solid var(--color-brown);
+    border-bottom: var(--border-thick) solid var(--color-brown);
 }
 
 .tab-link:hover{

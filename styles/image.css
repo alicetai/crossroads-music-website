@@ -1,5 +1,5 @@
 .product-img{
-    border-radius: var(--round-border-lg);
+    border-radius: var(--border-rounder);
 }
 
 #main-product-img{

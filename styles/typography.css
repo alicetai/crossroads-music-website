@@ -73,6 +73,10 @@ em, b, .text-bold{
     font-weight: var(--weight-light);
 }
 
+.text-regular{
+    font-weight: var(--weight-regular);
+}
+
 .text-semibold{
     font-weight: var(--weight-semibold);
 }
@@ -80,7 +84,6 @@ em, b, .text-bold{
 .text-extrabold{
     font-weight: var(--weight-extrabold);
 }
-
 
 .uppercase{
     text-transform: uppercase;
