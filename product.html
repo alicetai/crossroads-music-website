@@ -18,63 +18,63 @@
     <section>
         <div class="section-content">
 
-            <div id="added-confirmation" class="popup alert banner success">
-                <div class="flex-row align-center space-between">
-                    <p class="product-name">
-                    </p>
-                    <div class="link-block">
-                        <a href="cart.html">View cart</a>
-                    </div>
-                </div>
-            </div>
+            <form action="cart.html">
 
-            <div class="product-grid">
-                <div class="grid-item flex-column">
+                <div id="added-confirmation" class="popup alert banner success">
+                    <div class="flex-row align-center space-between">
+                        <p id="added-confirmation-text" class="confirmation-text">Item has been added to cart.</p>
                         <div>
-                            <img id="main-product-img" class="product-img">
+                            <input id="view-cart-btn" type="submit" value="View cart"></input>
                         </div>
-                        <div class="product-img-grid">
-                            <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
-                            <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
-                            <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
-                            <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
-                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-item flex-column left-align">
-                    <div>
-                        <h4 class="product-name"></h4>
-                        <h4 class="product-price text-bold"></h4>    
-                    </div>
-                    
-                    <div>
-                        <h6>Category</h6>
-                        <div class="flex-row">
-                            <a href="products.html">
-                                <button class="tag" variant="primary">Guitars</button>
-                            </a>
-                        </div>
+                <div class="product-grid">
+                    <div class="grid-item flex-column">
+                            <div>
+                                <img id="main-product-img" class="product-img">
+                            </div>
+                            <div class="product-img-grid">
+                                <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
+                                <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
+                                <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
+                                <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
+                            </div>
                     </div>
 
-                    <div>
-                        <h6>Quantity</h6>
-                        <div class="counter white-surface">
-                            <button class="counter-minus" onClick="decrement(event, this)">-</button>
-                            <input class="counter-input text-semibold" type="number" id="product-quantity" name="product-quantity" value="1" min="1" placeholder="1">
-                            <button class="counter-plus" onClick="increment(event, this)">+</button>
+                    <div class="grid-item flex-column left-align">
+                        <div>
+                            <h4 class="product-name"></h4>
+                            <h4 class="product-price text-bold"></h4>    
                         </div>
-                        <script type="text/javascript" src="scripts/counter.js"></script>
+                        
+                        <div>
+                            <h6>Category</h6>
+                            <div class="flex-row">
+                                <a class="tag" href="products.html">Guitars</a>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <h6>Quantity</h6>
+                            <div class="counter white-surface">
+                                <button class="counter-minus" type="button" onClick="decrement(event, this)">-</button>
+                                <input class="counter-input text-semibold" type="number" id="product-quantity" name="product-quantity" value="1" min="1" placeholder="1">
+                                <button class="counter-plus" type="button" onClick="increment(event, this)">+</button>
+                            </div>
+                            <script type="text/javascript" src="scripts/counter.js"></script>
+        
+                        </div>
+    
+                        <div class="flex-row">
+                            <button id="add-to-cart-btn" type="button" variant="primary">Add to cart</button>
+                            <button id="buy-now-btn" type="submit" variant="green">Buy now</button>
+                        </div>
+                        <script type="text/javascript" src="scripts/cart.js"></script>
     
                     </div>
-
-                    <div class="flex-row">
-                        <button id="add-to-cart-btn" variant="primary">Add to cart</button>
-                        <button id="buy-now-btn" variant="green">Buy now</button>
-                    </div>
-                    <script type="text/javascript" src="scripts/cart.js"></script>
-
                 </div>
-            </div>
+            </form>
 
             <section>
                 <div class="product-info-tab">

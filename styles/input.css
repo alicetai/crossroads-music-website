@@ -13,7 +13,7 @@ input{
     opacity: 1; /* Firefox */
 }
 
-input[type="number"] {
+input[type="number"]{
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
@@ -22,6 +22,12 @@ input[type="number"] {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
+}
+
+input[type="submit"]{
+    color: inherit;
+    font-weight: var(--weight-semibold);
+    cursor: pointer;
 }
 
 /* input[type=radio], input[type=checkbox]{

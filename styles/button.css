@@ -32,14 +32,6 @@ button[variant=green]:hover{
     background-color: var(--color-green-dark);
 }
 
-.tag{
-    font-weight: var(--weight-medium);
-    font-size: var(--text-base);
-    border-radius: var(--border-rounder);
-    margin: var(--spacing-xs) 0px;
-    padding: 6px var(--spacing-sm);
-}
-
 .search-btn{
     color: var(--color-beige);
     padding: 0px;

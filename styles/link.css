@@ -4,11 +4,6 @@ a{
     text-decoration: none;
 }
 
-
-.link-block{
-    padding: var(--spacing-sm);
-}
-
 .listing-item{
     text-align: center;
     padding: var(--spacing-sm);
@@ -17,4 +12,18 @@ a{
 
 .listing-item .product-name{
     font-weight: var(--weight-medium);
+}
+
+.tag{
+    color: var(--color-beige);
+    background-color: var(--color-brown);
+    font-weight: var(--weight-medium);
+    font-size: var(--text-base);
+    border-radius: var(--border-rounder);
+    margin: var(--spacing-xs) 0px;
+    padding: 6px var(--spacing-sm);
+}
+
+.tag:hover{
+    background-color: var(--color-brown-dark);
 }
