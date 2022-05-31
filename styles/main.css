@@ -15,7 +15,6 @@
 @import "table.css";
 @import "button.css";
 @import "input.css";
-@import "listing.css";
 @import "surface.css";
 @import "tab.css";
 @import "image.css";
@@ -53,6 +52,9 @@ img{
 .section-content{
     max-width: var(--max-desktop-width);
     margin: auto; /* center aligns content */
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
 }
 
 .brand-item{

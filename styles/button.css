@@ -2,7 +2,6 @@
     --button-size: 2.5rem;
 }
 
-
 button{
     font-size: var(--text-xs);
     font-weight: var(--weight-semibold);

@@ -34,7 +34,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-2xl);
-  }
+}
+
+.listing-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--spacing-sm);
+}
 
 .grid-item {
     padding: var(--spacing-md);

@@ -4,7 +4,23 @@ a{
     text-decoration: none;
 }
 
+
 .link-block{
     padding: var(--spacing-sm);
-    /* border: 1px solid black; */
+}
+
+
+.pagination a{
+    /* display: inline-block; */
+    color: var(--color-tan-dark);
+    margin: 0px;
+    width: var(--button-size);
+    height: var(--button-size);
+}
+
+.listing-item{
+    width: 12.5rem;
+    text-align: center;
+    padding: var(--spacing-sm);
+    margin: var(--spacing-xs) 0px;
 }

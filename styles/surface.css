@@ -1,9 +1,9 @@
-.white-surface {
+.white-surface, .pagination a{
     background-color: var(--color-white);
     border: 2px solid var(--color-beige-dark);
     border-radius: var(--round-border-lg);
 }
 
-a.white-surface:hover {
+a.white-surface:hover{
     border: 2px solid var(--color-tan);
 }
