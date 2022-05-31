@@ -9,15 +9,6 @@ a{
     padding: var(--spacing-sm);
 }
 
-
-.pagination a{
-    /* display: inline-block; */
-    color: var(--color-tan-dark);
-    margin: 0px;
-    width: var(--button-size);
-    height: var(--button-size);
-}
-
 .listing-item{
     width: 12.5rem;
     text-align: center;
