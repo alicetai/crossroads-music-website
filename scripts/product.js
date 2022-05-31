@@ -38,7 +38,10 @@ function loadPrice(){
 }
 
 function loadImages() {
-    document.getElementById('main-product-img').src = product.image;
+    var mainImage = document.getElementById('main-product-img')
+    if (mainImage) {
+        mainImage.src = product.image;
+    }
     var listingImage = document.getElementsByClassName('listing-img');
     for (const image of listingImage) {
         image.src = product.image;
@@ -47,12 +50,16 @@ function loadImages() {
 
 function loadDescription() {
     var productDescription = document.getElementById('product-description');
-    productDescription.innerHTML = product.description;
+    if (productDescription) {
+        productDescription.innerHTML = product.description;
+    }
 }
 
 function loadSpecs() {
     var productSpecs = document.getElementById('product-specs');
-    productSpecs.innerHTML = product.specifications;
+    if (productSpecs) {
+        productSpecs.innerHTML = product.specifications;
+    }
 }
 
 // updateQuantity() {
