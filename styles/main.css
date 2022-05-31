@@ -19,9 +19,11 @@
 @import "surface.css";
 @import "tab.css";
 @import "image.css";
+@import "alert.css";
+@import "link.css";
+
 
 header, section{
-    /* display: block; */
     text-align: center;
 }
 
@@ -51,12 +53,6 @@ img{
 .section-content{
     max-width: var(--max-desktop-width);
     margin: auto; /* center aligns content */
-}
-
-.alert-banner{
-    color: var(--color-beige);
-    background-color: var(--color-green);
-    padding: var(--spacing-sm);
 }
 
 .brand-item{

@@ -1,0 +1,29 @@
+.alert{
+    color: var(--color-beige);
+    background-color: var(--color-brown);
+}
+
+.alert a{
+    color: var(--color-beige);
+    font-weight: var(--weight-bold);
+}
+
+.success{
+    background-color: var(--color-green);
+}
+
+.error{
+    background-color: var(--color-green);
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    width: var(--max-desktop-width);
+    text-align: left;
+    /* padding: var(--spacing-xl); */
+}
+
+.banner{
+    padding: var(--spacing-sm);
+}

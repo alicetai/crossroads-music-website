@@ -1,0 +1,10 @@
+/* Hyperlink styles */
+a{
+    color: var(--color-brown);
+    text-decoration: none;
+}
+
+.link-block{
+    padding: var(--spacing-sm);
+    /* border: 1px solid black; */
+}
