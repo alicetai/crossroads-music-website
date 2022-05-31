@@ -5,3 +5,8 @@
 #main-product-img{
     max-width: 380px;
 }
+
+.listing-img{
+    height: 60%;
+    max-width: 120px;
+}

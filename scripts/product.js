@@ -19,7 +19,7 @@ window.onload = function() {
     loadNames();
     loadPrice();
     loadDescription();
-    loadImage();
+    loadImages();
     loadSpecs();
 };
 
@@ -37,8 +37,12 @@ function loadPrice(){
     }
 }
 
-function loadImage() {
+function loadImages() {
     document.getElementById('main-product-img').src = product.image;
+    var listingImage = document.getElementsByClassName('listing-img');
+    for (const image of listingImage) {
+        image.src = product.image;
+    }
 }
 
 function loadDescription() {

@@ -46,8 +46,3 @@
     gap: var(--spacing-xs);
     padding: var(--spacing-sm) 0px;
 }
-
-.product-info-tab{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}

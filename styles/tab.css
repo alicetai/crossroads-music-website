@@ -23,6 +23,11 @@
     padding: var(--spacing-xl);
 }
 
+.product-info-tab{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 #product-specs-content{
     /* hide on initial load*/
     display: none;

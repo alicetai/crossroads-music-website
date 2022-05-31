@@ -4,6 +4,6 @@
     border-radius: var(--round-border-lg);
 }
 
-/* .white-surface:hover {
+a.white-surface:hover {
     border: 2px solid var(--color-tan);
-} */
+}

@@ -1,17 +1,10 @@
 .listing-gallery{
-    justify-content: space-between;
+    margin: var(--spacing-xl) 0px;
 }
 
 .listing-item{
     width: 12.5rem;
-    height: 18.75rem;
     text-align: center;
     padding: var(--spacing-sm);
     margin: var(--spacing-xs) 0px;
-}
-
-.listing-img{
-    height: 60%;
-    width: 100%;
-    object-fit: contain; /* fit height */
 }
