@@ -1,28 +1,21 @@
 // Cart functions
 
 // function alertShow() {
-//     document.getElementById("item-added-confirmation").style.display = "block";
+//     document.getElementById("added-confirmation").style.display = "block";
 // }
 
 // function alertHide() {
-//     document.getElementById("item-added-confirmation").style.display = "none";
+//     document.getElementById("added-confirmation").style.display = "none";
 // }
 
-// const cartAdd = document.getElementById('add-to-cart-btn');
+const cartAdd = document.getElementById('add-to-cart-btn');
 
-// cartAdd.addEventListener('click', () => {
-//     setTimeout(() => {
-//         const confirmation = document.getElementById('item-added-confirmation');
-//         confirmation.style.display = 'block';
-//     // box.style.visibility = 'hidden';
-//     }, 1000);
-// });
+cartAdd.addEventListener('click', () => {
+    const confirmation = document.getElementById('added-confirmation');
+    confirmation.style.display = 'block';
 
-// $(document).ready(function(){
-//     $(".btn1").click(function(){
-//         $("p").hide();
-//     });
-//     $(".btn2").click(function(){
-//         $("p").show();
-//     });
-// });
+    // Remove the alert after 5 seconds
+    setTimeout(() => {
+        confirmation.style.display = 'none';
+    }, 5000);
+});

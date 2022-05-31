@@ -22,3 +22,8 @@
     text-align: left;
     padding: var(--spacing-xl);
 }
+
+#product-specs-content{
+    /* hide on initial load*/
+    display: none;
+}
