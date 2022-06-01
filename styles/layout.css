@@ -48,3 +48,16 @@
     gap: var(--spacing-xs);
     padding: var(--spacing-sm) 0px;
 }
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs) 0px;
+}
+
+.cart-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: var(--spacing-md);
+    font-weight: var(--weight-medium);
+}

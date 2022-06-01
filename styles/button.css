@@ -54,3 +54,8 @@ button[variant=green]:hover{
 .counter-minus:hover, .counter-plus:hover{
     background-color: var(--color-beige);
 }
+
+.delete-icon-button:hover{
+    color: var(--color-brown-dark);
+    cursor: pointer;
+}

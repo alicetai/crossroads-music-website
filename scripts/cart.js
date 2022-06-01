@@ -1,13 +1,5 @@
 // Cart functions
 
-// function alertShow() {
-//     document.getElementById("added-confirmation").style.display = "block";
-// }
-
-// function alertHide() {
-//     document.getElementById("added-confirmation").style.display = "none";
-// }
-
 const cartAdd = document.getElementById('add-to-cart-btn');
 
 cartAdd.addEventListener('click', () => {

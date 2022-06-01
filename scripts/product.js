@@ -9,12 +9,6 @@ var product = {
     specifications: "Top Material: Sitka Spruce with VTS"
 }
 
-// Format price in USD
-let dollarUS = Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-});
-
 window.onload = function() {
     loadNames();
     loadPrice();
