@@ -57,7 +57,8 @@
 
 .cart-item{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: var(--spacing-md);
+    grid-template-columns: 5rem 1fr 5rem 8rem 5rem 3rem;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
     font-weight: var(--weight-medium);
 }

@@ -52,6 +52,7 @@ select{
     width: 100px;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .counter input{

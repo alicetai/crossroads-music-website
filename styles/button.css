@@ -55,7 +55,13 @@ button[variant=green]:hover{
     background-color: var(--color-beige);
 }
 
+.delete-icon-button{
+    padding: var(--spacing-md);
+    border-radius: var(--border-rounder);
+}
+
 .delete-icon-button:hover{
     color: var(--color-brown-dark);
+    background-color: var(--color-beige);
     cursor: pointer;
 }

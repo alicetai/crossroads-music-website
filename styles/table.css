@@ -37,7 +37,3 @@ td:last-child {
     border-bottom-right-radius: var(--border-rounder); 
     border-top-right-radius: var(--border-rounder); 
 }
-/* 
-.cart-item .product-price, .cart-item .total-price{
-    width: 5rem;
-} */

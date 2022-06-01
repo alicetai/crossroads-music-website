@@ -45,4 +45,5 @@ nav{
     background-color: var(--color-red);
     /* color: white; */
     font-size: 0.625rem;
+    margin: auto;
 }

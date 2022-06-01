@@ -69,6 +69,10 @@ em, b, .text-bold{
     font-weight: bold;
 }
 
+legend h3{
+    margin: var(--spacing-lg) 0px;
+}
+
 .text-light{
     font-weight: var(--weight-light);
 }
