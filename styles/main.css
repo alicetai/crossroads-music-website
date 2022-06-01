@@ -29,7 +29,7 @@ header, section{
 }
 
 section{
-    padding: var(--spacing-2xl) 0px;
+    padding: var(--spacing-xxl) 0px;
 }
 
 .slideshow-gallery{

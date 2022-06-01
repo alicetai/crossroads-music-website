@@ -120,12 +120,12 @@ fieldset{
     gap: var(--spacing-xs);
 }
 
-.radio-option{
+.checkbox-option{
     height: 50px;
     cursor: pointer;
 }
 
-.radio-option, .text-input{
+.checkbox-option, .text-input{
     display: flex;
     flex-direction: row;
     align-items: center;

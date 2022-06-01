@@ -1,5 +1,5 @@
 .stepper-wrap{
-    margin-top: var(--spacing-2xl);
+    margin-top: var(--spacing-xxl);
     text-align: center;
     position: relative;
 }
@@ -24,7 +24,7 @@
 
 .step-label{
     /* smaller label size */
-    font-size: 0.75rem;
+    font-size: var(--text-xxs);
 }
 
 .step-number {

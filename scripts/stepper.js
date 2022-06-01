@@ -1,4 +1,4 @@
-let currentStep = 1;
+let currentStep = 0;
 
 window.onload = function() {
     showStep(currentStep); // Display the first form step
@@ -22,10 +22,13 @@ function toggleStep(n) {
     // if (n == 1 && !validateForm()) return false;
     steps[currentStep].style.display = "none";
     currentStep = n;
-    // if (current >= steps.length) {
-    //     document.getElementById("regForm").submit();
-    //     return false;
-    // }
+
+    if (currentStep==steps.length) {
+        // End of form reached
+        document.getElementById("checkout-form").submit();
+        return;
+    }
+
     showStep(currentStep);
 }
 

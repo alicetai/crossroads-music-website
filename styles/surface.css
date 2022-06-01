@@ -4,6 +4,6 @@
     border-radius: var(--border-rounder);
 }
 
-a.white-surface:hover, .radio-option:hover{
+a.white-surface:hover, .checkbox-option:hover{
     border: var(--border-medium) solid var(--color-tan);
 }

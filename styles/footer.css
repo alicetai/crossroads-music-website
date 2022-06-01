@@ -3,7 +3,7 @@ footer{
     text-align: center;
     color: var(--color-beige);
     background-color: var(--color-brown);
-    padding: var(--spacing-2xl) 10vw;
+    padding: var(--spacing-xxl) 10vw;
 }
 
 footer a{
