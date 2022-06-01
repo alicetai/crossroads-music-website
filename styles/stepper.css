@@ -28,8 +28,8 @@
 }
 
 .step-number {
-    height: var(--button-size);
-    width: var(--button-size);
+    height: 2rem;
+    width: 2rem;
     font-weight: var(--weight-semibold);
     font-size: var(--text-xs);
     color: var(--color-beige);
@@ -37,7 +37,7 @@
     display: inline-flex;
     vertical-align: middle;
     margin: var(--spacing-xs);
-    border: var(--border-thick) solid var(--color-beige);
+    border: var(--border-medium) solid var(--color-beige);
 
     /* this changes when active */
     background-color: var(--color-tan);
@@ -54,7 +54,14 @@
     background-color: var(--color-tan);
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 35%;
     transform: translate(-50%, 0%);
     z-index: -1;
+}
+
+.form-step{
+    display: none;
+    flex-direction: column;
+    padding: var(--spacing-xl);
+    gap: var(--spacing-xl);
 }

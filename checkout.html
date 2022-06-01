@@ -11,9 +11,18 @@
     <header>
 
     </header>
-    <div class="section-content">
-        <div class="stepper-wrap">
 
+    <div class="section-content">
+
+        <!-- Confirmation alert for discount code -->
+        <div id="discount-confirmation" class="popup alert banner success">
+            <div class="flex-row align-center space-between">
+                <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
+            </div>
+        </div>
+
+        <!-- Steps indicating form progress -->
+        <div class="stepper-wrap">
             <div class="stepper">
                 <div class="step">
                     <span class="step-number"><p>1</p></span>
@@ -36,92 +45,131 @@
         <div class="section-content">
 
             <form id="checkout-form" class="checkout-flex">
-
-                <div id="discount-confirmation" class="popup alert banner success">
-                    <div class="flex-row align-center space-between">
-                        <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
-                    </div>
-                </div>
                 
-                <div class="checkout-details white-surface">
-                    <h4>Contact details</h4>
+                <script type="text/javascript" src="scripts/stepper.js"></script>
 
-                    <fieldset class="input-list">
-                        <div class="text-input bottom-border-light">
-                            <label for="email">Email address</label>  
-                            <input type="text" id="email" name="email" placeholder="yourname@email.com" required>        
-                        </div>
-                        <div class="text-input bottom-border-light">
-                            <label for="phone">Phone</label> 
-                            <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555">        
-                        </div>
-                    </fieldset>
+                <div class="form-details white-surface">
 
-                    <fieldset id="delivery-method">
-                        <h5 class="form-heading">Delivery method</h5>
-                        <ul class="input-list">
-                            <li class="radio-option white-surface">
-                                <input type="radio" id="shipping-option" name="shipping" value="shipping">
-                                <label for="shipping">Shipping</label>    
-                            </li>
-                            <li class="radio-option white-surface">
-                                <input type="radio" id="pick-up-option" name="pick-up" value="pick-up">
-                                <label for="pick-up">Pick-up in store</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-
-                    <div>
-                        <button type="submit" variant="primary">Continue to shipping</button>
-                    </div>
-                    
-                </div>
-                
-                <div class="checkout-summary shaded-bg rounded">
-                    <h4>Your order</h4>
-                    <fieldset>
-                        <table class="order-table">
-                            <tr class="order-item-row">
-                                <td>
-                                    <p>2x</p>
-                                </td>                                
-                                <td>
-                                    <p>
-                                        C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup
-                                    </p>
-                                <td>
-                                <td>
-                                    <p class="product-price text-bold">
-                                        $100.00
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <div id="price-summary">
-                            <div class="price-row">
-                                <p class="text-medium">Subtotal:</p>
-                                <p class="items-price text-bold">$100.00</p>        
+                    <!-- First step -->
+                    <div class="form-step checkout-details">
+                        <h4>Contact details</h4>
+    
+                        <fieldset class="input-list">
+                            <div class="text-input bottom-border-light">
+                                <label for="email">Email address</label>  
+                                <input type="text" id="email" name="email" placeholder="yourname@email.com" required>        
                             </div>
+                            <div class="text-input bottom-border-light">
+                                <label for="phone">Phone</label> 
+                                <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555">        
+                            </div>
+                        </fieldset>
+    
+                        <fieldset id="delivery-method">
+                            <h5 class="form-heading">Delivery method</h5>
+                            <ul class="input-list">
+                                <li class="radio-option white-surface">
+                                    <input type="radio" id="shipping-option" name="shipping" value="shipping">
+                                    <label for="shipping">Shipping</label>    
+                                </li>
+                                <li class="radio-option white-surface">
+                                    <input type="radio" id="pick-up-option" name="pick-up" value="pick-up">
+                                    <label for="pick-up">Pick-up in store</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+    
+                        <div>
+                            <button type="submit" variant="primary">Continue to shipping</button>
                         </div>
+                    </div>
 
-                    </fieldset>
+                    <!-- Second step -->
+                    <div class="form-step shipping-details">
+                        <h4>Shipping address</h4>
+    
+                        <fieldset class="input-list">
+                            <div class="text-input bottom-border-light">
+                                <label for="first-name">First Name</label>  
+                                <input type="text" id="first-name" name="first-name" placeholder="John" required>        
+                            </div>
+                            <div class="text-input bottom-border-light">
+                                <label for="last-name">Last Name</label>  
+                                <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
+                            </div>
+                        </fieldset>
+    
+                        <!-- <fieldset id="delivery-method">
+                            <h5 class="form-heading">Delivery method</h5>
+                            <ul class="input-list">
+                                <li class="radio-option white-surface">
+                                    <input type="radio" id="shipping-option" name="shipping" value="shipping">
+                                    <label for="shipping">Shipping</label>    
+                                </li>
+                                <li class="radio-option white-surface">
+                                    <input type="radio" id="pick-up-option" name="pick-up" value="pick-up">
+                                    <label for="pick-up">Pick-up in store</label>
+                                </li>
+                            </ul>
+                        </fieldset> -->
+    
+                        <div>
+                            <button type="submit" variant="primary">Continue to shipping</button>
+                        </div>                    
+                    </div>
 
-                    <fieldset>
-                        <h5 class="form-heading">Have a coupon?</h5>
-                        <div class="text-input bottom-border-dark">
-                            <label for="discount-code">Coupon code</label>
-                            <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
-                            <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>        
-                        </div>
-                        <br/>
-                    </fieldset>
-                    <script type="text/javascript" src="scripts/price.js"></script>
+                    <!-- Last step -->
+                    <div class="form-step card-details">
+
+                    </div>
+
+                </div>
+
+                <div class="order-details shaded-bg rounded">
+                    <div class="order-summary">
+                        <h4>Your order</h4>
+                        <fieldset>
+                            <table class="order-table">
+                                <tr class="order-item-row">
+                                    <td>
+                                        <p>2x</p>
+                                    </td>                                
+                                    <td>
+                                        <p>
+                                            C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup
+                                        </p>
+                                    <td>
+                                    <td>
+                                        <p class="product-price text-bold">
+                                            $100.00
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+    
+                            <div id="price-summary">
+                                <div class="price-row">
+                                    <p class="text-medium">Subtotal:</p>
+                                    <p class="items-price text-bold">$100.00</p>        
+                                </div>
+                            </div>
+    
+                        </fieldset>
+    
+                        <fieldset>
+                            <h5 class="form-heading">Have a coupon?</h5>
+                            <div class="text-input bottom-border-dark">
+                                <label for="discount-code">Coupon code</label>
+                                <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
+                                <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>        
+                            </div>
+                            <br/>
+                        </fieldset>
+                        <script type="text/javascript" src="scripts/price.js"></script>
+                    </div>
                 </div>
             </form>
         </div>
     </section>
-    
-    <footer></footer>
 </body>
 </html>
