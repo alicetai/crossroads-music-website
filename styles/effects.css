@@ -27,6 +27,10 @@
     border: none;
 }
 
-.bottom-border{
+.bottom-border-light{
     border-bottom: var(--border-medium) solid var(--color-beige-dark);
+}
+
+.bottom-border-dark{
+    border-bottom: var(--border-medium) solid var(--color-brown);
 }

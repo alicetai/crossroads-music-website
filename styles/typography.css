@@ -60,7 +60,7 @@ h2, h3, h4, h5, h6{
     margin: var(--spacing-sm) 0px;
 }
 
-p, a{
+p, a, label{
     font-size: var(--text-base);
     line-height: 150%;
 }
@@ -79,6 +79,10 @@ legend h3{
 
 .text-regular{
     font-weight: var(--weight-regular);
+}
+
+.text-medium{
+    font-weight: var(--weight-medium);
 }
 
 .text-semibold{

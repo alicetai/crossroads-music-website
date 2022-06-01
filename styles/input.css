@@ -34,12 +34,12 @@ input[type="submit"]{
     //
 } */
 
-/* input, select{
-    Remove default appearance
+input, select{
+    /* Remove default appearance */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-} */
+}
 
 select{
     border: none;

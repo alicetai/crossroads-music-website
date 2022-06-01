@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script type="text/javascript" src="scripts/cart.js"></script>    
     <title>Cart</title>
 </head>
 <body>
     <header>
 
     </header>
-    <section id="shopping-cart">
+    <section id="cart">
         <div class="section-content">
-            <form class="flex-column">
+            <form id="cart-form" class="flex-column" action="checkout.html">
                 <legend>
                     <h3>Your cart</h3>
                 </legend>
@@ -45,15 +46,21 @@
                     </fieldset>
                 </fieldset>
 
-                <fieldset>
-                    <label for="discount-code">Coupon code</label>
-                    <input type="text" placeholder="xxxxxx" id="discount-code" name="discount-code">
-                    <button type="submit">Apply</button>
-                </fieldset>
+                <div class="flex-row space-between">
+                    <fieldset class="bottom-border-dark">
+                        <label class="text-semibold" for="discount-code">Coupon code</label>
+                        <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
+                        <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>    
+                    </fieldset>
+                    <div class="flex-row">
+                        <h5>Subtotal:</h5>
+                        <h5 class="text-bold">$100.00</h5>        
+                    </div>
+                </div>
 
-                <h5>Subtotal:</h5>
-                <h5 class="text-bold">$100.00</h5>
-                <button id="checkout-btn" type="submit" variant="primary">Proceed to checkout</button>        
+                <div class="button-wrap">
+                    <button id="checkout-btn" type="submit" variant="primary">Proceed to checkout</button>        
+                </div>
 
             </form>
         </div>
