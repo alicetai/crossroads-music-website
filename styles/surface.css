@@ -4,6 +4,6 @@
     border-radius: var(--border-rounder);
 }
 
-a.white-surface:hover{
+a.white-surface:hover, .radio-option:hover{
     border: var(--border-medium) solid var(--color-tan);
 }

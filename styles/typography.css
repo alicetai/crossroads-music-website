@@ -69,7 +69,7 @@ em, b, .text-bold{
     font-weight: bold;
 }
 
-legend h3{
+.form-heading{
     margin: var(--spacing-lg) 0px;
 }
 

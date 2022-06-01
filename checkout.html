@@ -13,45 +13,80 @@
     </header>
     <section id="checkout">
         <div class="section-content">
-            <section id="contact-details">
-                <div class="white-surface">
-                    <h3>Contact details</h3>
-                    <form id="contact-details-form">
+
+            <form id="checkout-form" class="checkout-flex">
+
+                <div class="checkout-details white-surface">
+                    <h4>Contact details</h4>
+
+                    <fieldset class="input-list">
                         <div class="bottom-border-light">
-                            <label for="email">Email address</label>  
-                            <input type="text" id="email" name="email" placeholder="yourname@email.com">    
+                            <label class="text-medium" for="email">Email address</label>  
+                            <input type="text" id="email" name="email" placeholder="yourname@email.com">        
                         </div>
-                        <div class="white-surface">
-                            <input type="radio" id="shipping-option" name="shipping" value="shipping">
-                            <label for="shipping">Shipping</label>    
+                        <div class="bottom-border-light">
+                            <label class="text-medium" for="phone">Phone</label>  
+                            <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555">        
                         </div>
-                        <div class="white-surface">
-                            <input type="radio" id="pick-up-option" name="pick-up" value="pick-up">
-                            <label for="pick-up">Pick-up in store</label>
-                        </div>
+                    </fieldset>
+
+                    <fieldset id="delivery-method">
+                        <h5 class="form-heading">Delivery method</h5>
+                        <ul class="input-list">
+                            <li class="radio-option white-surface">
+                                <input type="radio" id="shipping-option" name="shipping" value="shipping">
+                                <label for="shipping">Shipping</label>    
+                            </li>
+                            <li class="radio-option white-surface">
+                                <input type="radio" id="pick-up-option" name="pick-up" value="pick-up">
+                                <label for="pick-up">Pick-up in store</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <div>
                         <button type="submit" variant="primary">Continue to shipping</button>
-                    </form>
+                    </div>
+                    
                 </div>
-            </section>
-            <aside id="order-summary">
-                <div class="shaded-bg rounded">
-                    <h3>Your order</h3>
-                    <table class="order-table">
-                        <tr>
-                            <td>C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</td>
-                            <td>2</td>
-                            <td class="text-bold">$100.00</td>
-                        </tr>
-                        <tr>
-                            <td>Guitar Name</td>
-                            <td>2</td>
-                            <td class="text-bold">$10.00</td>
-                        </tr>
-                    </table>
+                
+                <div class="checkout-summary shaded-bg rounded">
+                    <h4>Your order</h4>
+                    <fieldset>
+                        <table class="order-table">
+                            <tr class="order-item-row">
+                                <td>
+                                    <p>2x</p>
+                                </td>                                
+                                <td>
+                                    <p>
+                                        C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup
+                                    </p>
+                                <td>
+                                <td>
+                                    <p class="product-price text-bold">
+                                        $100.00
+                                    </p>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <div class="flex-row space-between">
+                            <p class="text-medium">Subtotal:</p>
+                            <p class="text-bold">$100.00</p>        
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="bottom-border-dark">
+                        <label class="text-semibold" for="discount-code">Coupon code</label>
+                        <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
+                        <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>    
+                    </fieldset>
                 </div>
-            </aside>
+            </form>
         </div>
     </section>
+    
     <footer></footer>
 </body>
 </html>

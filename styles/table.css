@@ -1,0 +1,13 @@
+:root{
+    --table-row-height: 5rem; /* 80px */
+}
+
+td{
+    vertical-align: middle;
+}
+
+.order-item-row{
+    height: var(--table-row-height);
+    padding: var(--spacing-xs) 0px;
+    border-bottom: var(--border-medium) solid var(--color-tan);
+}
