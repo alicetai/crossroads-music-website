@@ -22,7 +22,7 @@
     color: var(--color-tan-dark);
 }
 
-.step label{
+.step-label{
     /* smaller label size */
     font-size: 0.75rem;
 }
