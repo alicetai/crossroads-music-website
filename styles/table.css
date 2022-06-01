@@ -2,12 +2,25 @@
     --table-row-height: 5rem; /* 80px */
 }
 
+table{
+    margin: var(--spacing-xs) 0px;
+}
+
 td{
+    padding: var(--spacing-sm);
     vertical-align: middle;
+    overflow: hidden;
 }
 
 .order-item-row{
     height: var(--table-row-height);
     padding: var(--spacing-xs) 0px;
     border-bottom: var(--border-medium) solid var(--color-tan);
+}
+
+.price-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--spacing-xs);
 }

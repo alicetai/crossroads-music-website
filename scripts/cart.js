@@ -10,7 +10,3 @@ cartAdd.addEventListener('click', () => {
         confirmation.style.display = 'none';
     }, 5000);
 });
-
-function applyCode() {
-
-}

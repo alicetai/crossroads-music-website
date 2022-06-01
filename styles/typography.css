@@ -73,6 +73,10 @@ em, b, .text-bold{
     margin: var(--spacing-lg) 0px;
 }
 
+.confirmation-text {
+    margin: var(--spacing-sm);
+}
+
 .text-light{
     font-weight: var(--weight-light);
 }

@@ -21,7 +21,10 @@
     position: fixed;
     width: var(--max-desktop-width);
     text-align: left;
-    /* padding: var(--spacing-xl); */
+
+    /* Center the element */
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .banner{

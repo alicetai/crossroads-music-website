@@ -4,13 +4,18 @@ input{
     font-family: var(--font-body);
     background-color: transparent;
     border-style: none;
-    padding: var(--spacing-xs) 0px;
     outline: none;
+    padding: var(--spacing-xs);
 }
 
 ::placeholder {
     color: var(--color-tan-dark);
     opacity: 1; /* Firefox */
+}
+
+input[type="number"], input[type="text"], input[type="tel"]{
+    width: 100%;
+    flex-grow: 1;
 }
 
 input[type="number"]{
@@ -35,7 +40,7 @@ input[type="button"]{
 }
 
 input[type=radio], input[type=checkbox]{
-    margin: var(--spacing-xs);
+    margin: var(--spacing-md);
 }
 
 /* input, select{
@@ -116,6 +121,21 @@ fieldset{
 }
 
 .radio-option{
-    padding: var(--spacing-sm) var(--spacing-md);
+    height: 50px;
     cursor: pointer;
+}
+
+.radio-option, .text-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-input{
+    height: 40px;
+}
+
+.text-input label{
+    font-weight: var(--weight-medium);
+    width: 180px;
 }

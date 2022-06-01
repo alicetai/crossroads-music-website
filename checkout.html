@@ -16,16 +16,22 @@
 
             <form id="checkout-form" class="checkout-flex">
 
+                <div id="discount-confirmation" class="popup alert banner success">
+                    <div class="flex-row align-center space-between">
+                        <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
+                    </div>
+                </div>
+                
                 <div class="checkout-details white-surface">
                     <h4>Contact details</h4>
 
                     <fieldset class="input-list">
-                        <div class="bottom-border-light">
-                            <label class="text-medium" for="email">Email address</label>  
-                            <input type="text" id="email" name="email" placeholder="yourname@email.com">        
+                        <div class="text-input bottom-border-light">
+                            <label for="email">Email address</label>  
+                            <input type="text" id="email" name="email" placeholder="yourname@email.com" required>        
                         </div>
-                        <div class="bottom-border-light">
-                            <label class="text-medium" for="phone">Phone</label>  
+                        <div class="text-input bottom-border-light">
+                            <label for="phone">Phone</label> 
                             <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555">        
                         </div>
                     </fieldset>
@@ -69,19 +75,27 @@
                                     </p>
                                 </td>
                             </tr>
-
                         </table>
-                        <div class="flex-row space-between">
-                            <p class="text-medium">Subtotal:</p>
-                            <p class="text-bold">$100.00</p>        
+
+                        <div id="price-summary">
+                            <div class="price-row">
+                                <p class="text-medium">Subtotal:</p>
+                                <p class="items-price text-bold">$100.00</p>        
+                            </div>
                         </div>
+
                     </fieldset>
 
-                    <fieldset class="bottom-border-dark">
-                        <label class="text-semibold" for="discount-code">Coupon code</label>
-                        <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
-                        <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>    
+                    <fieldset>
+                        <h5 class="form-heading">Have a coupon?</h5>
+                        <div class="text-input bottom-border-dark">
+                            <label for="discount-code">Coupon code</label>
+                            <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
+                            <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>        
+                        </div>
+                        <br/>
                     </fieldset>
+                    <script type="text/javascript" src="scripts/price.js"></script>
                 </div>
             </form>
         </div>
