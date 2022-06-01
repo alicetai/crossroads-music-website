@@ -41,9 +41,10 @@ nav{
     position: absolute;
     top: 12px;
     right: 18px;
-    border-radius: 50%;
+    border-radius: var(--circle-border);
     background-color: var(--color-red);
-    /* color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.625rem;
-    margin: auto;
 }

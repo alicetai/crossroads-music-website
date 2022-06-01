@@ -34,3 +34,11 @@
 .bottom-border-dark{
     border-bottom: var(--border-medium) solid var(--color-brown);
 }
+
+.shadow-dark{
+    box-shadow: 0px 4px 14px rgba(84, 62, 40, 0.3);
+}
+
+.shadow-light{
+    box-shadow: 0px 4px 10px rgba(84, 62, 40, 0.2);
+}

@@ -15,6 +15,14 @@
     </header>
     <section id="cart">
         <div class="section-content">
+            
+            <!-- Confirmation alert for discount code -->
+            <div id="discount-confirmation" class="popup alert banner success shadow-light">
+                <div class="flex-row align-center space-between">
+                    <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
+                </div>
+            </div>
+
             <form id="cart-form" class="flex-column" action="checkout.html">
                 <legend>
                     <h3 class="form-heading">Your cart</h3>
@@ -54,11 +62,13 @@
                             <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>    
                         </div>
                     </fieldset>
+
                     <div class="flex-row">
                         <h5>Subtotal:</h5>
                         <h5 class="text-bold">$100.00</h5>        
                     </div>
                 </div>
+                <script type="text/javascript" src="scripts/price.js"></script>
 
                 <div class="button-wrap">
                     <button id="checkout-btn" type="submit" variant="primary">Proceed to checkout</button>        

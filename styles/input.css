@@ -29,14 +29,13 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
-input[type="submit"]{
+input[type="submit"], input[type="button"]{
     color: inherit;
-    font-weight: var(--weight-semibold);
     cursor: pointer;
-}
-
-input[type="button"]{
     font-weight: var(--weight-bold);
+}
+input[type="button"]:hover{
+    color: var(--color-brown-dark);
 }
 
 input[type=radio], input[type=checkbox]{
@@ -64,7 +63,6 @@ fieldset{
     width: 100px;
     align-items: center;
     justify-content: center;
-    margin: auto;
 }
 
 .counter input{

@@ -3,7 +3,6 @@
 @import "reset.css";
 @import "colors.css";
 @import "layout.css";
-@import "spacing.css";
 @import "typography.css";
 @import "responsive.css";
 @import "animation.css";
@@ -22,7 +21,8 @@
 @import "link.css";
 @import "pagination.css";
 @import "stepper.css";
-
+@import "dialog.css";
+@import "icon.css";
 
 header, section{
     text-align: center;

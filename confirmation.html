@@ -14,11 +14,19 @@
     </header>
     <section class="shaded-bg">
         <div class="section-content">
-            <div class="light-bg rounded">
-                <span class="iconify" data-icon="bi:cart-check-fill" data-width="90" data-height="90"></span>
-                <h3>Your order has been placed</h3>
-                <p>Thank you for your purchase.</p>
-                <button>Take me back</button>
+            <div class="dialog flex-column light-bg rounded">
+                <div>
+                    <span class="iconify large-icon" data-icon="bi:cart-check-fill" data-width="90" data-height="90" style="text-align: center;"></span>
+                </div>
+                <h4>Your order has been placed</h4>
+                <p>Thank you for your purchase. We’re delighted you chose Crossroads,
+                    and can assure your item will arrive at top standard. To continue
+                    browsing, return to our main site.</p>
+                
+                <!-- Button to redirect back to home page -->
+                <form id="back-home-form" action="index.html">
+                    <button id="back-home-btn" type="submit" variant="primary">Take me back</button>
+                </form>
             </div>
         </div>
     </section>
