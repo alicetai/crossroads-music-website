@@ -2,7 +2,7 @@
     /* BORDER VARIABLES */
     --border-round: 0.625rem;
     --border-rounder: 0.875rem;
-    /* --round-border-xl: 1rem; */
+    --circle-border: 100%;
     --border-medium: 2px;
     --border-thick: 2.5px;
 }
