@@ -89,15 +89,15 @@
                                     <p class="product-price">$0.00</p> 
                                 </div>
                                 <div class="counter white-surface">
-                                    <button class="counter-minus" type="button" onClick="decrement(event, this)">-</button>
+                                    <button class="counter-minus" type="button" onclick="decrement(event, this)">-</button>
                                     <input class="counter-input text-semibold" type="number" id="product-quantity" name="product-quantity" value="1" min="1" placeholder="1">
-                                    <button class="counter-plus" type="button" onClick="increment(event, this)">+</button>
+                                    <button class="counter-plus" type="button" onclick="increment(event, this)">+</button>
                                 </div>
                                 <script type="text/javascript" src="scripts/counter.js"></script>    
                                 <div>
                                     <p class="total-price text-semibold">$10.00</p>
                                 </div>
-                                <div class="delete-icon">
+                                <div class="delete-icon" onclick="deleteItem(event, this)">
                                     <span class="iconify-inline" data-icon="fluent:delete-24-filled" data-width="20" data-height="20"></span>
                                 <div/>
                             </fieldset>

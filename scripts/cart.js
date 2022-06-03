@@ -27,3 +27,11 @@ function showCart() {
 //     image: "images/products/guitars/OM28E/OM28E-Modern-Deluxe-Main.jpg",
 // }
 
+
+function deleteItem(e, current) {
+    // Remove the element's HTML from the document
+    setTimeout(() => {
+        // current.parentElement.style.display = "none"
+        current.parentElement.remove();
+    }, 200); // don't remove it too quickly
+}
