@@ -54,23 +54,26 @@ button[variant=green]:hover{
     background-color: var(--color-beige);
 }
 
-.delete-icon-btn{
+.delete-icon{
     padding: var(--spacing-md);
     border-radius: var(--border-rounder);
 }
 
-.delete-icon-btn:hover{
+.delete-icon:hover{
     color: var(--color-brown-dark);
     background-color: var(--color-beige);
-    cursor: pointer;
 }
 
-.search-icon-btn{
+.search-icon{
     min-width: 24px;
     min-height: 24px;
 }
 
-.search-icon-btn:hover{
+.search-icon:hover{
     color: var(--color-tan);
+    cursor: pointer;
+}
+
+.social-icon:hover, .search-icon:hover, .delete-icon:hover{
     cursor: pointer;
 }

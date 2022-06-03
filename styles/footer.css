@@ -6,14 +6,22 @@ footer{
     padding: var(--spacing-xxl) 10vw;
 }
 
-footer a{
-    color: var(--color-beige);
-}
-
 footer a:hover{
     color: var(--color-tan);
 }
 
-#footer-content{
-    text-align: left;
+#newsletter-subscribe .text-input{
+    max-width: 20rem;
+}
+
+footer a, p{
+    line-height: 180%;
+}
+
+footer a, footer input, footer select, footer textarea{
+    color: var(--color-beige);
+}
+
+.copyright-div{
+    margin-top: var(--spacing-xxl);
 }

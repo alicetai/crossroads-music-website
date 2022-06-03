@@ -25,7 +25,7 @@
                     <div class="text-input bottom-border-light">
                         <input type="text" placeholder="Search all products" id="search" name="search">
                         <input type="button" id="submit-search" name="submit-search">
-                            <span class="search-icon-btn iconify-inline" data-icon="fe:search" data-width="24" data-height="24"></span>
+                            <span class="search-icon iconify-inline" data-icon="fe:search" data-width="24" data-height="24"></span>
                         </input>
                     </div>
                 </form>
@@ -180,19 +180,21 @@
     </main>
 
     <footer id="footer">
-        <div id="footer-content" class="flex-row space-between">
+        <div class="footer-content flex-row space-between left-align">
             <address class="flex-column">
-                <div>
+                <div class="flex-column">
                     <h5>Address</h5>
                     <p>
                         2100 Lawrence Street<br/>
                         Port Townsend, WA. 98368<br/>
                         United States<br/>
+                        <br/>
                         Monday - Friday, 12:00 - 5:00pm<br/>
-                        Saturdays & Sundays, Closed
+                        Saturdays & Sundays, Closed<br/>
+                        <br/>
                     </p>
                 </div>
-                <div>
+                <div class="flex-column">
                     <h5>Contact</h5>
                     <p>
                         <em>Phone: </em> <a href="tel:360 385 1471">360 385 1471</a><br/>
@@ -203,40 +205,48 @@
 
             <div class="flex-column">
                 <h5>Company</h5>
-                <a href="about.html">About Us</a>
-                <a href="rentals.html">Rentals</a>
-                <a href="repairs.html">Repairs</a>
-                <a href="music-lessons.html">Music Lessons</a>
-                <a href="contact.html">Contact</a>
+                <div>
+                    <a href="about.html">About Us</a><br>
+                    <a href="rentals.html">Rentals</a><br>
+                    <a href="repairs.html">Repairs</a><br>
+                    <a href="music-lessons.html">Music Lessons</a><br>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
 
-            <div>
+            <div class="flex-column">
                 <h5>Get our newsletter</h5>
-                <form>
-                    <label for="email">Email address</label>
-                    <input type="text" placeholder="Email address" id="email" name="email" required>
-                    <button type="submit">Subscribe</button>
+                <form id="newsletter-subscribe">
+                    <div class="text-input bottom-border-light">
+                        <label for="subscribe-email">Email</label>
+                        <input type="email" placeholder="yourname@email.com" id="subscribe-email" name="subscribe-email">
+                        <input type="button" id="subscribe" name="subscribe" value="Subscribe"></input>        
+                    </div>
                 </form>
             </div>
 
-            <div>
+            <div class="flex-column">
                 <h5>Stay in touch</h5>
-                <div>
-                    <a id="crossroads-facebook" class="social-link">Facebook icon</a>
-                    <a id="crossroads-instagram" class="social-link">Instagram icon</a>
-                    <a id="crossroads-youtube" class="social-link">YouTube icon</a>
+                <div class="flex-row">
+                    <a id="crossroads-facebook" class="social-link">
+                        <span class="iconify social-icon" data-icon="entypo-social:facebook" data-width="32" data-height="32"></span>
+                    </a>
+                    <a id="crossroads-instagram" class="social-link">
+                        <span class="iconify social-icon" data-icon="entypo-social:instagram" data-width="32" data-height="32"></span>
+                    </a>
+                    <a id="crossroads-youtube" class="social-link">
+                        <span class="iconify social-icon" data-icon="fa6-brands:youtube" data-width="32" data-height="32"></span>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div>
+        <div class="copyright-div">
             <label id="copyright-label" class="text-light">
                 © 2022 Crossroads Music All Rights Reserved
             </label>
         </div>
-
     </footer>
-    
 </body>
 </html>
 
