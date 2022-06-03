@@ -63,9 +63,3 @@ img{
     flex-direction: column;
     gap: var(--spacing-xl);
 }
-
-.brand-item{
-    width: 9.75rem;
-    height: 5rem;
-}
-

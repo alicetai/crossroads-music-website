@@ -3,8 +3,11 @@
 .logo img{
     width: 2.25rem;
     height: 2.25rem;
-    object-fit: contain;
     margin: var(--spacing-xs);
+}
+
+.logo img, .brand-img{
+    object-fit: contain;
 }
 
 .product-img{

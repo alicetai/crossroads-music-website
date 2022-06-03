@@ -9,13 +9,13 @@ var product = {
     specifications: "Top Material: Sitka Spruce with VTS"
 }
 
-window.onload = function() {
-    loadNames();
-    loadPrice();
-    loadDescription();
-    loadImages();
-    loadSpecs();
-};
+// window.onload = function() {
+//     loadNames();
+//     loadPrice();
+//     loadDescription();
+//     loadImages();
+//     loadSpecs();
+// };
 
 function loadNames() {
     var productNames = document.getElementsByClassName('product-name');
@@ -25,6 +25,11 @@ function loadNames() {
 }
 
 function loadPrice(){
+    // Format price in USD
+    let dollarUS = Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+    });
     var productPrice = document.getElementsByClassName('product-price');
     for (const price of productPrice) {
         price.innerHTML = dollarUS.format(product.price);
@@ -59,3 +64,4 @@ function loadSpecs() {
 // updateQuantity() {
 //     //
 // }
+

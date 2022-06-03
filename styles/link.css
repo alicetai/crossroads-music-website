@@ -14,6 +14,12 @@ a{
     font-weight: var(--weight-medium);
 }
 
+.brand-item{
+    width: 9.75rem;
+    height: 5rem;
+    padding: var(--spacing-sm);
+}
+
 .tag{
     color: var(--color-beige);
     background-color: var(--color-brown);

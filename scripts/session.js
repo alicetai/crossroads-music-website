@@ -1,0 +1,1 @@
+var itemQuantity = 0;

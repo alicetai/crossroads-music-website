@@ -6,19 +6,11 @@ const brands = [
     { src: 'images/brand-logos/kala-logo.png', title: 'Kala Ukelele', alt: 'Kala Ukelele logo' },
 ];
 
-window.onload = function() {
-    loadBrands();
-};
-
+// Load all the brand logos
 function loadBrands() {
     var brandImages = document.getElementsByClassName('brand-img');
     for (let i=0; i < brandImages.length; i++) {
         brandImages[i].src = brands[i].src;
         brandImages[i].alt = brands[i].alt;
     }
-
-    // var mainImage = document.getElementsByClassName('brand-img')
-    // for (const image of mainImage) {
-    //     image.src = brands[0].src;
-    //     image.innerHTML = brands[0].src;
 }

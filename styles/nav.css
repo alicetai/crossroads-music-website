@@ -1,8 +1,5 @@
 nav{
     width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 #top-nav{
@@ -22,6 +19,13 @@ nav{
     color: var(--color-tan);
 }
 
+nav, #top-nav > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
 /* navigation for instrument categories */
 #main-nav{
     justify-content: center;
@@ -33,7 +37,7 @@ nav{
     background-color: var(--color-beige-dark);
 }
 
-.header-nav-link{
+.nav-link{
     padding: var(--spacing-md) var(--spacing-lg);
     font-weight: var(--weight-medium);
 }
@@ -42,7 +46,14 @@ nav{
     position: relative;
 }
 
+#cart-quantity{
+    /* hide cart notification badge initially */
+    display: none;
+}
+
 .notification-badge {
+    display: flex;
+    align-items: center;
     width: 16px;
     height: 16px;
     border-radius: var(--circle-border);
@@ -57,12 +68,9 @@ nav{
 }
 
 .logo {
-    margin: 0px var(--spacing-xs);
-}
-
-.logo, .notification-badge{
     display: flex;
     align-items: center;
+    margin: 0px var(--spacing-xs);
 }
 
 .logo label{

@@ -1,9 +1,5 @@
 let currentStep = 0;
 
-window.onload = function() {
-    showStep(currentStep); // Display the first form step
-};
-
 function showStep(n) {
     // Display the elements of the form
     var steps = document.getElementsByClassName("form-step");
