@@ -1,8 +1,8 @@
 window.onload = function() {
-    loadNames();
-    loadPrice();
+    loadProductNames();
+    loadProductPrice();
     loadDescription();
-    loadImages();
+    loadProductImages();
     loadSpecs();
     loadBrands();
 };

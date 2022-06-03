@@ -1,12 +1,23 @@
-function totalSum(numbers) {
+function displayPrice() {
+    
+}
+
+function itemSum(numbers) {
     var total = 0;
-    for (var i=0; i < numbers.length; i++) {
+    for (let i=0; i < numbers.length; i++) {
         total += numbers[i];
     }
     return total;
 }
 
+// Calculate the total price of a set of items
+function totalPrice(cost, quantity) {
+    return cost * quantity;
+}
+
 function applyCode() {
+
+    // validateCode()
     // Calculate discounted price
 
     // Display confirmation

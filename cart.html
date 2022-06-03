@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <script type="text/javascript" src="scripts/session.js"></script>    
     <script type="text/javascript" src="scripts/cart.js"></script>    
+    <script type="text/javascript" src="scripts/product.js"></script>    
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <title>Cart</title>
 </head>
@@ -79,23 +80,23 @@
                         
                         <fieldset class="cart-items">
                             <fieldset class="cart-item white-surface align-center">
-                                <div class="main-product-img-container">
-                                    <a href="product.html"><img class="main-product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg"/></a>
+                                <div>
+                                    <a href="product.html"><img class="item-img"/></a>
                                 </div>
                                 <div>
-                                    <p class="product-name left-align">C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</p>
+                                    <p class="product-name left-align"></p>
                                 </div>
                                 <div>
-                                    <p class="product-price">$0.00</p> 
+                                    <p class="product-price"></p> 
                                 </div>
                                 <div class="counter white-surface">
                                     <button class="counter-minus" type="button" onclick="decrement(event, this)">-</button>
-                                    <input class="counter-input text-semibold" type="number" id="product-quantity" name="product-quantity" value="1" min="1" placeholder="1">
+                                    <input class="counter-input text-semibold" type="number" name="product-quantity" value="1" min="1" placeholder="1">
                                     <button class="counter-plus" type="button" onclick="increment(event, this)">+</button>
                                 </div>
                                 <script type="text/javascript" src="scripts/counter.js"></script>    
                                 <div>
-                                    <p class="total-price text-semibold">$10.00</p>
+                                    <p class="items-price text-semibold"></p>
                                 </div>
                                 <div class="delete-icon" onclick="deleteItem(event, this)">
                                     <span class="iconify-inline" data-icon="fluent:delete-24-filled" data-width="20" data-height="20"></span>

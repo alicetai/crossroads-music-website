@@ -23,7 +23,7 @@
     max-width: 120px;
 }
 
-.cart-item .main-product-img, .main-product-img-container{
+.cart-item .item-img{
     width: 3.5rem;
     height: 4.5rem;
     object-fit: cover;
