@@ -65,3 +65,13 @@ function loadSpecs() {
 //     //
 // }
 
+function addItem() {
+    // Display confirmation
+    let confirmation = document.getElementById('added-confirmation');
+    confirmation.style.display = "block";
+
+    // Remove the alert after 5 seconds
+    setTimeout(() => {
+        confirmation.style.display = 'none';
+    }, 5000);
+}

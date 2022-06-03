@@ -11,198 +11,197 @@
 </head>
 <body>
     <header>
-        <nav>
-        </nav>
-        <nav>
-        </nav>
+    </header>
+    
+    <main class="main-content">
         <div class="alert banner success">
             <p class="uppercase">Free shipping on all orders over $300*</p>
         </div>
-    </header>
-    
-    <section>
-        <div class="section-content">
-            <h2>Browse Guitars</h2>
-            <div>
-                <form id="product-filters">
-                    <div class="left-align dropdown">
-                        <div class="dropdown-button" onclick="toggleBrandDropdown()">
-                            Brand
-                            <span class="iconify" data-icon="bx:plus" data-width="20" data-height="20"></span>
+
+        <section id="products">
+            <div class="section-content">
+                <h2>Browse Guitars</h2>
+                <div>
+                    <form id="product-filters">
+                        <div class="left-align dropdown">
+                            <div class="dropdown-button" onclick="toggleBrandDropdown()">
+                                Brand
+                                <span class="iconify" data-icon="bx:plus" data-width="20" data-height="20"></span>
+                            </div>
+                            <div class="dropdown-content" id="brand-dropdown">
+                                <ul class="dropdown-list">
+                                    <li> 
+                                        <label class="option-label" for="gold-tone">Gold Tone
+                                            <input type="checkbox" id="gold-tone" name="gold-tone" value="gold-tone"/>
+                                        </label>
+                                    </li>
+                                    <li> 
+                                        <label class="option-label" for="weber">Weber
+                                            <input type="checkbox" id="weber" name="weber" value="weber"/>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="dropdown-content" id="brand-dropdown">
-                            <ul class="dropdown-list">
-                                <li> 
-                                    <label class="option-label" for="gold-tone">Gold Tone
-                                        <input type="checkbox" id="gold-tone" name="gold-tone" value="gold-tone"/>
-                                    </label>
-                                </li>
-                                <li> 
-                                    <label class="option-label" for="weber">Weber
-                                        <input type="checkbox" id="weber" name="weber" value="weber"/>
-                                    </label>
-                                </li>
-                            </ul>
+                        <div class="left-align dropdown">
+                            <div class="dropdown-button" onclick="toggleColorDropdown()">
+                                Color
+                                <span class="iconify" data-icon="bx:plus" data-width="20" data-height="20"></span>
+                            </div>
+                            <div class="dropdown-content" id="color-dropdown">
+                                <ul class="dropdown-list">
+                                    <li> 
+                                        <label class="option-label" for="wood">Wood
+                                            <input type="checkbox" id="wood" name="wood" value="wood"/>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="left-align dropdown">
-                        <div class="dropdown-button" onclick="toggleColorDropdown()">
-                            Color
-                            <span class="iconify" data-icon="bx:plus" data-width="20" data-height="20"></span>
+                        <div class="left-align dropdown">
+                            <div class="dropdown-button" onclick="toggleMaterialDropdown()">
+                                Material
+                                <span class="iconify" data-icon="bx:plus" data-width="20" data-height="20"></span>
+                            </div>
                         </div>
-                        <div class="dropdown-content" id="color-dropdown">
-                            <ul class="dropdown-list">
-                                <li> 
-                                    <label class="option-label" for="wood">Wood
-                                        <input type="checkbox" id="wood" name="wood" value="wood"/>
-                                    </label>
-                                </li>
-                            </ul>
+                        <div class="left-align dropdown">
+                            <div class="dropdown-button" onclick="toggleSortDropdown()">
+                                <span>Sort by <span class="text-regular">Popularity</span></span>
+                                <span class="iconify" data-icon="ci:chevron-down" data-width="20" data-height="20"></span>
+                            </div>
+                            <div class="dropdown-content" id="sort-dropdown">
+                                <ul class="dropdown-list">
+                                    <li> 
+                                        <label class="option-label" for="popularity">Sort by Popularity
+                                            <input type="radio" id="popularity" name="popularity" value="popularity"/>
+                                        </label>
+                                    </li>
+                                    <li> 
+                                        <label class="option-label" for="latest-added">Sort by Latest Added
+                                            <input type="radio" id="latest-added" name="latest-added" value="latest-added"/>
+                                        </label>
+                                    </li>
+                                    <li> 
+                                        <label class="option-label" for="availability">Sort by Availability
+                                            <input type="radio" id="availability" name="availability" value="availability"/>
+                                        </label>
+                                    </li>
+                                    <li> 
+                                        <label class="option-label" for="sale-items">Sort by Sale Items
+                                            <input type="radio" id="sale-items" name="sale-items" value="sale-items"/>
+                                        </label>
+                                    </li>
+                                    <li> 
+                                        <label class="option-label" for="price-increasing">Sort by Price: Low to High
+                                            <input type="radio" id="price-increasing" name="price-increasing" value="price-increasing"/>
+                                        </label>
+                                    </li>
+                                    <li> 
+                                        <label class="option-label" for="price-decreasing">Sort by Price: High to Low
+                                            <input type="radio" id="price-decreasing" name="price-decreasing" value="price-decreasing"/>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="left-align dropdown">
-                        <div class="dropdown-button" onclick="toggleMaterialDropdown()">
-                            Material
-                            <span class="iconify" data-icon="bx:plus" data-width="20" data-height="20"></span>
-                        </div>
-                    </div>
-                    <div class="left-align dropdown">
-                        <div class="dropdown-button" onclick="toggleSortDropdown()">
-                            <span>Sort by <span class="text-regular">Popularity</span></span>
-                            <span class="iconify" data-icon="ci:chevron-down" data-width="20" data-height="20"></span>
-                        </div>
-                        <div class="dropdown-content" id="sort-dropdown">
-                            <ul class="dropdown-list">
+                        <!-- <div class="dropdown-button" name="brand" id="brand-filter">
+                            <option>Color</option>
+                            <option value="wood">Wood</option>
+                        </div> -->
+                        
+                        <!-- <input type="submit" value="Submit"> -->
+                        <script type="text/javascript" src="scripts/dropdown.js"></script>    
+                    </form>
+                        <!-- <button className="dropdown-button" onClick={toggleDropdown}>
+                            Filter by country
+                            <Icon icon="bx:bx-caret-down" width="15" height="15" />
+                        </button>
+        
+                        {isOpen && (<div className={`dropdown ${isOpen ? 'open' : 'closed'}`}>
+                            <ul>
+                                {Object.keys(countries).map((country, selected) => (
                                 <li> 
-                                    <label class="option-label" for="popularity">Sort by Popularity
-                                        <input type="radio" id="popularity" name="popularity" value="popularity"/>
-                                    </label>
+                                    <input type="checkbox" id={country} name={country} value={country} onChange={handleCheck}/>
+                                    <label for={country}>{country}</label>
                                 </li>
-                                <li> 
-                                    <label class="option-label" for="latest-added">Sort by Latest Added
-                                        <input type="radio" id="latest-added" name="latest-added" value="latest-added"/>
-                                    </label>
-                                </li>
-                                <li> 
-                                    <label class="option-label" for="availability">Sort by Availability
-                                        <input type="radio" id="availability" name="availability" value="availability"/>
-                                    </label>
-                                </li>
-                                <li> 
-                                    <label class="option-label" for="sale-items">Sort by Sale Items
-                                        <input type="radio" id="sale-items" name="sale-items" value="sale-items"/>
-                                    </label>
-                                </li>
-                                <li> 
-                                    <label class="option-label" for="price-increasing">Sort by Price: Low to High
-                                        <input type="radio" id="price-increasing" name="price-increasing" value="price-increasing"/>
-                                    </label>
-                                </li>
-                                <li> 
-                                    <label class="option-label" for="price-decreasing">Sort by Price: High to Low
-                                        <input type="radio" id="price-decreasing" name="price-decreasing" value="price-decreasing"/>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- <div class="dropdown-button" name="brand" id="brand-filter">
-                        <option>Color</option>
-                        <option value="wood">Wood</option>
-                    </div> -->
-                    
-                    <!-- <input type="submit" value="Submit"> -->
-                    <script type="text/javascript" src="scripts/dropdown.js"></script>    
-                </form>
-                    <!-- <button className="dropdown-button" onClick={toggleDropdown}>
-                        Filter by country
-                        <Icon icon="bx:bx-caret-down" width="15" height="15" />
-                    </button>
-    
-                    {isOpen && (<div className={`dropdown ${isOpen ? 'open' : 'closed'}`}>
-                        <ul>
-                            {Object.keys(countries).map((country, selected) => (
-                            <li> 
-                                <input type="checkbox" id={country} name={country} value={country} onChange={handleCheck}/>
-                                <label for={country}>{country}</label>
-                            </li>
-                            ))}
-                        </ul>-->
+                                ))}
+                            </ul>-->
+                </div>
+                
+                <div>
+                    <ul class="listing-grid">
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+        
+                <div class="pagination">
+                    <a class="pagination-prev" href="#"><span class="iconify-inline" data-icon="charm:chevron-left" data-width="16" data-height="16"></span></a>
+                    <a class="active" href="#"><p>1</p></a>
+                    <a href="#"><p>2</p></a>
+                    <a href="#"><p>3</p></a>
+                    <a href="#"><p>4</p></a>
+                    <a href="#"><p>5</p></a>
+                    <a href="#"><p>6</p></a>
+                    <a class="pagination-next" href="#"><span class="iconify" data-icon="charm:chevron-right" data-width="16" data-height="16"></span></a>
+                </div>
             </div>
-            
-            <div>
-                <ul class="listing-grid">
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                </ul>
-            </div>
-    
-            <div class="pagination">
-                <a class="pagination-prev" href="#"><span class="iconify-inline" data-icon="charm:chevron-left" data-width="16" data-height="16"></span></a>
-                <a class="active" href="#"><p>1</p></a>
-                <a href="#"><p>2</p></a>
-                <a href="#"><p>3</p></a>
-                <a href="#"><p>4</p></a>
-                <a href="#"><p>5</p></a>
-                <a href="#"><p>6</p></a>
-                <a class="pagination-next" href="#"><span class="iconify" data-icon="charm:chevron-right" data-width="16" data-height="16"></span></a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     
     <footer>
 

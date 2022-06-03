@@ -15,162 +15,164 @@
         </div>
     </header>
 
-    <section>
-        <div class="section-content">
+    <main class="main-content">
 
-            <form action="cart.html">
-
-                <div id="added-confirmation" class="popup alert banner success shadow-light">
-                    <div class="flex-row align-center space-between">
-                        <p id="added-confirmation-text" class="confirmation-text">Item has been added to cart.</p>
-                        <div>
-                            <input id="view-cart-btn" type="submit" value="View cart"></input>
-                        </div>
-                    </div>
+        <!-- Confirmation alert for item added -->
+        <div id="added-confirmation" class="popup alert banner success shadow-light">
+            <div class="flex-row align-center space-between">
+                <p id="added-confirmation-text" class="confirmation-text">Item has been added to cart.</p>
+                <div>
+                    <input id="view-cart-btn" type="submit" value="View cart"></input>
                 </div>
+            </div>
+        </div>
 
-                <div class="product-grid">
-                    <div class="grid-item flex-column">
-                            <div>
-                                <img id="main-product-img" class="product-img">
-                            </div>
-                            <div class="product-img-grid">
-                                <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
-                                <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
-                                <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
-                                <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
-                            </div>
-                    </div>
-
-                    <div class="grid-item flex-column left-align">
-                        <div>
-                            <h4 class="product-name"></h4>
-                            <h4 class="product-price text-bold"></h4>    
-                        </div>
-                        
-                        <div>
-                            <h6>Category</h6>
-                            <div class="flex-row">
-                                <a class="tag" href="products.html">Guitars</a>
-                            </div>
+        <section>
+            <div class="section-content">
+                <form action="cart.html">
+                    <div class="product-grid">
+                        <div class="grid-item flex-column">
+                                <div>
+                                    <img id="main-product-img" class="product-img">
+                                </div>
+                                <div class="product-img-grid">
+                                    <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
+                                    <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
+                                    <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
+                                    <img class="product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg">
+                                </div>
                         </div>
     
-                        <div>
-                            <h6>Quantity</h6>
-                            <div class="counter white-surface">
-                                <button class="counter-minus" type="button" onClick="decrement(event, this)">-</button>
-                                <input class="counter-input text-semibold" type="number" id="product-quantity" name="product-quantity" value="1" min="1" placeholder="1">
-                                <button class="counter-plus" type="button" onClick="increment(event, this)">+</button>
+                        <div class="grid-item flex-column left-align">
+                            <div>
+                                <h4 class="product-name"></h4>
+                                <h4 class="product-price text-bold"></h4>    
                             </div>
-                            <script type="text/javascript" src="scripts/counter.js"></script>
+                            
+                            <div>
+                                <h6>Category</h6>
+                                <div class="flex-row">
+                                    <a class="tag" href="products.html">Guitars</a>
+                                </div>
+                            </div>
+        
+                            <div>
+                                <h6>Quantity</h6>
+                                <div class="counter white-surface">
+                                    <button class="counter-minus" type="button" onClick="decrement(event, this)">-</button>
+                                    <input class="counter-input text-semibold" type="number" id="product-quantity" name="product-quantity" value="1" min="1" placeholder="1">
+                                    <button class="counter-plus" type="button" onClick="increment(event, this)">+</button>
+                                </div>
+                                <script type="text/javascript" src="scripts/counter.js"></script>
+            
+                            </div>
+        
+                            <div class="flex-row">
+                                <button id="add-to-cart-btn" type="button" variant="primary" onclick="addItem()">Add to cart</button>
+                                <button id="buy-now-btn" type="submit" variant="green">Buy now</button>
+                            </div>
+                            <script type="text/javascript" src="scripts/cart.js"></script>
         
                         </div>
-    
-                        <div class="flex-row">
-                            <button id="add-to-cart-btn" type="button" variant="primary" onclick="addItem()">Add to cart</button>
-                            <button id="buy-now-btn" type="submit" variant="green">Buy now</button>
-                        </div>
-                        <script type="text/javascript" src="scripts/cart.js"></script>
-    
                     </div>
-                </div>
-            </form>
-
-            <section>
-                <div class="product-info-tab">
-                    <button class="tab-link active" onclick="openTab(event, 'product-description-content')">Description</button>
-                    <button class="tab-link" onclick="openTab(event, 'product-specs-content')">Specifications</button>
-                </div>
-                    
-                <div id="product-description-content" class="tab-content shaded-bg">
-                    <p id="product-description"></p>
-                </div>
-                <div id="product-specs-content" class="tab-content shaded-bg">
-                    <p id="product-specs"></p> 
-                </div>
-
-                <script type="text/javascript" src="scripts/tab.js"></script>
-            </section>
-        </div>
-    </section>
-
-    <section id="recommended">
-
-        <div class="section-content">
-
-            <h3 class="section-heading">You might also like</h3>
-            <div class="listing-gallery">
-                <ul id="recommended-list" class="flex-row space-between">
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                </ul>
+                </form>
+    
+                <section>
+                    <div class="product-info-tab">
+                        <button class="tab-link active" onclick="openTab(event, 'product-description-content')">Description</button>
+                        <button class="tab-link" onclick="openTab(event, 'product-specs-content')">Specifications</button>
+                    </div>
+                        
+                    <div id="product-description-content" class="tab-content shaded-bg">
+                        <p id="product-description"></p>
+                    </div>
+                    <div id="product-specs-content" class="tab-content shaded-bg">
+                        <p id="product-specs"></p> 
+                    </div>
+    
+                    <script type="text/javascript" src="scripts/tab.js"></script>
+                </section>
             </div>
-        </div>
-    </section>
-
-    <section id="recently-viewed">
-        <div class="section-content">
-            <h3 class="section-heading">Recently viewed</h3>
-            <div class="listing-gallery">
-                <ul id="recently-viewed-list" class="flex-row space-between">
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                    <a class="listing-item white-surface" href="product.html">
-                        <img class="listing-img">
-                        <div class="left-align">
-                            <h6 class="product-name"></h6>
-                            <h6 class="product-price text-extrabold"></h6>
-                        </div>
-                    </a>
-                </ul>
+        </section>
+    
+        <section id="recommended">
+    
+            <div class="section-content">
+    
+                <h3 class="section-heading">You might also like</h3>
+                <div class="listing-gallery">
+                    <ul id="recommended-list" class="flex-row space-between">
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <section id="recently-viewed">
+            <div class="section-content">
+                <h3 class="section-heading">Recently viewed</h3>
+                <div class="listing-gallery">
+                    <ul id="recently-viewed-list" class="flex-row space-between">
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                        <a class="listing-item white-surface" href="product.html">
+                            <img class="listing-img">
+                            <div class="left-align">
+                                <h6 class="product-name"></h6>
+                                <h6 class="product-price text-extrabold"></h6>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
 

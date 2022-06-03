@@ -12,277 +12,279 @@
 
     </header>
 
-    <div class="section-content">
-
-        <!-- Confirmation alert for discount code -->
-        <div id="discount-confirmation" class="popup alert banner success shadow-light">
-            <div class="flex-row align-center space-between">
-                <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
-            </div>
-        </div>
-
-        <!-- Steps indicating form progress -->
-        <div class="stepper-wrap">
-            <div class="stepper">
-                <div class="step">
-                    <span class="step-number"><p>1</p></span>
-                    <label class="step-label">Information</label>
-                </div>
-                <div class="step">
-                    <span class="step-number"><p>2</p></span>
-                    <label class="step-label">Shipping</label>
-                </div>
-                <div class="step">
-                    <span class="step-number"><p>3</p></span>
-                    <label class="step-label">Payment</label>
-                </div>
-            </div>
-            <div class="stepper-line"/>
-        </div>
-    </div>
-
-    <section id="checkout">
+    <main class="main-content">
         <div class="section-content">
 
-            <form id="checkout-form" class="checkout-flex" action="confirmation.html">
-                
-                <script type="text/javascript" src="scripts/stepper.js"></script>
-
-                <div class="form-details white-surface">
-
-                    <!-- First step -->
-                    <div class="form-step checkout-details">
-                        <h4>Contact details</h4>
-    
-                        <fieldset class="input-list">
-                            <div class="text-input bottom-border-light">
-                                <label for="email">Email address</label>  
-                                <input type="text" id="email" name="email" placeholder="yourname@email.com" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="phone">Phone</label> 
-                                <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555" required>        
-                            </div>
-                        </fieldset>
-    
-                        <fieldset id="delivery-method">
-                            <h5 class="form-heading">Delivery method</h5>
-                            <ul class="input-list">
-                                <li class="checkbox-option white-surface">
-                                    <input type="checkbox" id="shipping-option" name="shipping" value="shipping">
-                                    <label for="shipping">Shipping</label>    
-                                </li>
-                                <li class="checkbox-option white-surface">
-                                    <input type="checkbox" id="pick-up-option" name="pick-up" value="pick-up">
-                                    <label for="pick-up">Pick-up in store</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-    
-                        <div>
-                            <button id="continue-to-shipping-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(1)">Continue to shipping</button>
-                        </div>
-                    </div>
-
-                    <!-- Second step -->
-                    <div class="form-step shipping-details">
-                        <h4>Shipping address</h4>
-    
-                        <fieldset class="input-list">
-                            <div class="text-input bottom-border-light">
-                                <label for="first-name">First Name</label>  
-                                <input type="text" id="first-name" name="first-name" placeholder="John" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="last-name">Last Name</label>  
-                                <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="country">Country/Region</label>
-                                <input type="text" id="country" name="country" placeholder="United States" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="street-address">Street address</label>
-                                <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="city">City</label>
-                                <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="state">State</label>
-                                <input type="text" id="state" name="state" placeholder="Washington" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="postcode">Postcode</label>
-                                <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="shipping-phone">Phone</label> 
-                                <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
-                            </div>
-                        </fieldset>
-    
-                        <fieldset id="shipping-method">
-                            <h5 class="form-heading">Shipping method</h5>
-                            <ul class="input-list">
-                                <li class="checkbox-option white-surface">
-                                    <input type="checkbox" id="standard-shipping" name="standard-shipping" value="standard-shipping">
-                                    <label for="standard-shipping">Standard shipping</label>    
-                                </li>
-                                <li class="checkbox-option white-surface">
-                                    <input type="checkbox" id="express-shipping" name="express-shipping" value="express-shipping">
-                                    <label for="express-shipping">Express shipping</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-    
-                        <div>
-                            <button id="continue-to-payment-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(2)">Continue to payment</button>
-                        </div>                    
-                    </div>
-
-                    <!-- Last step -->
-                    <div class="form-step card-details">
-                        <h4>Card details</h4>
-    
-                        <fieldset class="input-list">
-                            <div class="text-input bottom-border-light">
-                                <label for="card-number">Card number</label>  
-                                <input type="number" id="card-number" name="card-number" placeholder="5555 5555 5555 4444" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="card-name">Card name</label> 
-                                <input type="text" id="card-name" name="card-name" placeholder="John Smith" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="card-expiration-date">Expiration date</label> 
-                                <input type="number" id="card-expiration-date" name="card-expiration-date" placeholder="MM/YY" required>        
-                            </div>
-                            <div class="text-input bottom-border-light">
-                                <label for="card-cvv">Security code</label> 
-                                <input type="number" id="card-cvv" name="card-cvv" placeholder="123" required>        
-                            </div>
-                            <p class="helper-text">All transactions are secure and encrypted. View our <a class="text-medium underlined">privacy policy</a> here.</p>
-                        </fieldset>
-    
-                        <fieldset id="payment-method">
-                            <h5 class="form-heading">Payment method</h5>
-                            <ul class="input-list">
-                                <li class="checkbox-option white-surface">
-                                    <input type="checkbox" id="credit-card" name="credit-card" value="credit-card">
-                                    <label for="credit-card">Credit card</label>    
-                                </li>
-                                <li class="checkbox-option white-surface">
-                                    <input type="checkbox" id="paypal" name="paypal" value="paypal">
-                                    <label for="paypal">PayPal</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-
-                        <fieldset id="billing-address">
-                            <h5 class="form-heading">Billing address</h5>
-                            <ul class="input-list">
-                                <li class="checkbox-option white-surface">
-                                    <input type="checkbox" id="shipping-address" name="shipping-address" value="shipping-address">
-                                    <label for="shipping-address">Same as shipping address</label>    
-                                </li>
-                                <li class="checkbox-option white-surface">
-                                    <input type="checkbox" id="billing-address" name="billing-address" value="billing-address">
-                                    <label for="billing-address">Use a different billing address</label>
-                                </li>
-                            </ul>
-                            <br/><br/>
-                            <div id="different-billing-address">
-                                <fieldset class="input-list">
-                                    <div class="text-input bottom-border-light">
-                                        <label for="first-name">First Name</label>  
-                                        <input type="text" id="first-name" name="first-name" placeholder="Jane" required>        
-                                    </div>
-                                    <div class="text-input bottom-border-light">
-                                        <label for="last-name">Last Name</label>  
-                                        <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
-                                    </div>
-                                    <div class="text-input bottom-border-light">
-                                        <label for="country">Country/Region</label>
-                                        <input type="text" id="country" name="country" placeholder="United States" required>        
-                                    </div>
-                                    <div class="text-input bottom-border-light">
-                                        <label for="street-address">Street address</label>
-                                        <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
-                                    </div>
-                                    <div class="text-input bottom-border-light">
-                                        <label for="city">City</label>
-                                        <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
-                                    </div>
-                                    <div class="text-input bottom-border-light">
-                                        <label for="state">State</label>
-                                        <input type="text" id="state" name="state" placeholder="Washington" required>        
-                                    </div>
-                                    <div class="text-input bottom-border-light">
-                                        <label for="postcode">Postcode</label>
-                                        <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
-                                    </div>
-                                    <div class="text-input bottom-border-light">
-                                        <label for="shipping-phone">Phone</label> 
-                                        <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </fieldset>
-    
-                        <div>
-                            <button id="continue-to-shipping-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(3)">Confirm purchase</button>
-                        </div>
-                    </div>
-
+            <!-- Confirmation alert for discount code -->
+            <div id="discount-confirmation" class="popup alert banner success shadow-light">
+                <div class="flex-row align-center space-between">
+                    <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
                 </div>
-
-                <div class="order-details shaded-bg rounded">
-                    <div class="order-summary">
-                        <h4>Your order</h4>
-                        <fieldset>
-                            <table class="order-table">
-                                <tr class="order-item-row">
-                                    <td>
-                                        <p>2x</p>
-                                    </td>                                
-                                    <td>
-                                        <p>
-                                            C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup
-                                        </p>
-                                    <td>
-                                    <td>
-                                        <p class="product-price text-bold">
-                                            $100.00
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
+            </div>
     
-                            <div id="price-summary">
-                                <div class="price-row">
-                                    <p class="text-medium">Subtotal:</p>
-                                    <p class="items-price text-bold">$100.00</p>        
-                                </div>
-                            </div>
-    
-                        </fieldset>
-    
-                        <fieldset>
-                            <h5 class="form-heading">Have a coupon?</h5>
-                            <div class="text-input bottom-border-dark">
-                                <label for="discount-code">Coupon code</label>
-                                <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
-                                <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>        
-                            </div>
-                            <br/>
-                        </fieldset>
-                        <script type="text/javascript" src="scripts/price.js"></script>
+            <!-- Steps indicating form progress -->
+            <div class="stepper-wrap">
+                <div class="stepper">
+                    <div class="step">
+                        <span class="step-number"><p>1</p></span>
+                        <label class="step-label">Information</label>
+                    </div>
+                    <div class="step">
+                        <span class="step-number"><p>2</p></span>
+                        <label class="step-label">Shipping</label>
+                    </div>
+                    <div class="step">
+                        <span class="step-number"><p>3</p></span>
+                        <label class="step-label">Payment</label>
                     </div>
                 </div>
-            </form>
+                <div class="stepper-line"/>
+            </div>
         </div>
-    </section>
+    
+        <section id="checkout">
+            <div class="section-content">
+    
+                <form id="checkout-form" class="checkout-flex" action="confirmation.html">
+                    
+                    <script type="text/javascript" src="scripts/stepper.js"></script>
+    
+                    <div class="form-details white-surface">
+    
+                        <!-- First step -->
+                        <div class="form-step checkout-details">
+                            <h4>Contact details</h4>
+        
+                            <fieldset class="input-list">
+                                <div class="text-input bottom-border-light">
+                                    <label for="email">Email address</label>  
+                                    <input type="text" id="email" name="email" placeholder="yourname@email.com" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="phone">Phone</label> 
+                                    <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555" required>        
+                                </div>
+                            </fieldset>
+        
+                            <fieldset id="delivery-method">
+                                <h5 class="form-heading">Delivery method</h5>
+                                <ul class="input-list">
+                                    <li class="checkbox-option white-surface">
+                                        <input type="checkbox" id="shipping-option" name="shipping" value="shipping">
+                                        <label for="shipping">Shipping</label>    
+                                    </li>
+                                    <li class="checkbox-option white-surface">
+                                        <input type="checkbox" id="pick-up-option" name="pick-up" value="pick-up">
+                                        <label for="pick-up">Pick-up in store</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+        
+                            <div>
+                                <button id="continue-to-shipping-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(1)">Continue to shipping</button>
+                            </div>
+                        </div>
+    
+                        <!-- Second step -->
+                        <div class="form-step shipping-details">
+                            <h4>Shipping address</h4>
+        
+                            <fieldset class="input-list">
+                                <div class="text-input bottom-border-light">
+                                    <label for="first-name">First Name</label>  
+                                    <input type="text" id="first-name" name="first-name" placeholder="John" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="last-name">Last Name</label>  
+                                    <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="country">Country/Region</label>
+                                    <input type="text" id="country" name="country" placeholder="United States" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="street-address">Street address</label>
+                                    <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="Washington" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="postcode">Postcode</label>
+                                    <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="shipping-phone">Phone</label> 
+                                    <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
+                                </div>
+                            </fieldset>
+        
+                            <fieldset id="shipping-method">
+                                <h5 class="form-heading">Shipping method</h5>
+                                <ul class="input-list">
+                                    <li class="checkbox-option white-surface">
+                                        <input type="checkbox" id="standard-shipping" name="standard-shipping" value="standard-shipping">
+                                        <label for="standard-shipping">Standard shipping</label>    
+                                    </li>
+                                    <li class="checkbox-option white-surface">
+                                        <input type="checkbox" id="express-shipping" name="express-shipping" value="express-shipping">
+                                        <label for="express-shipping">Express shipping</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+        
+                            <div>
+                                <button id="continue-to-payment-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(2)">Continue to payment</button>
+                            </div>                    
+                        </div>
+    
+                        <!-- Last step -->
+                        <div class="form-step card-details">
+                            <h4>Card details</h4>
+        
+                            <fieldset class="input-list">
+                                <div class="text-input bottom-border-light">
+                                    <label for="card-number">Card number</label>  
+                                    <input type="number" id="card-number" name="card-number" placeholder="5555 5555 5555 4444" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="card-name">Card name</label> 
+                                    <input type="text" id="card-name" name="card-name" placeholder="John Smith" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="card-expiration-date">Expiration date</label> 
+                                    <input type="number" id="card-expiration-date" name="card-expiration-date" placeholder="MM/YY" required>        
+                                </div>
+                                <div class="text-input bottom-border-light">
+                                    <label for="card-cvv">Security code</label> 
+                                    <input type="number" id="card-cvv" name="card-cvv" placeholder="123" required>        
+                                </div>
+                                <p class="helper-text">All transactions are secure and encrypted. View our <a class="text-medium underlined">privacy policy</a> here.</p>
+                            </fieldset>
+        
+                            <fieldset id="payment-method">
+                                <h5 class="form-heading">Payment method</h5>
+                                <ul class="input-list">
+                                    <li class="checkbox-option white-surface">
+                                        <input type="checkbox" id="credit-card" name="credit-card" value="credit-card">
+                                        <label for="credit-card">Credit card</label>    
+                                    </li>
+                                    <li class="checkbox-option white-surface">
+                                        <input type="checkbox" id="paypal" name="paypal" value="paypal">
+                                        <label for="paypal">PayPal</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+    
+                            <fieldset id="billing-address">
+                                <h5 class="form-heading">Billing address</h5>
+                                <ul class="input-list">
+                                    <li class="checkbox-option white-surface">
+                                        <input type="checkbox" id="shipping-address" name="shipping-address" value="shipping-address">
+                                        <label for="shipping-address">Same as shipping address</label>    
+                                    </li>
+                                    <li class="checkbox-option white-surface">
+                                        <input type="checkbox" id="billing-address" name="billing-address" value="billing-address">
+                                        <label for="billing-address">Use a different billing address</label>
+                                    </li>
+                                </ul>
+                                <br/><br/>
+                                <div id="different-billing-address">
+                                    <fieldset class="input-list">
+                                        <div class="text-input bottom-border-light">
+                                            <label for="first-name">First Name</label>  
+                                            <input type="text" id="first-name" name="first-name" placeholder="Jane" required>        
+                                        </div>
+                                        <div class="text-input bottom-border-light">
+                                            <label for="last-name">Last Name</label>  
+                                            <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
+                                        </div>
+                                        <div class="text-input bottom-border-light">
+                                            <label for="country">Country/Region</label>
+                                            <input type="text" id="country" name="country" placeholder="United States" required>        
+                                        </div>
+                                        <div class="text-input bottom-border-light">
+                                            <label for="street-address">Street address</label>
+                                            <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
+                                        </div>
+                                        <div class="text-input bottom-border-light">
+                                            <label for="city">City</label>
+                                            <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
+                                        </div>
+                                        <div class="text-input bottom-border-light">
+                                            <label for="state">State</label>
+                                            <input type="text" id="state" name="state" placeholder="Washington" required>        
+                                        </div>
+                                        <div class="text-input bottom-border-light">
+                                            <label for="postcode">Postcode</label>
+                                            <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
+                                        </div>
+                                        <div class="text-input bottom-border-light">
+                                            <label for="shipping-phone">Phone</label> 
+                                            <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </fieldset>
+        
+                            <div>
+                                <button id="continue-to-shipping-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(3)">Confirm purchase</button>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="order-details shaded-bg rounded">
+                        <div class="order-summary">
+                            <h4>Your order</h4>
+                            <fieldset>
+                                <table class="order-table">
+                                    <tr class="order-item-row">
+                                        <td>
+                                            <p>2x</p>
+                                        </td>                                
+                                        <td>
+                                            <p>
+                                                C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup
+                                            </p>
+                                        <td>
+                                        <td>
+                                            <p class="product-price text-bold">
+                                                $100.00
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+        
+                                <div id="price-summary">
+                                    <div class="price-row">
+                                        <p class="text-medium">Subtotal:</p>
+                                        <p class="items-price text-bold">$100.00</p>        
+                                    </div>
+                                </div>
+        
+                            </fieldset>
+        
+                            <fieldset>
+                                <h5 class="form-heading">Have a coupon?</h5>
+                                <div class="text-input bottom-border-dark">
+                                    <label for="discount-code">Coupon code</label>
+                                    <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
+                                    <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>        
+                                </div>
+                                <br/>
+                            </fieldset>
+                            <script type="text/javascript" src="scripts/price.js"></script>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

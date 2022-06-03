@@ -1,3 +1,5 @@
+/* Footer styles */
+
 footer{
     display: block;
     text-align: center;
@@ -6,12 +8,8 @@ footer{
     padding: var(--spacing-xxl) 10vw;
 }
 
-footer a:hover{
+footer a:hover, footer .text-input [type="button"]:hover{
     color: var(--color-tan);
-}
-
-#newsletter-subscribe .text-input{
-    max-width: 20rem;
 }
 
 footer a, p{

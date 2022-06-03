@@ -5,13 +5,17 @@ nav{
 #top-nav{
     color: var(--color-beige);
     background-color: var(--color-brown);
-    position: fixed;
-    z-index: 1;
     padding: var(--spacing-xs) 0px;
     justify-content: space-between;
 }
 
-/* change link and input colors to white */
+.top-fixed{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+/* link and input colors are white */
 #top-nav a, #top-nav input, #top-nav select, #top-nav textarea{
     color: var(--color-white);
 }

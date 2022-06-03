@@ -9,7 +9,7 @@
 @import "effects.css";
 
 /* Import component styles */
-@import "nav.css";
+@import "header.css";
 @import "footer.css";
 @import "button.css";
 @import "input.css";
@@ -62,4 +62,12 @@ img{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xl);
+}
+
+.main-content{
+    margin-top: 150px; /* margin for header space */
+}
+
+#cart-form {
+    display: none;
 }

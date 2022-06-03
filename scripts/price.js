@@ -10,7 +10,7 @@ function applyCode() {
     // Calculate discounted price
 
     // Display confirmation
-    const confirmation = document.getElementById('discount-confirmation');
+    let confirmation = document.getElementById('discount-confirmation');
     confirmation.style.display = "block";
 
     // Remove the alert after 3 seconds

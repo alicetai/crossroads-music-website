@@ -5,78 +5,210 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script type="text/javascript" src="scripts/session.js"></script>    
     <script type="text/javascript" src="scripts/cart.js"></script>    
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <title>Cart</title>
 </head>
 <body>
-    <header>
+    <header class="top-fixed">
+        <!-- Introductory content -->
+        <nav id="top-nav">
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/crossroads-logo.png">
+                    <label>Crossroads Music</label>
+                </a>
+                <form id="search-form">
+                    <div class="text-input bottom-border-light">
+                        <input type="text" placeholder="Search all products" id="search" name="search">
+                        <input type="button" id="submit-search" name="submit-search">
+                            <span class="search-icon iconify-inline" data-icon="fe:search" data-width="24" data-height="24"></span>
+                        </input>
+                    </div>
+                </form>
+            </div>
+            <div class="nav-links">
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="rentals.html">Rentals</a>
+                <a class="nav-link" href="repairs.html">Repairs</a>
+                <a class="nav-link" href="music-lessons.html">Music Lessons</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a id="cart-btn" class="nav-link" href="cart.html">
+                    <span class="iconify" data-icon="bi:cart" data-width="24" data-height="24"></span>
+                    <div id="cart-quantity">
+                        <span id="cart-quantity-badge" class="notification-badge"></span>
+                    </div>
+                </a>    
+                <script type="text/javascript" src="scripts/nav.js"></script>
+            </div>
+        </nav>
 
+        <nav id="main-nav" class="shadow-light">
+            <a class="nav-link" href="products.html">Guitars</a>
+            <a class="nav-link" href="products.html">Amps</a>
+            <a class="nav-link" href="products.html">Drums</a>
+            <a class="nav-link" href="products.html">Keyboards</a>
+            <a class="nav-link" href="products.html">Live Sound</a>
+            <a class="nav-link" href="products.html">Band & Orchestral</a>
+            <a class="nav-link" href="products.html">Accessories</a>
+            <a class="nav-link" href="products.html">Kids' Instruments</a>
+            <a class="nav-link" href="products.html">Books</a>
+            <a class="nav-link" href="products.html">Gift Certificates</a>
+        </nav>
     </header>
-    <section id="cart">
-        <div class="section-content">
-            
-            <!-- Confirmation alert for discount code -->
-            <div id="discount-confirmation" class="popup alert banner success shadow-light">
-                <div class="flex-row align-center space-between">
-                    <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
+
+    <!-- Cart content -->
+    <main class="main-content">
+
+        <!-- Confirmation alert for discount code -->
+        <div id="discount-confirmation" class="popup alert banner success shadow-light">
+            <div class="flex-row align-center space-between">
+                <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
+            </div>
+        </div>
+
+        <section id="cart">
+            <div class="section-content">
+    
+                <form id="cart-form"  action="checkout.html">
+                    <div class="flex-column">
+                        <legend>
+                            <h3 class="form-heading">Your cart</h3>
+                        </legend>
+                        
+                        <fieldset class="cart-items">
+                            <fieldset class="cart-item white-surface align-center">
+                                <div class="main-product-img-container">
+                                    <a href="product.html"><img class="main-product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg"/></a>
+                                </div>
+                                <div>
+                                    <p class="product-name left-align">C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</p>
+                                </div>
+                                <div>
+                                    <p class="product-price">$0.00</p> 
+                                </div>
+                                <div class="counter white-surface">
+                                    <button class="counter-minus" type="button" onClick="decrement(event, this)">-</button>
+                                    <input class="counter-input text-semibold" type="number" id="product-quantity" name="product-quantity" value="1" min="1" placeholder="1">
+                                    <button class="counter-plus" type="button" onClick="increment(event, this)">+</button>
+                                </div>
+                                <script type="text/javascript" src="scripts/counter.js"></script>    
+                                <div>
+                                    <p class="total-price text-semibold">$10.00</p>
+                                </div>
+                                <div class="delete-icon">
+                                    <span class="iconify-inline" data-icon="fluent:delete-24-filled" data-width="20" data-height="20"></span>
+                                <div/>
+                            </fieldset>
+                        </fieldset>
+        
+                        <div class="flex-row space-between">
+                            <fieldset id="discount-code-input">
+                                <div class="text-input bottom-border-dark">
+                                    <label class="text-semibold" for="discount-code">Coupon code</label>
+                                    <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
+                                    <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>    
+                                </div>
+                            </fieldset>
+        
+                            <div class="flex-row">
+                                <h5>Subtotal:</h5>
+                                <h5 class="text-bold">$100.00</h5>        
+                            </div>
+                        </div>
+                        <script type="text/javascript" src="scripts/price.js"></script>
+        
+                        <div class="button-wrap">
+                            <button id="checkout-btn" type="submit" variant="primary">Proceed to checkout</button>        
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Redirect for empty cart -->
+                <form id="empty-cart-form" action="product.html">
+                    <div class="dialog flex-column">
+                        <legend>
+                            <h3 class="form-heading">Your cart is empty</h3>
+                        </legend>
+                        <p>You currently have no items in your cart. <br>
+                            Let’s go find something special for you</p>
+                        <div>
+                            <button id="back-shopping-btn" type="submit" variant="primary">Back to shopping</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content flex-row space-between left-align">
+            <address class="flex-column">
+                <div class="flex-column">
+                    <h5>Address</h5>
+                    <p>
+                        2100 Lawrence Street<br/>
+                        Port Townsend, WA. 98368<br/>
+                        United States<br/>
+                        <br/>
+                        Monday - Friday, 12:00 - 5:00pm<br/>
+                        Saturdays & Sundays, Closed<br/>
+                        <br/>
+                    </p>
+                </div>
+                <div class="flex-column">
+                    <h5>Contact</h5>
+                    <p>
+                        <em>Phone: </em> <a href="tel:360 385 1471">360 385 1471</a><br/>
+                        <em>Email: </em> <a href="mailto:info@crossroads-music.com">info@crossroads-music.com</a>
+                    </p>
+                </div>
+            </address>
+
+            <div class="flex-column">
+                <h5>Company</h5>
+                <div>
+                    <a href="about.html">About Us</a><br>
+                    <a href="rentals.html">Rentals</a><br>
+                    <a href="repairs.html">Repairs</a><br>
+                    <a href="music-lessons.html">Music Lessons</a><br>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
 
-            <form id="cart-form" class="flex-column" action="checkout.html">
-                <legend>
-                    <h3 class="form-heading">Your cart</h3>
-                </legend>
-                
-                <fieldset class="cart-items">
-                    <fieldset class="cart-item white-surface align-center">
-                        <div class="main-product-img-container">
-                            <a href="product.html"><img class="main-product-img" src="images/products/guitars/OM28E/OM28E-Modern-Deluxe-Back.jpg"/></a>
-                        </div>
-                        <div>
-                            <p class="product-name left-align">C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup</p>
-                        </div>
-                        <div>
-                            <p class="product-price">$0.00</p> 
-                        </div>
-                        <div class="counter white-surface">
-                            <button class="counter-minus" type="button" onClick="decrement(event, this)">-</button>
-                            <input class="counter-input text-semibold" type="number" id="product-quantity" name="product-quantity" value="1" min="1" placeholder="1">
-                            <button class="counter-plus" type="button" onClick="increment(event, this)">+</button>
-                        </div>
-                        <script type="text/javascript" src="scripts/counter.js"></script>    
-                        <div>
-                            <p class="total-price text-semibold">$10.00</p>
-                        </div>
-                        <div class="delete-icon">
-                            <span class="iconify-inline" data-icon="fluent:delete-24-filled" data-width="20" data-height="20"></span>
-                        <div/>
-                    </fieldset>
-                </fieldset>
-
-                <div class="flex-row space-between">
-                    <fieldset>
-                        <div class="text-input bottom-border-dark">
-                            <label class="text-semibold" for="discount-code">Coupon code</label>
-                            <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
-                            <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>    
-                        </div>
-                    </fieldset>
-
-                    <div class="flex-row">
-                        <h5>Subtotal:</h5>
-                        <h5 class="text-bold">$100.00</h5>        
+            <div class="flex-column">
+                <h5>Get our newsletter</h5>
+                <form id="newsletter-subscribe">
+                    <div class="text-input bottom-border-light">
+                        <label for="subscribe-email">Email</label>
+                        <input type="email" placeholder="yourname@email.com" id="subscribe-email" name="subscribe-email">
+                        <input type="button" id="subscribe" name="subscribe" value="Subscribe"></input>        
                     </div>
-                </div>
-                <script type="text/javascript" src="scripts/price.js"></script>
+                </form>
+            </div>
 
-                <div class="button-wrap">
-                    <button id="checkout-btn" type="submit" variant="primary">Proceed to checkout</button>        
+            <div class="flex-column">
+                <h5>Stay in touch</h5>
+                <div class="flex-row">
+                    <a id="crossroads-facebook" class="social-link">
+                        <span class="iconify social-icon" data-icon="entypo-social:facebook" data-width="32" data-height="32"></span>
+                    </a>
+                    <a id="crossroads-instagram" class="social-link">
+                        <span class="iconify social-icon" data-icon="entypo-social:instagram" data-width="32" data-height="32"></span>
+                    </a>
+                    <a id="crossroads-youtube" class="social-link">
+                        <span class="iconify social-icon" data-icon="fa6-brands:youtube" data-width="32" data-height="32"></span>
+                    </a>
                 </div>
-
-            </form>
+            </div>
         </div>
-    </section>
-    <footer></footer>
+
+        <div class="copyright-div">
+            <label id="copyright-label" class="text-light">
+                © 2022 Crossroads Music All Rights Reserved
+            </label>
+        </div>
+    </footer>
 </body>
 </html>

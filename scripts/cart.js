@@ -1,19 +1,23 @@
 // Cart functions
 
+window.onload = function() {
+    loadCart();
+};
+
+
 // Load cart items
 function loadCart() {
+    if (itemQuantity > 0) {
+        showCart();
+    }
 }
 
-function addItem() {
-    // Display confirmation
-    const confirmation = document.getElementById('added-confirmation');
-    confirmation.style.display = "block";
-
-    // Remove the alert after 5 seconds
-    setTimeout(() => {
-        confirmation.style.display = 'none';
-    }, 5000);
-}
+function showCart() {
+    // Hide the empty cart
+    document.getElementById("empty-cart-form").style.display = "none";
+    // Show cart content
+    document.getElementById("cart-form").style.display = "block";
+};
 
 // var product = {
 //     name: "C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup",
