@@ -1,3 +1,3 @@
-// Session data
+// Global variables and data for the session
 
-var itemQuantity = 0;
+var totalCartQuantity = 1;

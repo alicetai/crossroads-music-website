@@ -2,12 +2,13 @@
 
 window.onload = function() {
     loadCart();
+    showCartBadge(totalCartQuantity);
 };
 
 
 // Load cart items
 function loadCart() {
-    if (itemQuantity > 0) {
+    if (totalCartQuantity > 0) {
         showCart();
     }
 }
