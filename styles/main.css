@@ -35,6 +35,11 @@ section{
 .slideshow-gallery{
     color: var(--color-beige);
     height: 36rem;
+    width: 100%;
+
+    /* gallery image */
+    background-image: url('../images/gallery/gallery-image-1.jpg');
+    background-size: cover;
 }
 
 img{
@@ -64,7 +69,3 @@ img{
     height: 5rem;
 }
 
-.logo{
-    font-family: var(--font-serif);
-    font-size: var(--text-xs);
-}

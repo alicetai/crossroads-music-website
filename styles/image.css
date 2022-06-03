@@ -1,3 +1,12 @@
+/* Styles for images */
+
+.logo img{
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: contain;
+    margin: var(--spacing-xs);
+}
+
 .product-img{
     border-radius: var(--border-rounder);
 }
@@ -14,5 +23,5 @@
 .cart-item .main-product-img, .main-product-img-container{
     width: 3.5rem;
     height: 4.5rem;
-    object-fit: fill;
+    object-fit: cover;
 }

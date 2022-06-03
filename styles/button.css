@@ -36,11 +36,6 @@ button[variant=green]:hover{
     margin: var(--spacing-lg) auto;
 }
 
-.search-btn{
-    color: var(--color-beige);
-    padding: 0px;
-}
-
 .input-btn{
     height: var(--button-size);
     /* padding: var(--spacing-xs) var(--spacing-xs); */
@@ -59,13 +54,23 @@ button[variant=green]:hover{
     background-color: var(--color-beige);
 }
 
-.delete-icon-button{
+.delete-icon-btn{
     padding: var(--spacing-md);
     border-radius: var(--border-rounder);
 }
 
-.delete-icon-button:hover{
+.delete-icon-btn:hover{
     color: var(--color-brown-dark);
     background-color: var(--color-beige);
+    cursor: pointer;
+}
+
+.search-btn{
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.search-btn:hover{
+    color: var(--color-tan);
     cursor: pointer;
 }

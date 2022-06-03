@@ -14,29 +14,33 @@
     <header>
         <!-- Introductory content -->
         <nav id="top-nav">
-            <a href="index.html" class="logo">Crossroads Music</a>
-            <form class="bottom-border-light">
-                <input type="text" placeholder="Search all products" name="search">
-                <button class="search-btn" type="submit">
-                    <span class="iconify" data-icon="fe:search" data-width="20" data-height="20"></span>
-                </button>
+            <a href="index.html" class="logo">
+                <img src="images/crossroads-logo.png">
+                <label>Crossroads Music</label>
+            </a>
+            <form id="search-form">
+                <div class="text-input bottom-border-light">
+                    <input type="text" placeholder="Search all products" id="search" name="search">
+                    <input type="button" id="submit-search" name="submit-search">
+                        <span class="search-btn iconify-inline" data-icon="fe:search" data-width="24" data-height="24"></span>
+                    </input>
+                </div>
             </form>
             <a class="header-nav-link" href="about.html">About </a>
             <a class="header-nav-link" href="rentals.html">Rentals</a>
             <a class="header-nav-link" href="repairs.html">Repairs</a>
             <a class="header-nav-link" href="music-lessons.html">Music Lessons</a>
             <a class="header-nav-link" href="contact.html">Contact</a>
-            <a class="header-nav-link" href="cart.html">
+            <a id="cart-btn" class="header-nav-link" href="cart.html">
                 <span class="iconify" data-icon="bi:cart" data-width="24" data-height="24"></span>
-                <span class="notification-badge">0</span>
+                <span id="cart-quantity" class="notification-badge">0</span>
             </a>
         </nav>
 
         <!-- Slideshow image gallery -->
         <div class="slideshow-gallery">
-            <img src="images/gallery/gallery-image-1.jpg">
             <h1 class="capitalize">Port Townsend’s finest hand-crafted instruments</h1>
-            <button>Shop now</button>
+            <!-- <button>Shop now</button> -->
         </div>
 
         <nav id="main-nav">

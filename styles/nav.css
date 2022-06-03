@@ -2,7 +2,7 @@ nav{
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
 }
 
 #top-nav{
@@ -11,18 +11,21 @@ nav{
     position: fixed;
     z-index: 1;
     padding: var(--spacing-xs) 0px;
+    justify-content: space-between;
 }
 
-#top-nav a{
-    color: var(--color-beige);
+#top-nav a, #top-nav input, #top-nav select, #top-nav textarea{
+    color: var(--color-white);
 }
 
 #top-nav a:hover{
     color: var(--color-tan);
 }
 
+/* navigation for instrument categories */
 #main-nav{
-    flex-wrap: wrap; /* go onto a new line if needed */
+    justify-content: center;
+    flex-wrap: wrap; /* menu items go onto a new line if needed */
     background-color: var(--color-tan);
 }
 
@@ -35,16 +38,36 @@ nav{
     font-weight: var(--weight-medium);
 }
 
+#cart-btn{
+    position: relative;
+}
+
 .notification-badge {
     width: 16px;
     height: 16px;
-    position: absolute;
-    top: 12px;
-    right: 18px;
     border-radius: var(--circle-border);
     background-color: var(--color-red);
-    display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 0.625rem;
+
+    /* fix position relative to cart icon */
+    position: absolute;
+    top: 8px;
+    right: 18px;
+}
+
+.logo {
+    margin: 0px var(--spacing-xs);
+}
+
+.logo, .notification-badge{
+    display: flex;
+    align-items: center;
+}
+
+.logo label{
+    font: var(--text-xs) var(--font-serif);
+    text-align: left;
+    letter-spacing: 0.02rem;
+    cursor: pointer;
 }
