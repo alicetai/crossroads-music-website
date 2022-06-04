@@ -82,3 +82,5 @@ function addItem() {
         confirmation.style.display = 'none';
     }, 5000);
 }
+
+export { loadProductNames, loadProductPrice, loadDescription, loadProductImages, loadSpecs}

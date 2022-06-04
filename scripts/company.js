@@ -9,6 +9,7 @@ const brands = [
 // Load all the brand logos
 function loadBrands() {
     var brandImages = document.getElementsByClassName('brand-img');
+
     for (let i=0; i < brandImages.length; i++) {
         brandImages[i].src = brands[i].src;
         brandImages[i].alt = brands[i].alt;

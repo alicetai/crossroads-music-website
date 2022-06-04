@@ -1,4 +1,5 @@
 // Cart functions
+import {loadProductNames, loadProductPrice, loadProductImages} from './product.js';
 
 window.onload = function() {
     loadCart();
@@ -41,7 +42,7 @@ function loadTotalPrice() {
     });
     var prices = document.getElementsByClassName('items-price');
     for (const price of prices) {
-        price.innerHTML = dollarUS.format(totalPrice(product.price, totalCartQuantity))
+        price.innerHTML = dollarUS.format(totalPrice(699, totalCartQuantity))
     }
 }
 
