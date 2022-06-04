@@ -5,4 +5,5 @@ window.onload = function() {
     loadProductImages();
     loadSpecs();
     loadBrands();
+    showCartBadge(totalCartQuantity);
 };

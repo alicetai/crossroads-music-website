@@ -21,10 +21,17 @@
     position: fixed;
     width: var(--max-desktop-width);
     text-align: left;
+    z-index: 100;
 
     /* Center the element */
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.popup-container{
+    /* Shift the popup element upwards */
+    top: -50px;
+    position: relative;
 }
 
 .banner{

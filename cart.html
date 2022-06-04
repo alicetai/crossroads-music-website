@@ -62,17 +62,20 @@
     <!-- Cart content -->
     <main class="main-content">
 
-        <!-- Confirmation alert for discount code -->
-        <div id="discount-confirmation" class="popup alert banner success shadow-light">
-            <div class="flex-row align-center space-between">
-                <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
-            </div>
-        </div>
-
         <section id="cart">
             <div class="section-content">
     
                 <form id="cart-form"  action="checkout.html">
+                    
+                    <!-- Confirmation alert for discount code -->
+                    <div class="popup-container">
+                        <div id="discount-confirmation" class="popup alert banner success shadow-light">
+                            <div class="flex-row align-center space-between">
+                                <p id="discount-confirmation-text" class="confirmation-text">Coupon code successfully applied!</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="flex-column">
                         <legend>
                             <h3 class="form-heading">Your cart</h3>
