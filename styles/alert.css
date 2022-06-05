@@ -13,6 +13,10 @@
 }
 
 .error{
+    background-color: var(--color-red);
+}
+
+.error{
     background-color: var(--color-green);
 }
 

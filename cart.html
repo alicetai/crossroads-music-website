@@ -98,7 +98,7 @@
                                     <button class="counter-plus" type="button" onclick="increment(event, this)">+</button>
                                 </div>
                                 <div>
-                                    <p class="items-price text-semibold"></p>
+                                    <p id="cart-total" class="text-semibold"></p>
                                 </div>
                                 <div class="delete-icon">
                                     <span class="iconify-inline" data-icon="fluent:delete-24-filled" data-width="20" data-height="20"></span>
@@ -111,7 +111,7 @@
                                 <div class="text-input bottom-border-dark">
                                     <label class="text-semibold" for="discount-code">Coupon code</label>
                                     <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
-                                    <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>    
+                                    <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="submitCode()"></input>    
                                 </div>
                             </fieldset>
         
@@ -120,6 +120,7 @@
                                 <h5 class="text-bold">$100.00</h5>        
                             </div>
                         </div>
+                        <script type="text/javascript" src="scripts/discount.js"></script>
                         <script type="text/javascript" src="scripts/price.js"></script>
         
                         <div class="button-wrap">

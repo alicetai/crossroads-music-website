@@ -19,7 +19,7 @@ td{
 }
 
 .price-row{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     padding: var(--spacing-xs);

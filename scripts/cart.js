@@ -51,6 +51,6 @@ function loadDelete() {
 }
 
 // Update the display of the item total
-function updateItemTotal() {
-    //
-}
+// function updateItemTotal() {
+//     //
+// }

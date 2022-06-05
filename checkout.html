@@ -255,35 +255,35 @@
                                         <ul class="input-list">
                                             <li class="text-input bottom-border-light">
                                                 <label for="first-name">First Name</label>  
-                                                <input type="text" id="first-name" name="first-name" placeholder="Jane" required>        
+                                                <input type="text" id="billing-first-name" name="billing-first-name" placeholder="Jane" required>        
                                             </li>
                                             <li class="text-input bottom-border-light">
                                                 <label for="last-name">Last Name</label>  
-                                                <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
+                                                <input type="text" id="billing-last-name" name="billing-last-name" placeholder="Smith" required>        
                                             </li>
                                             <li class="text-input bottom-border-light">
                                                 <label for="country">Country/Region</label>
-                                                <input type="text" id="country" name="country" placeholder="United States" required>        
+                                                <input type="text" id="billing-country" name="billing-country" placeholder="United States" required>        
                                             </li>
                                             <li class="text-input bottom-border-light">
                                                 <label for="street-address">Street address</label>
-                                                <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
+                                                <input type="text" id="billing-street-address" name="billing-street-address" placeholder="2100 Lawrence Street" required>        
                                             </li>
                                             <li class="text-input bottom-border-light">
                                                 <label for="city">City</label>
-                                                <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
+                                                <input type="text" id="billing-city" name="billing-city" placeholder="Port Townsend" required>        
                                             </li>
                                             <li class="text-input bottom-border-light">
                                                 <label for="state">State</label>
-                                                <input type="text" id="state" name="state" placeholder="Washington" required>        
+                                                <input type="text" id="billing-state" name="billing-state" placeholder="Washington" required>        
                                             </li>
                                             <li class="text-input bottom-border-light">
                                                 <label for="postcode">Postcode</label>
-                                                <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
+                                                <input type="number" id="billing-postcode" name="billing-postcode" placeholder="99999" required>        
                                             </li>
                                             <li class="text-input bottom-border-light">
                                                 <label for="shipping-phone">Phone</label> 
-                                                <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
+                                                <input type="tel" id="billing-phone" name="billing-billing-phone" placeholder="(205) 555-5555" required>        
                                             </li>
                                         </ul>
                                     </fieldset>
@@ -319,10 +319,26 @@
                                     </tr>
                                 </table>
         
-                                <div id="price-summary">
-                                    <div class="price-row">
-                                        <p class="text-medium">Subtotal:</p>
-                                        <p class="items-price text-bold">$100.00</p>        
+                                <div id="total-price-summary">
+                                    <div id="cart-total-row" class="price-row">
+                                        <p class="text-medium">Subtotal</p>
+                                        <p id="cart-total" class="text-bold">$100.00</p>        
+                                    </div>
+                                    <div id="shipping-total-row" class="price-row">
+                                        <p class="text-medium">Shipping</p>
+                                        <p id="shipping-total" class="text-bold"></p>        
+                                    </div>
+                                    <div id="shipping-total-row" class="price-row">
+                                        <p class="text-medium">Tax</p>
+                                        <p id="tax-total" class="text-bold"></p>        
+                                    </div>
+                                    <div id="discount-row" class="price-row">
+                                        <p class="text-medium">Discount</p>
+                                        <p id="discount" class="text-bold"></p>        
+                                    </div>
+                                    <div id="total-row" class="price-row">
+                                        <h5>Total</h5>
+                                        <h5 id="total-price" class="text-bold">$100.00</h5>        
                                     </div>
                                 </div>
         
@@ -333,10 +349,13 @@
                                 <div class="text-input bottom-border-dark">
                                     <label for="discount-code">Coupon code</label>
                                     <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
-                                    <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="applyCode()"></input>        
+                                    <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="submitCode()"></input>        
                                 </div>
                                 <br/>
+                                <p id="discount-code-error" class="error-text">Please enter a valid coupon code</p>
+
                             </fieldset>
+                            <script type="text/javascript" src="scripts/discount.js"></script>
                             <script type="text/javascript" src="scripts/price.js"></script>
                         </div>
                     </div>

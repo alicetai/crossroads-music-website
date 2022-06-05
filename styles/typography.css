@@ -78,6 +78,12 @@ em, b, .text-bold{
     margin: var(--spacing-sm);
 }
 
+.error-text {
+    display: none;
+    color: var(--color-red);
+    text-align: center;
+}
+
 .helper-text{
     font-size: var(--text-xxs);
 }

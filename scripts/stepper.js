@@ -15,7 +15,9 @@ function showStep(n) {
 // Display the next step of the form
 function toggleStep(n) {
     var steps = document.getElementsByClassName("form-step");
-    // if (n == 1 && !validateForm()) return false;
+    
+    // if (!validateForm()) return false;
+
     steps[currentStep].style.display = "none";
     currentStep = n;
 
@@ -28,6 +30,6 @@ function toggleStep(n) {
     showStep(currentStep);
 }
 
-function validateForm() {
-    return true;
-}
+// function validateForm() {
+//     return true;
+// }
