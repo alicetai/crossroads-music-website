@@ -103,15 +103,17 @@
                         <div class="form-step checkout-details">
                             <h4>Contact details</h4>
         
-                            <fieldset class="input-list">
-                                <div class="text-input bottom-border-light">
-                                    <label for="email">Email address</label>  
-                                    <input type="text" id="email" name="email" placeholder="yourname@email.com" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="phone">Phone</label> 
-                                    <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555" required>        
-                                </div>
+                            <fieldset id="contact-details">
+                                <ul class="input-list">
+                                    <li class="text-input bottom-border-light">
+                                        <label for="email">Email address</label>  
+                                        <input type="text" id="email" name="email" placeholder="yourname@email.com" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="phone">Phone</label> 
+                                        <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555" required>        
+                                    </li>
+                                </ul>
                             </fieldset>
         
                             <fieldset id="delivery-method">
@@ -137,39 +139,42 @@
                         <div class="form-step shipping-details">
                             <h4>Shipping address</h4>
         
-                            <fieldset class="input-list">
-                                <div class="text-input bottom-border-light">
-                                    <label for="first-name">First Name</label>  
-                                    <input type="text" id="first-name" name="first-name" placeholder="John" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="last-name">Last Name</label>  
-                                    <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="country">Country/Region</label>
-                                    <input type="text" id="country" name="country" placeholder="United States" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="street-address">Street address</label>
-                                    <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="city">City</label>
-                                    <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="state">State</label>
-                                    <input type="text" id="state" name="state" placeholder="Washington" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="postcode">Postcode</label>
-                                    <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="shipping-phone">Phone</label> 
-                                    <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
-                                </div>
+                            <fieldset id="shipping-address">
+                                <ul class="input-list">
+                                    <li class="text-input bottom-border-light">
+                                        <label for="first-name">First Name</label>  
+                                        <input type="text" id="first-name" name="first-name" placeholder="John" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="last-name">Last Name</label>  
+                                        <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="country">Country/Region</label>
+                                        <input type="text" id="country" name="country" placeholder="United States" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="street-address">Street address</label>
+                                        <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" placeholder="Washington" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="postcode">Postcode</label>
+                                        <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="shipping-phone">Phone</label> 
+                                        <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
+                                    </li>
+    
+                                </ul>
                             </fieldset>
         
                             <fieldset id="shipping-method">
@@ -195,23 +200,26 @@
                         <div class="form-step card-details">
                             <h4>Card details</h4>
         
-                            <fieldset class="input-list">
-                                <div class="text-input bottom-border-light">
-                                    <label for="card-number">Card number</label>  
-                                    <input type="number" id="card-number" name="card-number" placeholder="5555 5555 5555 4444" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="card-name">Card name</label> 
-                                    <input type="text" id="card-name" name="card-name" placeholder="John Smith" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="card-expiration-date">Expiration date</label> 
-                                    <input type="number" id="card-expiration-date" name="card-expiration-date" placeholder="MM/YY" required>        
-                                </div>
-                                <div class="text-input bottom-border-light">
-                                    <label for="card-cvv">Security code</label> 
-                                    <input type="number" id="card-cvv" name="card-cvv" placeholder="123" required>        
-                                </div>
+                            <fieldset>
+                                <ul class="input-list">
+                                    <li class="text-input bottom-border-light">
+                                        <label for="card-number">Card number</label>  
+                                        <input type="number" id="card-number" name="card-number" placeholder="5555 5555 5555 4444" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="card-name">Card name</label> 
+                                        <input type="text" id="card-name" name="card-name" placeholder="John Smith" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="card-expiration-date">Expiration date</label> 
+                                        <input type="number" id="card-expiration-date" name="card-expiration-date" placeholder="MM/YY" required>        
+                                    </li>
+                                    <li class="text-input bottom-border-light">
+                                        <label for="card-cvv">Security code</label> 
+                                        <input type="number" id="card-cvv" name="card-cvv" placeholder="123" required>        
+                                    </li>    
+                                </ul>
+                                <br>
                                 <p class="helper-text">All transactions are secure and encrypted. View our <a class="text-medium underlined">privacy policy</a> here.</p>
                             </fieldset>
         
@@ -229,53 +237,55 @@
                                 </ul>
                             </fieldset>
     
-                            <fieldset id="billing-address">
+                            <fieldset id="billing-address-option">
                                 <h5 class="form-heading">Billing address</h5>
                                 <ul class="input-list">
                                     <li class="checkbox-option white-surface">
-                                        <input type="checkbox" id="shipping-address" name="shipping-address" value="shipping-address">
-                                        <label for="shipping-address">Same as shipping address</label>    
+                                        <input type="checkbox" id="use-shipping-address" name="use-shipping-address" value="use-shipping-address">
+                                        <label for="use-shipping-address">Same as shipping address</label>    
                                     </li>
                                     <li class="checkbox-option white-surface">
-                                        <input type="checkbox" id="billing-address" name="billing-address" value="billing-address">
-                                        <label for="billing-address">Use a different billing address</label>
+                                        <input type="checkbox" id="use-billing-address" name="use-billing-address" value="use-billing-address">
+                                        <label for="use-billing-address">Use a different billing address</label>
                                     </li>
                                 </ul>
                                 <br/><br/>
-                                <div id="different-billing-address">
-                                    <fieldset class="input-list">
-                                        <div class="text-input bottom-border-light">
-                                            <label for="first-name">First Name</label>  
-                                            <input type="text" id="first-name" name="first-name" placeholder="Jane" required>        
-                                        </div>
-                                        <div class="text-input bottom-border-light">
-                                            <label for="last-name">Last Name</label>  
-                                            <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
-                                        </div>
-                                        <div class="text-input bottom-border-light">
-                                            <label for="country">Country/Region</label>
-                                            <input type="text" id="country" name="country" placeholder="United States" required>        
-                                        </div>
-                                        <div class="text-input bottom-border-light">
-                                            <label for="street-address">Street address</label>
-                                            <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
-                                        </div>
-                                        <div class="text-input bottom-border-light">
-                                            <label for="city">City</label>
-                                            <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
-                                        </div>
-                                        <div class="text-input bottom-border-light">
-                                            <label for="state">State</label>
-                                            <input type="text" id="state" name="state" placeholder="Washington" required>        
-                                        </div>
-                                        <div class="text-input bottom-border-light">
-                                            <label for="postcode">Postcode</label>
-                                            <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
-                                        </div>
-                                        <div class="text-input bottom-border-light">
-                                            <label for="shipping-phone">Phone</label> 
-                                            <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
-                                        </div>
+                                <div id="billing-address">
+                                    <fieldset>
+                                        <ul class="input-list">
+                                            <li class="text-input bottom-border-light">
+                                                <label for="first-name">First Name</label>  
+                                                <input type="text" id="first-name" name="first-name" placeholder="Jane" required>        
+                                            </li>
+                                            <li class="text-input bottom-border-light">
+                                                <label for="last-name">Last Name</label>  
+                                                <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
+                                            </li>
+                                            <li class="text-input bottom-border-light">
+                                                <label for="country">Country/Region</label>
+                                                <input type="text" id="country" name="country" placeholder="United States" required>        
+                                            </li>
+                                            <li class="text-input bottom-border-light">
+                                                <label for="street-address">Street address</label>
+                                                <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
+                                            </li>
+                                            <li class="text-input bottom-border-light">
+                                                <label for="city">City</label>
+                                                <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
+                                            </li>
+                                            <li class="text-input bottom-border-light">
+                                                <label for="state">State</label>
+                                                <input type="text" id="state" name="state" placeholder="Washington" required>        
+                                            </li>
+                                            <li class="text-input bottom-border-light">
+                                                <label for="postcode">Postcode</label>
+                                                <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
+                                            </li>
+                                            <li class="text-input bottom-border-light">
+                                                <label for="shipping-phone">Phone</label> 
+                                                <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
+                                            </li>
+                                        </ul>
                                     </fieldset>
                                 </div>
                             </fieldset>
