@@ -1,10 +1,18 @@
+import {showPriceRow} from './checkout.js';
+
 const NUM_DIGITS = 9;
 const DISCOUNT = 0.2;
 
 const count = n => String((Math.abs(n))).length;
 
-function submitCode() {
-    var code = document.getElementById('discount-code').value;
+// Event listener for discount code submission
+var discountSubmit = document.getElementById("submit-discount-code");
+discountSubmit.addEventListener("click", function(e) {
+    e.preventDefault();
+    submitCode(document.getElementById("discount-code").value);
+})
+
+function submitCode(code) {
     var error = document.getElementById("discount-code-error");
 
     if (!code || !validateCode(code)) {
@@ -25,7 +33,7 @@ function submitCode() {
         }, 3000);
 
         // applyDiscount(DISCOUNT);
-        displayDiscount(DISCOUNT);
+        displayDiscount();
     }
 }
 
@@ -40,10 +48,10 @@ function validateCode(code) {
 }
 
 // Make the discount appear in order summary section
-function displayDiscount(discount) {
+function displayDiscount() {
     showPriceRow(document.getElementById("discount-row"));
     var discountText = document.getElementById("discount")
-    discountText.innerHTML = dollarUS.format(calcDiscount(100, discount));
+    discountText.innerHTML = dollarUS.format(calcDiscount(100, DISCOUNT));
 }
 
 // function applyDiscount(discount) {
@@ -52,3 +60,5 @@ function displayDiscount(discount) {
 
 //     updateCartSubtotal(discounted);
 // }
+
+export {displayDiscount};

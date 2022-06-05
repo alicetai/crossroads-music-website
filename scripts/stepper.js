@@ -16,7 +16,9 @@ function showStep(n) {
 function toggleStep(n) {
     var steps = document.getElementsByClassName("form-step");
     
-    // if (!validateForm()) return false;
+    // Prevent the user from going forward in the stepper bar
+
+    
 
     steps[currentStep].style.display = "none";
     currentStep = n;

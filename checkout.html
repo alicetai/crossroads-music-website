@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <script type="text/javascript" src="scripts/session.js"></script>
-    <script type="text/javascript" src="scripts/checkout.js"></script>
+    <script type="module" src="scripts/checkout.js"></script>
+    <script type="module" src="scripts/discount.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <title>Checkout</title>
 </head>
@@ -73,15 +74,15 @@
             <!-- Steps indicating form progress -->
             <div class="stepper-wrap">
                 <div class="stepper">
-                    <div class="step">
+                    <div class="step" onclick="toggleStep(0)">
                         <span class="step-number"><p>1</p></span>
                         <label class="step-label">Information</label>
                     </div>
-                    <div class="step">
+                    <div class="step" onclick="toggleStep(1)">
                         <span class="step-number"><p>2</p></span>
                         <label class="step-label">Shipping</label>
                     </div>
-                    <div class="step">
+                    <div class="step" onclick="toggleStep(2)">
                         <span class="step-number"><p>3</p></span>
                         <label class="step-label">Payment</label>
                     </div>
@@ -303,18 +304,16 @@
                             <fieldset>
                                 <table class="order-table">
                                     <tr class="order-item-row">
-                                        <td>
-                                            <p>2x</p>
+                                        <td class="item-quantity">
+                                            <p></p>
                                         </td>                                
-                                        <td>
+                                        <td class="item-name">
                                             <p>
                                                 C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup
                                             </p>
                                         <td>
-                                        <td>
-                                            <p class="product-price text-bold">
-                                                $100.00
-                                            </p>
+                                        <td class="item-price">
+                                            <p class="text-bold"></p>
                                         </td>
                                     </tr>
                                 </table>
@@ -349,13 +348,12 @@
                                 <div class="text-input bottom-border-dark">
                                     <label for="discount-code">Coupon code</label>
                                     <input type="number" placeholder="123 456 789" id="discount-code" name="discount-code">
-                                    <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply" onclick="submitCode()"></input>        
+                                    <input type="button" id="submit-discount-code" name="submit-discount-code" value="Apply"></input>        
                                 </div>
                                 <br/>
                                 <p id="discount-code-error" class="error-text">Please enter a valid coupon code</p>
 
                             </fieldset>
-                            <script type="text/javascript" src="scripts/discount.js"></script>
                             <script type="text/javascript" src="scripts/price.js"></script>
                         </div>
                     </div>
