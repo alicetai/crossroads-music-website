@@ -7,3 +7,7 @@ window.onload = function() {
 function showPriceRow(row) {
     row.style.display = "flex";
 }
+
+function removePriceRow(row){
+    row.style.display = "none";
+}

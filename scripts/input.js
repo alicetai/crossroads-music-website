@@ -1,14 +1,27 @@
-// Toggle if billing address input is displayed
+// Event listeners for billing address input
 
 var useShippingAddress = document.getElementById("use-shipping-address").parentElement;
-var useBillingAddress = document.getElementById("use-billing-address").parentElement;
-
 useShippingAddress.addEventListener("click", function() {
     document.getElementById("billing-address").style.display = "none";
 });
 
+var useBillingAddress = document.getElementById("use-billing-address").parentElement;
 useBillingAddress.addEventListener("click", function() {
     document.getElementById("billing-address").style.display = "block";
+});
+
+
+// Event listeners for express shipping option
+
+var standardShipping = document.getElementById("standard-shipping").parentElement;
+standardShipping.addEventListener("click", function() {
+    removeShippingPrice();
+});
+
+var expressShipping = document.getElementById("express-shipping").parentElement;
+expressShipping.addEventListener("click", function() {
+    
+    addShippingPrice();
 });
 
 
