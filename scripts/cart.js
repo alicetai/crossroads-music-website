@@ -35,18 +35,6 @@ function showCart() {
 //     image: "images/products/guitars/OM28E/OM28E-Modern-Deluxe-Main.jpg",
 // }
 
-function loadTotalPrice() {
-    // Format price in USD
-    let dollarUS = Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-    });
-    var prices = document.getElementsByClassName('items-price');
-    for (const price of prices) {
-        price.innerHTML = dollarUS.format(totalPrice(699, totalCartQuantity))
-    }
-}
-
 // Add event listeners to delete button
 function loadDelete() {
     let deleteButton = document.getElementsByClassName("delete-icon");
@@ -62,4 +50,9 @@ function loadDelete() {
             }, 200); // don't remove it too quickly
         });
     };
+}
+
+// Update the display of the item total
+function updateItemTotal() {
+    //
 }

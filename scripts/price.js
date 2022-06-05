@@ -1,5 +1,15 @@
-function displayPrice() {
-    
+// Formatted price in USD
+const dollarUS = Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+});
+
+function loadTotalPrice() {
+
+    var prices = document.getElementsByClassName('items-price');
+    for (const price of prices) {
+        price.innerHTML = dollarUS.format(totalPrice(699, totalCartQuantity))
+    }
 }
 
 function itemSum(numbers) {

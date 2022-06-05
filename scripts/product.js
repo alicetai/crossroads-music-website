@@ -27,11 +27,6 @@ function loadProductNames() {
 }
 
 function loadProductPrice(){
-    // Format price in USD
-    let dollarUS = Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-    });
     var productPrice = document.getElementsByClassName('product-price');
     for (const price of productPrice) {
         price.innerHTML = dollarUS.format(product.price);
