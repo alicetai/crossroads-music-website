@@ -31,6 +31,10 @@
     border-bottom: var(--border-medium) solid var(--color-beige-dark);
 }
 
+.bottom-border-tan{
+    border-bottom: var(--border-medium) solid var(--color-tan); /* hover color */
+}
+
 .bottom-border-dark{
     border-bottom: var(--border-medium) solid var(--color-brown);
 }

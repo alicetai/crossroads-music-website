@@ -41,12 +41,10 @@ function loadDelete() {
 
     for (var button of deleteButton) {
         button.addEventListener("click", function() {
-            console.log("removing...");
             setTimeout(() => {
                 // Remove the whole line
-                this.parentElement.remove();
                 this.parentElement.style.display = "none";
-        
+                this.parentElement.remove();
             }, 200); // don't remove it too quickly
         });
     };
