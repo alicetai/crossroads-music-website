@@ -17,6 +17,7 @@ function loadCart() {
         loadProductImages();
         loadProductPrice();
         loadTotalPrice();
+        loadDelete();
     }
 }
 
@@ -46,10 +47,19 @@ function loadTotalPrice() {
     }
 }
 
-function deleteItem(e, current) {
-    // Remove the element's HTML from the document
-    setTimeout(() => {
-        // current.parentElement.style.display = "none"
-        current.parentElement.remove();
-    }, 200); // don't remove it too quickly
+// Add event listeners to delete button
+function loadDelete() {
+    let deleteButton = document.getElementsByClassName("delete-icon");
+
+    for (var button of deleteButton) {
+        button.addEventListener("click", function() {
+            console.log("removing...");
+            setTimeout(() => {
+                // Remove the whole line
+                this.parentElement.remove();
+                this.parentElement.style.display = "none";
+        
+            }, 200); // don't remove it too quickly
+        });
+    };
 }
