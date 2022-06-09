@@ -1,5 +1,7 @@
+import {showPriceRow, removePriceRow} from "./checkout.js"
+
 // Formatted price in USD
-const dollarUS = Intl.NumberFormat("en-US", {
+export const dollarUS = Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
 });
@@ -40,3 +42,5 @@ function removeShippingPrice() {
 // function updateCartSubtotal(newSubtotal) {
 //     document.getElementById("cart-subtotal-text").innerHTML = dollarUS.format(newSubtotal);
 // }
+
+export {loadTotalPrice, totalPrice, itemSum, removeShippingPrice, addShippingPrice};

@@ -74,15 +74,15 @@
             <!-- Steps indicating form progress -->
             <div class="stepper-wrap">
                 <div class="stepper">
-                    <div class="step" onclick="toggleStep(0)">
+                    <div class="step">
                         <span class="step-number"><p>1</p></span>
                         <label class="step-label">Information</label>
                     </div>
-                    <div class="step" onclick="toggleStep(1)">
+                    <div class="step">
                         <span class="step-number"><p>2</p></span>
                         <label class="step-label">Shipping</label>
                     </div>
-                    <div class="step" onclick="toggleStep(2)">
+                    <div class="step">
                         <span class="step-number"><p>3</p></span>
                         <label class="step-label">Payment</label>
                     </div>
@@ -94,7 +94,7 @@
         <section id="checkout">
             <div class="section-content">
     
-                <form id="checkout-form" class="checkout-flex" action="confirmation.html">
+                <form id="checkout-form" class="checkout-flex" action="confirmation.html" >
                     
                     <script type="text/javascript" src="scripts/stepper.js"></script>
     
@@ -107,13 +107,15 @@
                             <fieldset id="contact-details">
                                 <ul class="input-list">
                                     <li class="text-input bottom-border-light">
-                                        <label for="email">Email address</label>  
-                                        <input type="text" id="email" name="email" placeholder="yourname@email.com" required>        
+                                        <label for="contact-email">Email address</label>  
+                                        <input type="text" id="contact-email" name="contact-email" placeholder="yourname@email.com" required>        
                                     </li>
+                                    <p id="contact-email-error" class="error-text">Please enter a valid email</p>
                                     <li class="text-input bottom-border-light">
-                                        <label for="phone">Phone</label> 
-                                        <input type="tel" id="phone" name="phone" placeholder="(205) 555-5555" required>        
+                                        <label for="contact-phone">Phone</label> 
+                                        <input type="tel" id="contact-phone" name="contact-phone" placeholder="(205) 555-5555" required>        
                                     </li>
+                                    <p id="contact-phone-error" class="error-text">Please enter a valid phone number</p>
                                 </ul>
                             </fieldset>
         
@@ -132,7 +134,7 @@
                             </fieldset>
         
                             <div>
-                                <button id="continue-to-shipping-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(1)">Continue to shipping</button>
+                                <button id="continue-to-shipping-btn" class="next-btn" type="submit" variant="primary">Continue to shipping</button>
                             </div>
                         </div>
     
@@ -146,35 +148,49 @@
                                         <label for="first-name">First Name</label>  
                                         <input type="text" id="first-name" name="first-name" placeholder="John" required>        
                                     </li>
+                                    <p id="first-name-error" class="error-text">Please enter your name</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="last-name">Last Name</label>  
                                         <input type="text" id="last-name" name="last-name" placeholder="Smith" required>        
                                     </li>
+                                    <p id="last-name-error" class="error-text">Please enter your name</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="country">Country/Region</label>
                                         <input type="text" id="country" name="country" placeholder="United States" required>        
                                     </li>
+                                    <p id="country-error" class="error-text">Please enter a valid country</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="street-address">Street address</label>
                                         <input type="text" id="street-address" name="street-address" placeholder="2100 Lawrence Street" required>        
                                     </li>
+                                    <p id="street-address-error" class="error-text">Please enter your street address</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="city">City</label>
                                         <input type="text" id="city" name="city" placeholder="Port Townsend" required>        
                                     </li>
+                                    <p id="city-error" class="error-text">Please enter a valid city</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="state">State</label>
                                         <input type="text" id="state" name="state" placeholder="Washington" required>        
                                     </li>
+                                    <p id="state-error" class="error-text">Please enter a valid state</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="postcode">Postcode</label>
                                         <input type="number" id="postcode" name="postcode" placeholder="99999" required>        
                                     </li>
+                                    <p id="postcode-error" class="error-text">Please enter a valid postcode</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="shipping-phone">Phone</label> 
                                         <input type="tel" id="shipping-phone" name="shipping-phone" placeholder="(205) 555-5555" required>        
                                     </li>
-    
+                                    <p id="shipping-phone-error" class="error-text">Please enter a valid phone number</p>
                                 </ul>
                             </fieldset>
         
@@ -193,7 +209,7 @@
                             </fieldset>
         
                             <div>
-                                <button id="continue-to-payment-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(2)">Continue to payment</button>
+                                <button id="continue-to-payment-btn" class="next-btn" type="submit" variant="primary">Continue to payment</button>
                             </div>                    
                         </div>
     
@@ -354,11 +370,12 @@
                                 <p id="discount-code-error" class="error-text">Please enter a valid coupon code</p>
 
                             </fieldset>
-                            <script type="text/javascript" src="scripts/price.js"></script>
+                            <script type="module" src="scripts/price.js"></script>
                         </div>
                     </div>
                 </form>
-                <script type="text/javascript" src="scripts/input.js"></script>
+                <script type="text/javascript" src="scripts/validation.js"></script>
+                <script type="module" src="scripts/input.js"></script>
             </div>
         </section>
     </main>

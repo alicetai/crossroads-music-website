@@ -1,4 +1,6 @@
 import {displayDiscount} from './discount.js';
+import {dollarUS, totalPrice} from './price.js';
+
 
 // Get the URL params
 

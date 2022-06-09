@@ -1,3 +1,5 @@
+import { addShippingPrice, removeShippingPrice } from "./price.js";
+
 // Event listeners for billing address input
 
 var useShippingAddress = document.getElementById("use-shipping-address").parentElement;
@@ -71,3 +73,45 @@ function selectOne(selected, list) {
     checkBoxValue.checked = true;
     // No ability to uncheck - everything in the form is required
 }
+
+
+document.getElementById("continue-to-shipping-btn").addEventListener("click", submitContactDetails);
+
+function submitContactDetails() {
+    var email = document.getElementById("contact-email").value;
+    var phone = document.getElementById("contact-phone").value;
+
+    if (validateContactDetails(email, phone)) {
+        // Save contact details
+
+        // Go to the next step
+        toggleStep(currentStep + 1);
+    }
+}
+
+document.getElementById("continue-to-payment-btn").addEventListener("click", submitShippingDetails);
+
+function submitShippingDetails() {
+    var firstName = document.getElementById("first-name").value;
+    var lastName = document.getElementById("last-name").value;
+    var country = document.getElementById("country").value;
+    var street = document.getElementById("street-address").value;
+    var city = document.getElementById("city").value;
+    var state = document.getElementById("state").value;
+    var postcode = document.getElementById("postcode").value;
+    var phone = document.getElementById("shipping-phone").value;
+
+
+    if (validateShippingDetails(firstName, lastName, country, street, city, state,
+        postcode, phone)) {
+        
+        // Go to the next step
+        toggleStep(currentStep + 1);
+    }
+}
+
+// function saveDetails() {
+//     orderDetails['contactEmail'] = email;
+// }
+
+export {submitContactDetails, submitShippingDetails}

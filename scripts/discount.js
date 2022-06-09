@@ -1,9 +1,7 @@
 import {showPriceRow} from './checkout.js';
+import {dollarUS} from './price.js';
 
-const NUM_DIGITS = 9;
 const DISCOUNT = 0.2;
-
-const count = n => String((Math.abs(n))).length;
 
 // Event listener for discount code submission
 var discountSubmit = document.getElementById("submit-discount-code");
@@ -18,6 +16,7 @@ function submitCode(code) {
     if (!code || !validateCode(code)) {
         // Display the error text
         error.style.display = "block";
+        document.getElementById("discount-code").removeAttribute("required")
     }
     else {
         // Get rid of the error text if it's still there
@@ -37,14 +36,8 @@ function submitCode(code) {
     }
 }
 
-
 function calcDiscount(original, discount) {
     return original * (1.0 - discount);
-}
-
-// Check that the coupon code is valid (9 digits)
-function validateCode(code) {
-    return count(code) === NUM_DIGITS;
 }
 
 // Make the discount appear in order summary section
