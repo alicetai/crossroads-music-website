@@ -28,7 +28,6 @@ nav, #top-nav > div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: var(--spacing-xs);
 }
 
 /* navigation for instrument categories */
@@ -42,9 +41,17 @@ nav, #top-nav > div {
     background-color: var(--color-beige-dark);
 }
 
+#hamburger-nav{
+    display: none;
+}
+
 .nav-link{
     padding: var(--spacing-md) var(--spacing-lg);
     font-weight: var(--weight-medium);
+}
+
+.nav-icon{
+    padding: var(--spacing-sm);
 }
 
 #cart-btn{
@@ -68,8 +75,8 @@ nav, #top-nav > div {
 
     /* fix position relative to cart icon */
     position: absolute;
-    top: 8px;
-    right: 18px;
+    top: 6px;
+    right: 6px;
 }
 
 .logo {

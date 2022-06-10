@@ -135,7 +135,7 @@ fieldset{
 
 .text-input label{
     font-weight: var(--weight-medium);
-    width: 180px;
+    max-width: 180px;
 }
 
 #newsletter-subscribe .text-input, #discount-code-input .text-input{

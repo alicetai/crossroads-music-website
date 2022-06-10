@@ -20,6 +20,18 @@ footer a, footer input, footer select, footer textarea{
     color: var(--color-beige);
 }
 
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xl);
+}
+
 .copyright-div{
     margin-top: var(--spacing-xxl);
+}
+
+@media screen and (max-width: 500px) {
+    .footer-content{
+        flex-direction: column;
+    }
 }

@@ -4,12 +4,11 @@
 @import "colors.css";
 @import "layout.css";
 @import "typography.css";
-@import "responsive.css";
 @import "animation.css";
 @import "effects.css";
 
 /* Import component styles */
-@import "header.css";
+@import "nav.css";
 @import "footer.css";
 @import "button.css";
 @import "input.css";
@@ -23,20 +22,6 @@
 @import "stepper.css";
 @import "dialog.css";
 @import "icon.css";
+@import "section.css";
 
-
-header, section{
-    text-align: center;
-}
-
-section{
-    padding: var(--spacing-xxl) 0px;
-}
-
-.section-content{
-    max-width: var(--max-desktop-width);
-    margin: auto; /* center aligns content */
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-xl);
-}
+@import "responsive.css";

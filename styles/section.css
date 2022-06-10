@@ -1,0 +1,19 @@
+header, section{
+    text-align: center;
+}
+
+section{
+    padding: var(--spacing-xxl) 0px;
+}
+
+.main-content{
+    margin-top: 120px; /* margin for header space */
+}
+
+.section-content{
+    max-width: var(--max-desktop-width);
+    margin: auto; /* center aligns content */
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
