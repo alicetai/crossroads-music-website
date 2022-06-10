@@ -12,7 +12,7 @@
 <body>
     <header class="top-fixed">
         <!-- Introductory content -->
-        <nav id="top-nav">
+        <nav id="top-nav" class="shadow-dark">
             <div>
                 <a href="index.html" class="logo">
                     <img src="images/crossroads-logo.png">
@@ -22,8 +22,7 @@
                     <div class="text-input bottom-border-light">
                         <input type="text" placeholder="Search all products" id="search" name="search">
                         <input type="button" id="submit-search" name="submit-search">
-                            <span class="search-icon iconify-inline" data-icon="fe:search" data-width="24" data-height="24"></span>
-                        </input>
+                        <span class="search-icon iconify-inline" data-icon="ant-design:search-outlined" data-width="24" data-height="24"></span>                        </input>
                     </div>
                 </form>
             </div>
@@ -33,12 +32,13 @@
                 <a class="nav-link" href="repairs.html">Repairs</a>
                 <a class="nav-link" href="music-lessons.html">Music Lessons</a>
                 <a class="nav-link" href="contact.html">Contact</a>
-                <a id="cart-btn" class="nav-link" href="cart.html">
-                    <span class="iconify" data-icon="bi:cart" data-width="24" data-height="24"></span>
-                    <div id="cart-quantity">
+                <a id="cart-btn" class="nav-icon" href="cart.html">
+                    <span class="iconify" data-icon="mdi:cart-variant" data-width="28" data-height="28"></span>                    <div id="cart-quantity">
                         <span id="cart-quantity-badge" class="notification-badge"></span>
                     </div>
                 </a>    
+                <a id="hamburger-nav" class="nav-icon">
+                    <span class="iconify" data-icon="ci:menu-alt-01" data-width="28" data-height="28"></span>                </a> 
                 <script type="text/javascript" src="scripts/nav.js"></script>
             </div>
         </nav>
