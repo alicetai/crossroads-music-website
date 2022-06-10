@@ -54,7 +54,7 @@
 }
 
 .stepper-line{
-    width: calc(var(--stepper-width) - var(--step-icon-width));
+    width: 400px;
     height: 2px;
     background-color: var(--color-tan);
     position: absolute;
@@ -67,7 +67,11 @@
 @media screen and (max-width: 700px) {
     .stepper{
         max-width: var(--stepper-width);
-        /* justify-content: center;
-        column-gap: var(--spacing-xxl); */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .stepper-line{
+        width: calc(var(--stepper-width) - var(--step-icon-width));
     }
 }
