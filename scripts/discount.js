@@ -5,10 +5,11 @@ const DISCOUNT = 0.2;
 
 // Event listener for discount code submission
 var discountSubmit = document.getElementById("submit-discount-code");
-discountSubmit.addEventListener("click", function(e) {
-    e.preventDefault();
-    submitCode(document.getElementById("discount-code").value);
-})
+if (discountSubmit) {
+    discountSubmit.addEventListener("click", function() {
+        submitCode(document.getElementById("discount-code").value);
+    })
+}
 
 function submitCode(code) {
     var error = document.getElementById("discount-code-error");

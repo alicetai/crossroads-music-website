@@ -1,3 +1,5 @@
+import {dollarUS} from "./price.js"
+
 var product = {
     name: "C.F. Martin OM-28E Modern Deluxe Acoustic Guitar with Pickup",
     price: 699.00,
@@ -77,4 +79,4 @@ function addItem() {
     }, 5000);
 }
 
-export { loadProductNames, loadProductPrice, loadDescription, loadProductImages, loadSpecs}
+export { addItem, loadProductNames, loadProductPrice, loadDescription, loadProductImages, loadSpecs}

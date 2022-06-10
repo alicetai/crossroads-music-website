@@ -4,5 +4,5 @@ window.onload = function() {
     loadProductNames();
     loadProductPrice();
     loadProductImages();
-    showCartBadge(totalCartQuantity);
+    showCartBadge(1);
 };
