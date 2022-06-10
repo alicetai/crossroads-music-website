@@ -135,7 +135,7 @@ fieldset{
 
 .text-input label{
     font-weight: var(--weight-medium);
-    max-width: 180px;
+    width: 180px;
 }
 
 #newsletter-subscribe .text-input, #discount-code-input .text-input{
@@ -144,4 +144,11 @@ fieldset{
 
 #billing-address {
     display: none;
+}
+
+.form-step{
+    display: none;
+    flex-direction: column;
+    padding: var(--spacing-xl);
+    gap: var(--spacing-xl);
 }

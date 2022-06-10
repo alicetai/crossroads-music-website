@@ -1,3 +1,8 @@
+:root{
+    --stepper-width: 80vw;
+    --step-icon-width: 60px;
+}
+
 .stepper-wrap{
     margin-top: var(--spacing-xxl);
     text-align: center;
@@ -12,7 +17,7 @@
 }
 
 .step{
-    width: 60px;
+    width: var(--step-icon-width);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +54,7 @@
 }
 
 .stepper-line{
-    width: 400px;
+    width: calc(var(--stepper-width) - var(--step-icon-width));
     height: 2px;
     background-color: var(--color-tan);
     position: absolute;
@@ -59,9 +64,10 @@
     z-index: -1;
 }
 
-.form-step{
-    display: none;
-    flex-direction: column;
-    padding: var(--spacing-xl);
-    gap: var(--spacing-xl);
+@media screen and (max-width: 700px) {
+    .stepper{
+        max-width: var(--stepper-width);
+        /* justify-content: center;
+        column-gap: var(--spacing-xxl); */
+    }
 }
