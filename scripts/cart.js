@@ -1,5 +1,7 @@
 // Cart functions
 import {loadProductNames, loadProductPrice, loadProductImages} from './product.js';
+import {loadTotalPrice} from './price.js';
+
 
 window.onload = function() {
     loadCart();
