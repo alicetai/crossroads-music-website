@@ -32,7 +32,7 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
-    var regex = /^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/; // Regex for North American phone numbers
+    var regex = /^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/; // North American phone numbers
     return regex.test(phone);
 }
 
@@ -44,6 +44,7 @@ function clearError(error) {
     error.style.display = "none";
 }
 
+// Clear all the error text on a page
 function clearErrors() {
     let errors = document.getElementsByClassName("error-text");
     console.log(errors.length);
@@ -68,6 +69,10 @@ function validateShippingDetails(firstName, lastName, country, street, city, sta
         showError(document.getElementById("country-error"))
         return false;
     }
+    if (!validateStreet(street)) {
+        showError(document.getElementById("street-address-error"))
+        return false;
+    }
     if (!validateName(city)) {
         showError(document.getElementById("city-error"))
         return false;
@@ -87,11 +92,49 @@ function validateShippingDetails(firstName, lastName, country, street, city, sta
     return true;
 }
 
+// Check if a name is valid by checking that it is alphabet letters only
 function validateName(name) {
-    var regex = /^[A-Za-z]+$/ // Alphebet letters only (lowercase and uppercase)
+    var regex = /^[A-Za-z]+$/ // Alphabet letters only (lowercase and uppercase)
     return regex.test(name);
 }
 
+// Check if a postcode is valid (American)
 function validatePostcode(postcode) {
     return (postcode > 0) && (count(postcode) === 5)
+}
+
+// Check if a street name is valid
+function validateStreet(street) {
+    var regex = /^\s*\S+(?:\s+\S+){2}/
+    return regex.test(street);
+}
+
+function validateCardDetails(cardNumber, cardName, expiryDate, securityCode) {
+    if (!validateCardNumber(cardNumber)) {
+        showError(document.getElementById("card-number-error"))
+        return false;
+    }
+    if (!validateName(cardName)) {
+        showError(document.getElementById("card-name-error"))
+        return false;
+    }
+    if (!validateSecurityCode(expiryDate)) {
+        showError(document.getElementById("card-date-error"))
+        return false;
+    }
+    if (!validateSecurityCode(securityCode)) {
+        showError(document.getElementById("card-cvv-error"))
+        return false;
+    }
+    return true;
+}
+
+function validateExpiryDate(date) {
+    var regex = /^(0[1-9]|1[0-2])\/?([0-9]{2})$/ // Date in MM/YY format
+    return regex.test(date)
+}
+
+function validateSecurityCode(code) {
+    var regex = /^[0-9]{3, 4}$/ // 3 or 4 digit number code
+    return regex.test(code)
 }

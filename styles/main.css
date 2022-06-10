@@ -24,6 +24,7 @@
 @import "dialog.css";
 @import "icon.css";
 
+
 header, section{
     text-align: center;
 }
@@ -32,42 +33,10 @@ section{
     padding: var(--spacing-xxl) 0px;
 }
 
-.slideshow-gallery{
-    color: var(--color-beige);
-    height: 36rem;
-    width: 100%;
-
-    /* gallery image */
-    background-image: url('../images/gallery/gallery-image-1.jpg');
-    background-size: cover;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slideshow-gallery h1{
-    /* center text on top of gallery image */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .section-content{
     max-width: var(--max-desktop-width);
     margin: auto; /* center aligns content */
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xl);
-}
-
-.main-content{
-    margin-top: 150px; /* margin for header space */
-}
-
-#cart-form {
-    display: none;
 }

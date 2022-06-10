@@ -223,21 +223,30 @@
                                         <label for="card-number">Card number</label>  
                                         <input type="number" id="card-number" name="card-number" placeholder="5555 5555 5555 4444" required>        
                                     </li>
+                                    <p id="card-number-error" class="error-text">Please enter a card number in the correct format</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="card-name">Card name</label> 
                                         <input type="text" id="card-name" name="card-name" placeholder="John Smith" required>        
                                     </li>
+                                    <p id="card-name-error" class="error-text">Please enter a card name in the correct format</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="card-expiration-date">Expiration date</label> 
                                         <input type="number" id="card-expiration-date" name="card-expiration-date" placeholder="MM/YY" required>        
                                     </li>
+                                    <p id="card-date-error" class="error-text">Please enter an expiration date in the correct format</p>
+
                                     <li class="text-input bottom-border-light">
                                         <label for="card-cvv">Security code</label> 
                                         <input type="number" id="card-cvv" name="card-cvv" placeholder="123" required>        
                                     </li>    
+                                    <p id="card-cvv-error" class="error-text">Please enter a security code in the correct format</p>
                                 </ul>
                                 <br>
                                 <p class="helper-text">All transactions are secure and encrypted. View our <a class="text-medium underlined">privacy policy</a> here.</p>
+                                <p id="card-details-error" class="error-text">Card verification failed. Please check your details and try again</p>
+
                             </fieldset>
         
                             <fieldset id="payment-method">
@@ -308,7 +317,7 @@
                             </fieldset>
         
                             <div>
-                                <button id="continue-to-shipping-btn" class="next-btn" type="submit" variant="primary" onclick="toggleStep(3)">Confirm purchase</button>
+                                <button id="confirm-purchase-btn" class="next-btn" type="submit" variant="primary">Confirm purchase</button>
                             </div>
                         </div>
     

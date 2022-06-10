@@ -89,6 +89,7 @@ function submitContactDetails() {
     }
 }
 
+
 document.getElementById("continue-to-payment-btn").addEventListener("click", submitShippingDetails);
 
 function submitShippingDetails() {
@@ -106,7 +107,21 @@ function submitShippingDetails() {
         postcode, phone)) {
         
         // Go to the next step
-        toggleStep(currentStep + 1);
+        toggleStep(currentStep++);
+    }
+}
+
+
+document.getElementById("confirm-purchase-btn").addEventListener("click", submitCardDetails);
+
+function submitCardDetails() {
+    var cardName = document.getElementById("card-name").value;
+    var cardNumber = document.getElementById("card-number").value;
+    var expiryDate = document.getElementById("card-expiration-date").value;
+    var securityCode = document.getElementById("card-cvv").value;
+
+    if (validateCardDetails(cardNumber, cardName, expiryDate, securityCode)) {
+        toggleStep(currentStep++);
     }
 }
 
@@ -114,4 +129,4 @@ function submitShippingDetails() {
 //     orderDetails['contactEmail'] = email;
 // }
 
-export {submitContactDetails, submitShippingDetails}
+export {submitContactDetails, submitShippingDetails, submitCardDetails}
